@@ -46,7 +46,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 50);
             this.button1.TabIndex = 25;
-            this.button1.Text = "Détail";
+            this.button1.Text = "+Détail";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
