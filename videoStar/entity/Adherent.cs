@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace videoStar
 {
-    class Adherent
+   public class Adherent
     {
         String nom;
         String prenom;

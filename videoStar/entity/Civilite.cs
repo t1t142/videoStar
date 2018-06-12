@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,10 +23,42 @@ namespace videoStar
             Libelle = libelle;
         }
 
+
+        public List<Civilite> GetAllCivilite()
+        {
+
+            List<Civilite> civilites = new List<Civilite>();
+
+            string query = "SELECT * FROM civilite order by libelle";
+
+
+            MySqlCommand cmd = DBConnect.GetConnexion().CreateCommand();
+
+            cmd.CommandText = query;
+
+
+            //Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            //Read the data and store them in the list
+            while (dataReader.Read())
+            {
+
+                MessageBox.Show(dataReader["libelle"].ToString());
+
+            }
+
+            dataReader.Close();
+
+            return civilites;
+
+        }
+
+
         public Adherent  GetCiviliteBy(Adherent adherent)
         {
 
-            string query = "SELECT civilite.libelle FROM civilite where id_civilite=@id_civilite";
+            string query = "SELECT civilite.libelle FROM civilite where id_civilite=@id_civilite ";
 
 
             MySqlCommand cmd = DBConnect.GetConnexion().CreateCommand();
@@ -39,10 +72,7 @@ namespace videoStar
 
             //Read the data and store them in the list
             while (dataReader.Read())
-            {
-
-
-
+            { 
 
                 MessageBox.Show(dataReader["libelle"].ToString());
 
