@@ -57,6 +57,18 @@
     <Compile Include="vue\star\ajoutStar.Designer.cs">
       <DependentUpon>ajoutStar.cs</DependentUpon>
     </Compile>
+    <Compile Include="vue\star\gestionStars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\star\gestionStars.Designer.cs">
+      <DependentUpon>gestionStars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\star\star.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\star\star.Designer.cs">
+      <DependentUpon>star.cs</DependentUpon>
+    </Compile>
     <Compile Include="vue\villes\conteneurItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +112,12 @@
     <EmbeddedResource Include="vue\star\ajoutStar.resx">
       <DependentUpon>ajoutStar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vue\star\gestionStars.resx">
+      <DependentUpon>gestionStars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\star\star.resx">
+      <DependentUpon>star.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vue\villes\conteneurItem.resx">
       <DependentUpon>conteneurItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +141,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -137,6 +156,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\tunnel-3233082_1920.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
