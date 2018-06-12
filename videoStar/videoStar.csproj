@@ -47,6 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entity\Etat.cs" />
+    <Compile Include="entity\Role.cs" />
+    <Compile Include="entity\Star.cs" />
+    <Compile Include="entity\TypeDocument.cs" />
+    <Compile Include="vue\star\ajoutStar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\star\ajoutStar.Designer.cs">
+      <DependentUpon>ajoutStar.cs</DependentUpon>
+    </Compile>
     <Compile Include="vue\villes\conteneurItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -87,6 +97,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="entity\Ville.cs" />
+    <EmbeddedResource Include="vue\star\ajoutStar.resx">
+      <DependentUpon>ajoutStar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vue\villes\conteneurItem.resx">
       <DependentUpon>conteneurItem.cs</DependentUpon>
     </EmbeddedResource>

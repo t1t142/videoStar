@@ -33,6 +33,24 @@ namespace videoStar
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ajoutStar1.BringToFront();
+            Point point1 = new Point(250, 0);
+
+            ajoutStar1.Location=point1;
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
