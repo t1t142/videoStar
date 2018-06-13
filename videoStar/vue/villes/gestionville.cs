@@ -36,7 +36,7 @@ namespace videoStar
         private void gestionville_Load(object sender, EventArgs e)
         {
             
-           Actualise();
+          // Actualise();
         
         }
 

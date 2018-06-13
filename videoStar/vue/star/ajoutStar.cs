@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using videoStar.entity;
 
 namespace videoStar.vue.star
 {
@@ -18,33 +19,19 @@ namespace videoStar.vue.star
             InitializeComponent();
             pictureBox1.AllowDrop = true;
             pictureBox1.ImageLocation = @"D:\image\drag-drop-upload-1.gif";
+            label1.BackColor = System.Drawing.Color.Transparent;
+            comboBox1.DroppedDown = true;
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void pictureBox1_DragEnter(object sender, DragEventArgs e)
         {
@@ -73,7 +60,50 @@ namespace videoStar.vue.star
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SendToBack();
+            this.Hide();
+        }
+
+        private void comboBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text.Length >= 2 && comboBox1.Text.Length <= 4)
+            {
+                string rech = comboBox1.Text;
+
+                List<Pays> pays = Pays.GetPaysByName(comboBox1.Text,1,20);
+
+                comboBox1.Items.Clear();
+                foreach ( Pays unPays in pays)
+                {
+                   
+                    comboBox1.Items.Add(unPays.Libelle);
+
+
+
+                }
+                comboBox1.DroppedDown = true;
+                comboBox1.Select(comboBox1.Text.Length, 0);
+                // comboBox1.Text = comboBox1.Text;
+            }
+
+        }
+
+        
+       
+          
+       
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            comboBox1.Text = comboBox1.SelectedIndex.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Star st = new Star( textBox1.Text, textBox2.Text, dateTimePicker1.Value, comboBox1.Text);
+
+            st.Photo = textBox3.Text;
+            Star.InsertStar(st);
+
         }
     }
 }

@@ -109,6 +109,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "star";
             this.Size = new System.Drawing.Size(190, 278);
+            this.Load += new System.EventHandler(this.star_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

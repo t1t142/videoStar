@@ -37,9 +37,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.detailVille1 = new videoStar.detailVille();
-            this.gestionville1 = new videoStar.gestionville();
             this.gestionStars1 = new videoStar.vue.star.gestionStars();
+            this.button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -49,7 +48,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 59);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Star";
+            this.button1.Text = "Stars";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -76,7 +75,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 254);
+            this.button4.Location = new System.Drawing.Point(12, 319);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(216, 59);
             this.button4.TabIndex = 5;
@@ -86,7 +85,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 319);
+            this.button5.Location = new System.Drawing.Point(12, 254);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(216, 59);
             this.button5.TabIndex = 6;
@@ -96,7 +95,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(12, 384);
+            this.button6.Location = new System.Drawing.Point(12, 449);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(216, 59);
             this.button6.TabIndex = 7;
@@ -106,7 +105,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(12, 449);
+            this.button7.Location = new System.Drawing.Point(12, 514);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(216, 59);
             this.button7.TabIndex = 8;
@@ -116,44 +115,41 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(12, 616);
+            this.button8.Location = new System.Drawing.Point(12, 579);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(216, 59);
             this.button8.TabIndex = 9;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // detailVille1
-            // 
-            this.detailVille1.Location = new System.Drawing.Point(712, 211);
-            this.detailVille1.Name = "detailVille1";
-            this.detailVille1.Size = new System.Drawing.Size(503, 387);
-            this.detailVille1.TabIndex = 1;
-            // 
-            // gestionville1
-            // 
-            this.gestionville1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.gestionville1.Location = new System.Drawing.Point(252, 59);
-            this.gestionville1.Name = "gestionville1";
-            this.gestionville1.Size = new System.Drawing.Size(1136, 742);
-            this.gestionville1.TabIndex = 0;
-            // 
             // gestionStars1
             // 
             this.gestionStars1.BackColor = System.Drawing.Color.Teal;
             this.gestionStars1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestionStars1.BackgroundImage")));
             this.gestionStars1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gestionStars1.Location = new System.Drawing.Point(322, 254);
+            this.gestionStars1.Location = new System.Drawing.Point(253, 21);
             this.gestionStars1.Name = "gestionStars1";
             this.gestionStars1.Size = new System.Drawing.Size(1049, 815);
             this.gestionStars1.TabIndex = 10;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(12, 384);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(216, 59);
+            this.button9.TabIndex = 11;
+            this.button9.Text = "Exemplaires";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(1294, 819);
+            this.ClientSize = new System.Drawing.Size(1294, 814);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.gestionStars1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -163,9 +159,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.detailVille1);
-            this.Controls.Add(this.gestionville1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
@@ -173,10 +169,8 @@
         }
 
         #endregion
-
-        private gestionville gestionville1;
-        private conteneurItem conteneurItem1;
-        private detailVille detailVille1;
+       
+        
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -186,5 +180,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private vue.star.gestionStars gestionStars1;
+        private System.Windows.Forms.Button button9;
     }
 }

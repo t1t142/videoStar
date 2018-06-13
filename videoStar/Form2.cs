@@ -17,29 +17,28 @@ namespace videoStar
         public Form2()
         {
             InitializeComponent();
-            gestionville1.BringToFront();
-           gestionville1.RaiseeventClickDetail += HandleeventClickDetail;
+            
+            // gestionville1.RaiseeventClickDetail += HandleeventClickDetail;
+            gestionStars1.Hide();
+           
+
+            
+
         }
 
-        private void gestionville1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         void HandleeventClickDetail(object sender, eventClickDetail e)
         {
-            detailVille1.BringToFront();
-            detailVille1.GetVilledetail(e.Id);
+            //detailVille1.BringToFront();
+            //detailVille1.GetVilledetail(e.Id);
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
+            gestionStars1.Show();
             gestionStars1.BringToFront();
             Point point1 = new Point(250, 0);
 
@@ -48,6 +47,11 @@ namespace videoStar
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
         {
 
         }

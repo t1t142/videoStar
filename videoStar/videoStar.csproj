@@ -159,5 +159,14 @@
   <ItemGroup>
     <None Include="Resources\tunnel-3233082_1920.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christmas-2871064_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christmas-2871064_19201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-maul-1555343_1280.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
