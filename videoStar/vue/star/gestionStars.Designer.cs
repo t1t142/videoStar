@@ -29,44 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gestionStars));
-
-            this.star1 = new videoStar.vue.star.star();
             this.btnPrecedent = new System.Windows.Forms.Button();
             this.btnSuivant = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.lblTitre = new System.Windows.Forms.Label();
             this.lblRecherche = new System.Windows.Forms.Label();
             this.txtRecherche = new System.Windows.Forms.TextBox();
-            this.ajoutStar1 = new videoStar.vue.star.ajoutStar();
             this.lblPages = new System.Windows.Forms.Label();
-            this.star2 = new videoStar.vue.star.star();
-            this.star3 = new videoStar.vue.star.star();
-            this.star4 = new videoStar.vue.star.star();
             this.star8 = new videoStar.vue.star.star();
             this.star7 = new videoStar.vue.star.star();
             this.star6 = new videoStar.vue.star.star();
             this.star5 = new videoStar.vue.star.star();
+            this.star4 = new videoStar.vue.star.star();
+            this.star3 = new videoStar.vue.star.star();
+            this.ajoutStar1 = new videoStar.vue.star.ajoutStar();
+            this.star1 = new videoStar.vue.star.star();
+            this.star2 = new videoStar.vue.star.star();
             this.SuspendLayout();
-           
             // 
-            // star1
-            // 
-            this.star1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.star1.Location = new System.Drawing.Point(47, 116);
-            this.star1.Name = "star1";
-            this.star1.Size = new System.Drawing.Size(190, 278);
-            this.star1.TabIndex = 28;
-            this.star1.TabStop = false;
-           
-            
-            // 
-            // button2btnPrecedent
+            // btnPrecedent
             // 
             this.btnPrecedent.BackColor = System.Drawing.Color.Teal;
             this.btnPrecedent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrecedent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrecedent.Location = new System.Drawing.Point(156, 750);
-            this.btnPrecedent.Name = "button2btnPrecedent";
+            this.btnPrecedent.Name = "btnPrecedent";
             this.btnPrecedent.Size = new System.Drawing.Size(125, 37);
             this.btnPrecedent.TabIndex = 15;
             this.btnPrecedent.Text = "Précédent";
@@ -109,7 +96,6 @@
             this.lblTitre.Size = new System.Drawing.Size(231, 39);
             this.lblTitre.TabIndex = 18;
             this.lblTitre.Text = "GESTION STAR";
-           
             // 
             // lblRecherche
             // 
@@ -131,16 +117,6 @@
             this.txtRecherche.TabIndex = 20;
             this.txtRecherche.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // ajoutStar1
-            // 
-            this.ajoutStar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ajoutStar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutStar1.BackgroundImage")));
-            this.ajoutStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ajoutStar1.Location = new System.Drawing.Point(66, 232);
-            this.ajoutStar1.Name = "ajoutStar1";
-            this.ajoutStar1.Size = new System.Drawing.Size(1070, 599);
-            this.ajoutStar1.TabIndex = 21;
-            // 
             // lblPages
             // 
             this.lblPages.AutoSize = true;
@@ -151,30 +127,6 @@
             this.lblPages.Size = new System.Drawing.Size(167, 21);
             this.lblPages.TabIndex = 22;
             this.lblPages.Text = "Recherche par Nom";
-            // 
-            // star2
-            // 
-            this.star2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.star2.Location = new System.Drawing.Point(278, 116);
-            this.star2.Name = "star2";
-            this.star2.Size = new System.Drawing.Size(190, 278);
-            this.star2.TabIndex = 23;
-            // 
-            // star3
-            // 
-            this.star3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.star3.Location = new System.Drawing.Point(510, 116);
-            this.star3.Name = "star3";
-            this.star3.Size = new System.Drawing.Size(190, 278);
-            this.star3.TabIndex = 24;
-            // 
-            // star4
-            // 
-            this.star4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.star4.Location = new System.Drawing.Point(760, 116);
-            this.star4.Name = "star4";
-            this.star4.Size = new System.Drawing.Size(190, 278);
-            this.star4.TabIndex = 25;
             // 
             // star8
             // 
@@ -208,6 +160,49 @@
             this.star5.Size = new System.Drawing.Size(190, 278);
             this.star5.TabIndex = 26;
             // 
+            // star4
+            // 
+            this.star4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.star4.Location = new System.Drawing.Point(760, 116);
+            this.star4.Name = "star4";
+            this.star4.Size = new System.Drawing.Size(190, 278);
+            this.star4.TabIndex = 25;
+            // 
+            // star3
+            // 
+            this.star3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.star3.Location = new System.Drawing.Point(510, 116);
+            this.star3.Name = "star3";
+            this.star3.Size = new System.Drawing.Size(190, 278);
+            this.star3.TabIndex = 24;
+            // 
+            // ajoutStar1
+            // 
+            this.ajoutStar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ajoutStar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutStar1.BackgroundImage")));
+            this.ajoutStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ajoutStar1.Location = new System.Drawing.Point(66, 232);
+            this.ajoutStar1.Name = "ajoutStar1";
+            this.ajoutStar1.Size = new System.Drawing.Size(1070, 599);
+            this.ajoutStar1.TabIndex = 21;
+            this.ajoutStar1.Load += new System.EventHandler(this.ajoutStar1_Load);
+            // 
+            // star1
+            // 
+            this.star1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.star1.Location = new System.Drawing.Point(47, 104);
+            this.star1.Name = "star1";
+            this.star1.Size = new System.Drawing.Size(190, 278);
+            this.star1.TabIndex = 30;
+            // 
+            // star2
+            // 
+            this.star2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.star2.Location = new System.Drawing.Point(278, 104);
+            this.star2.Name = "star2";
+            this.star2.Size = new System.Drawing.Size(190, 278);
+            this.star2.TabIndex = 31;
+            // 
             // gestionStars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,13 +210,14 @@
             this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImage = global::videoStar.Properties.Resources.tunnel_3233082_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.star2);
+            this.Controls.Add(this.star1);
             this.Controls.Add(this.star8);
             this.Controls.Add(this.star7);
             this.Controls.Add(this.star6);
             this.Controls.Add(this.star5);
             this.Controls.Add(this.star4);
             this.Controls.Add(this.star3);
-            this.Controls.Add(this.star2);
             this.Controls.Add(this.lblPages);
             this.Controls.Add(this.ajoutStar1);
             this.Controls.Add(this.txtRecherche);
@@ -230,7 +226,6 @@
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnSuivant);
             this.Controls.Add(this.btnPrecedent);
-            this.Controls.Add(this.star1);
             this.Name = "gestionStars";
             this.Size = new System.Drawing.Size(1049, 805);
             this.ResumeLayout(false);
@@ -241,8 +236,6 @@
         #endregion
      
        
-        
-        private star star1;
         private System.Windows.Forms.Button btnPrecedent;
         private System.Windows.Forms.Button btnSuivant;
         private System.Windows.Forms.Button btnAjouter;
@@ -251,12 +244,13 @@
         private System.Windows.Forms.TextBox txtRecherche;
         private ajoutStar ajoutStar1;
         private System.Windows.Forms.Label lblPages;
-        private star star2;
         private star star3;
         private star star4;
         private star star8;
         private star star7;
         private star star6;
         private star star5;
+        private star star1;
+        private star star2;
     }
 }

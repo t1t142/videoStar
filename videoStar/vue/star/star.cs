@@ -23,11 +23,11 @@ namespace videoStar.vue.star
 
     
 
-        public void GetStar(Star star)
+        public void GetStar(Star st)
         {
-            textBox1.Text = star.Nom;
-            textBox2.Text = star.Prenom;
-
+            textBox1.Text = st.Nom;
+            textBox2.Text = st.Prenom;
+            pictureBox2.ImageLocation = st.Photo;
         }
 
         private void button1_Click(object sender, EventArgs e)

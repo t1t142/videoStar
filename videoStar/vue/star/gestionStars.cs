@@ -150,9 +150,15 @@ namespace videoStar.vue.star
             }
         }
 
-       
+        private void ajoutStar1_Load(object sender, EventArgs e)
+        {
 
-        
+        }
+
+        private void star2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

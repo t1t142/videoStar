@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using videoStar.entity;
+using Tulpep.NotificationWindow;
 
 namespace videoStar.vue.star
 {
@@ -26,10 +27,7 @@ namespace videoStar.vue.star
 
         
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         
 
@@ -94,7 +92,7 @@ namespace videoStar.vue.star
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            comboBox1.Text = comboBox1.SelectedIndex.ToString();
+            //comboBox1.Text = comboBox1.SelectedIndex.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,6 +102,10 @@ namespace videoStar.vue.star
             st.Photo = textBox3.Text;
             Star.InsertStar(st);
 
-        }
+            PopupNotifier popup = new PopupNotifier();
+            popup.TitleText = "un popup perso et un";
+            popup.ContentText = "la nouvelle star a bien été ajoutée ";
+             popup.Popup();
+                }
     }
 }
