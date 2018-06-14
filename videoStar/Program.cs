@@ -16,8 +16,10 @@ namespace videoStar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new Form1());
-            Application.Run(new Form2());
+            // Application.Run(new Form1());
+            Form3 form = new Form3();
+
+            Application.Run(form );
         }
     }
 }
