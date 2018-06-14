@@ -114,7 +114,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Teal;
             this.pictureBox1.Location = new System.Drawing.Point(78, 62);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(276, 242);
+            this.pictureBox1.Size = new System.Drawing.Size(276, 253);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -188,6 +188,7 @@
             this.DoubleBuffered = true;
             this.Name = "ajoutStar";
             this.Size = new System.Drawing.Size(1070, 599);
+            this.Load += new System.EventHandler(this.ajoutStar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

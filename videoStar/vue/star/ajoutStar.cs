@@ -107,5 +107,10 @@ namespace videoStar.vue.star
             popup.ContentText = "la nouvelle star a bien été ajoutée ";
              popup.Popup();
                 }
+
+        private void ajoutStar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,98 +29,102 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.BtnStars = new System.Windows.Forms.Button();
+            this.btnFilms = new System.Windows.Forms.Button();
+            this.btnTournage = new System.Windows.Forms.Button();
+            this.btnLocations = new System.Windows.Forms.Button();
+            this.btnAdherent = new System.Windows.Forms.Button();
+            this.btnParametres = new System.Windows.Forms.Button();
+            this.btnStats = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.gestionStars1 = new videoStar.vue.star.gestionStars();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnExemplaires = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnStars
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 59);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Stars";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnStars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStars.Location = new System.Drawing.Point(12, 59);
+            this.BtnStars.Name = "BtnStars";
+            this.BtnStars.Size = new System.Drawing.Size(216, 59);
+            this.BtnStars.TabIndex = 2;
+            this.BtnStars.Text = "Stars";
+            this.BtnStars.UseVisualStyleBackColor = true;
+            this.BtnStars.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnFilms
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 59);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Films";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnFilms.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilms.Location = new System.Drawing.Point(12, 124);
+            this.btnFilms.Name = "btnFilms";
+            this.btnFilms.Size = new System.Drawing.Size(216, 59);
+            this.btnFilms.TabIndex = 3;
+            this.btnFilms.Text = "Films";
+            this.btnFilms.UseVisualStyleBackColor = true;
+            this.btnFilms.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnTournage
             // 
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 189);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 59);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Lieu Tournage";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTournage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTournage.Location = new System.Drawing.Point(12, 189);
+            this.btnTournage.Name = "btnTournage";
+            this.btnTournage.Size = new System.Drawing.Size(216, 59);
+            this.btnTournage.TabIndex = 4;
+            this.btnTournage.Text = "Lieu Tournage";
+            this.btnTournage.UseVisualStyleBackColor = true;
+            this.btnTournage.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnLocations
             // 
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 319);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(216, 59);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Locations";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLocations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocations.Location = new System.Drawing.Point(12, 319);
+            this.btnLocations.Name = "btnLocations";
+            this.btnLocations.Size = new System.Drawing.Size(216, 59);
+            this.btnLocations.TabIndex = 5;
+            this.btnLocations.Text = "Locations";
+            this.btnLocations.UseVisualStyleBackColor = true;
+            this.btnLocations.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnAdherent
             // 
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 254);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(216, 59);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Adhérents";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAdherent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdherent.Location = new System.Drawing.Point(12, 254);
+            this.btnAdherent.Name = "btnAdherent";
+            this.btnAdherent.Size = new System.Drawing.Size(216, 59);
+            this.btnAdherent.TabIndex = 6;
+            this.btnAdherent.Text = "Adhérents";
+            this.btnAdherent.UseVisualStyleBackColor = true;
+            this.btnAdherent.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // btnParametres
             // 
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(12, 449);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(216, 59);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Paramètres";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnParametres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParametres.Location = new System.Drawing.Point(12, 449);
+            this.btnParametres.Name = "btnParametres";
+            this.btnParametres.Size = new System.Drawing.Size(216, 59);
+            this.btnParametres.TabIndex = 7;
+            this.btnParametres.Text = "Paramètres";
+            this.btnParametres.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnStats
             // 
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(12, 514);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(216, 59);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Statistiques";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnStats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStats.Location = new System.Drawing.Point(12, 514);
+            this.btnStats.Name = "btnStats";
+            this.btnStats.Size = new System.Drawing.Size(216, 59);
+            this.btnStats.TabIndex = 8;
+            this.btnStats.Text = "Statistiques";
+            this.btnStats.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnExit
             // 
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(12, 579);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(216, 59);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(12, 579);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(216, 59);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Quitter";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // gestionStars1
             // 
@@ -132,16 +136,16 @@
             this.gestionStars1.Size = new System.Drawing.Size(1049, 815);
             this.gestionStars1.TabIndex = 10;
             // 
-            // button9
+            // btnExemplaires
             // 
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(12, 384);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(216, 59);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Exemplaires";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExemplaires.Location = new System.Drawing.Point(12, 384);
+            this.btnExemplaires.Name = "btnExemplaires";
+            this.btnExemplaires.Size = new System.Drawing.Size(216, 59);
+            this.btnExemplaires.TabIndex = 11;
+            this.btnExemplaires.Text = "Exemplaires";
+            this.btnExemplaires.UseVisualStyleBackColor = true;
+            this.btnExemplaires.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form2
             // 
@@ -149,16 +153,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1294, 814);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.btnExemplaires);
             this.Controls.Add(this.gestionStars1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnStats);
+            this.Controls.Add(this.btnParametres);
+            this.Controls.Add(this.btnAdherent);
+            this.Controls.Add(this.btnLocations);
+            this.Controls.Add(this.btnTournage);
+            this.Controls.Add(this.btnFilms);
+            this.Controls.Add(this.BtnStars);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -171,15 +175,15 @@
         #endregion
        
         
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button BtnStars;
+        private System.Windows.Forms.Button btnFilms;
+        private System.Windows.Forms.Button btnTournage;
+        private System.Windows.Forms.Button btnLocations;
+        private System.Windows.Forms.Button btnAdherent;
+        private System.Windows.Forms.Button btnParametres;
+        private System.Windows.Forms.Button btnStats;
+        private System.Windows.Forms.Button btnExit;
         private vue.star.gestionStars gestionStars1;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnExemplaires;
     }
 }
