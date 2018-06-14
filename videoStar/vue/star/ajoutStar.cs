@@ -101,7 +101,7 @@ namespace videoStar.vue.star
 
             st.Photo = textBox3.Text;
             Star.InsertStar(st);
-
+            
             PopupNotifier popup = new PopupNotifier();
             popup.TitleText = "un popup perso et un";
             popup.ContentText = "la nouvelle star a bien été ajoutée ";
