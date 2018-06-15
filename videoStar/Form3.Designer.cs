@@ -29,11 +29,31 @@
         private void InitializeComponent()
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnFilms = new System.Windows.Forms.Button();
+            this.BtnStars = new System.Windows.Forms.Button();
+            this.btnExemplaires = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnStats = new System.Windows.Forms.Button();
+            this.btnParametres = new System.Windows.Forms.Button();
+            this.btnAdherent = new System.Windows.Forms.Button();
+            this.btnLocations = new System.Windows.Forms.Button();
+            this.btnTournage = new System.Windows.Forms.Button();
             this.pnlStarGestion = new System.Windows.Forms.Panel();
-            this.star4 = new videoStar.vue.star.star();
-            this.star3 = new videoStar.vue.star.star();
-            this.star2 = new videoStar.vue.star.star();
-            this.star1 = new videoStar.vue.star.star();
+            this.star8 = new videoStar.vue.star.StarVue();
+            this.star7 = new videoStar.vue.star.StarVue();
+            this.star6 = new videoStar.vue.star.StarVue();
+            this.star5 = new videoStar.vue.star.StarVue();
+            this.lblPages = new System.Windows.Forms.Label();
+            this.btnSuivant = new System.Windows.Forms.Button();
+            this.btnPrecedent = new System.Windows.Forms.Button();
+            this.txtRecherche = new System.Windows.Forms.TextBox();
+            this.lblRecherche = new System.Windows.Forms.Label();
+            this.lblTitre = new System.Windows.Forms.Label();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.star4 = new videoStar.vue.star.StarVue();
+            this.star3 = new videoStar.vue.star.StarVue();
+            this.star2 = new videoStar.vue.star.StarVue();
+            this.star1 = new videoStar.vue.star.StarVue();
             this.pnlParametres = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -81,26 +101,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtRecherche = new System.Windows.Forms.TextBox();
-            this.lblRecherche = new System.Windows.Forms.Label();
-            this.lblTitre = new System.Windows.Forms.Label();
-            this.btnAjouter = new System.Windows.Forms.Button();
-            this.lblPages = new System.Windows.Forms.Label();
-            this.btnSuivant = new System.Windows.Forms.Button();
-            this.btnPrecedent = new System.Windows.Forms.Button();
-            this.star5 = new videoStar.vue.star.star();
-            this.star6 = new videoStar.vue.star.star();
-            this.star7 = new videoStar.vue.star.star();
-            this.star8 = new videoStar.vue.star.star();
-            this.btnExemplaires = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnStats = new System.Windows.Forms.Button();
-            this.btnParametres = new System.Windows.Forms.Button();
-            this.btnAdherent = new System.Windows.Forms.Button();
-            this.btnLocations = new System.Windows.Forms.Button();
-            this.btnTournage = new System.Windows.Forms.Button();
-            this.btnFilms = new System.Windows.Forms.Button();
-            this.BtnStars = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlStarGestion.SuspendLayout();
             this.pnlParametres.SuspendLayout();
@@ -131,10 +131,102 @@
             this.pnlMenu.Size = new System.Drawing.Size(170, 736);
             this.pnlMenu.TabIndex = 0;
             // 
+            // btnFilms
+            // 
+            this.btnFilms.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilms.Location = new System.Drawing.Point(3, 221);
+            this.btnFilms.Name = "btnFilms";
+            this.btnFilms.Size = new System.Drawing.Size(161, 50);
+            this.btnFilms.TabIndex = 20;
+            this.btnFilms.Text = "Films";
+            this.btnFilms.UseVisualStyleBackColor = true;
+            // 
+            // BtnStars
+            // 
+            this.BtnStars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStars.Location = new System.Drawing.Point(3, 156);
+            this.BtnStars.Name = "BtnStars";
+            this.BtnStars.Size = new System.Drawing.Size(161, 50);
+            this.BtnStars.TabIndex = 19;
+            this.BtnStars.Text = "Stars";
+            this.BtnStars.UseVisualStyleBackColor = true;
+            this.BtnStars.Click += new System.EventHandler(this.BtnStars_Click);
+            // 
+            // btnExemplaires
+            // 
+            this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExemplaires.Location = new System.Drawing.Point(3, 476);
+            this.btnExemplaires.Name = "btnExemplaires";
+            this.btnExemplaires.Size = new System.Drawing.Size(161, 53);
+            this.btnExemplaires.TabIndex = 18;
+            this.btnExemplaires.Text = "Exemplaires";
+            this.btnExemplaires.UseVisualStyleBackColor = true;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(3, 671);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(161, 53);
+            this.btnExit.TabIndex = 17;
+            this.btnExit.Text = "Quitter";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // btnStats
+            // 
+            this.btnStats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStats.Location = new System.Drawing.Point(3, 606);
+            this.btnStats.Name = "btnStats";
+            this.btnStats.Size = new System.Drawing.Size(161, 53);
+            this.btnStats.TabIndex = 16;
+            this.btnStats.Text = "Statistiques";
+            this.btnStats.UseVisualStyleBackColor = true;
+            // 
+            // btnParametres
+            // 
+            this.btnParametres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParametres.Location = new System.Drawing.Point(3, 541);
+            this.btnParametres.Name = "btnParametres";
+            this.btnParametres.Size = new System.Drawing.Size(161, 53);
+            this.btnParametres.TabIndex = 15;
+            this.btnParametres.Text = "Paramètres";
+            this.btnParametres.UseVisualStyleBackColor = true;
+            // 
+            // btnAdherent
+            // 
+            this.btnAdherent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdherent.Location = new System.Drawing.Point(3, 346);
+            this.btnAdherent.Name = "btnAdherent";
+            this.btnAdherent.Size = new System.Drawing.Size(161, 53);
+            this.btnAdherent.TabIndex = 14;
+            this.btnAdherent.Text = "Adhérents";
+            this.btnAdherent.UseVisualStyleBackColor = true;
+            // 
+            // btnLocations
+            // 
+            this.btnLocations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocations.Location = new System.Drawing.Point(3, 411);
+            this.btnLocations.Name = "btnLocations";
+            this.btnLocations.Size = new System.Drawing.Size(161, 53);
+            this.btnLocations.TabIndex = 13;
+            this.btnLocations.Text = "Locations";
+            this.btnLocations.UseVisualStyleBackColor = true;
+            // 
+            // btnTournage
+            // 
+            this.btnTournage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTournage.Location = new System.Drawing.Point(3, 281);
+            this.btnTournage.Name = "btnTournage";
+            this.btnTournage.Size = new System.Drawing.Size(161, 53);
+            this.btnTournage.TabIndex = 12;
+            this.btnTournage.Text = "Lieu Tournage";
+            this.btnTournage.UseVisualStyleBackColor = true;
+            // 
             // pnlStarGestion
             // 
             this.pnlStarGestion.BackgroundImage = global::videoStar.Properties.Resources.tunnel_3233082_1920;
             this.pnlStarGestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlStarGestion.Controls.Add(this.pnlStarDetail);
             this.pnlStarGestion.Controls.Add(this.star8);
             this.pnlStarGestion.Controls.Add(this.star7);
             this.pnlStarGestion.Controls.Add(this.star6);
@@ -155,6 +247,115 @@
             this.pnlStarGestion.Name = "pnlStarGestion";
             this.pnlStarGestion.Size = new System.Drawing.Size(1076, 736);
             this.pnlStarGestion.TabIndex = 1;
+            // 
+            // star8
+            // 
+            this.star8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.star8.Location = new System.Drawing.Point(765, 357);
+            this.star8.Name = "star8";
+            this.star8.Size = new System.Drawing.Size(190, 278);
+            this.star8.TabIndex = 31;
+            // 
+            // star7
+            // 
+            this.star7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.star7.Location = new System.Drawing.Point(522, 357);
+            this.star7.Name = "star7";
+            this.star7.Size = new System.Drawing.Size(190, 278);
+            this.star7.TabIndex = 30;
+            // 
+            // star6
+            // 
+            this.star6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.star6.Location = new System.Drawing.Point(288, 353);
+            this.star6.Name = "star6";
+            this.star6.Size = new System.Drawing.Size(190, 278);
+            this.star6.TabIndex = 29;
+            // 
+            // star5
+            // 
+            this.star5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.star5.Location = new System.Drawing.Point(82, 357);
+            this.star5.Name = "star5";
+            this.star5.Size = new System.Drawing.Size(190, 278);
+            this.star5.TabIndex = 28;
+            // 
+            // lblPages
+            // 
+            this.lblPages.AutoSize = true;
+            this.lblPages.BackColor = System.Drawing.Color.Teal;
+            this.lblPages.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPages.Location = new System.Drawing.Point(442, 679);
+            this.lblPages.Name = "lblPages";
+            this.lblPages.Size = new System.Drawing.Size(167, 21);
+            this.lblPages.TabIndex = 27;
+            this.lblPages.Text = "Recherche par Nom";
+            // 
+            // btnSuivant
+            // 
+            this.btnSuivant.BackColor = System.Drawing.Color.Teal;
+            this.btnSuivant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuivant.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuivant.Location = new System.Drawing.Point(645, 671);
+            this.btnSuivant.Name = "btnSuivant";
+            this.btnSuivant.Size = new System.Drawing.Size(118, 36);
+            this.btnSuivant.TabIndex = 26;
+            this.btnSuivant.Text = "Suivant";
+            this.btnSuivant.UseVisualStyleBackColor = false;
+            // 
+            // btnPrecedent
+            // 
+            this.btnPrecedent.BackColor = System.Drawing.Color.Teal;
+            this.btnPrecedent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrecedent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrecedent.Location = new System.Drawing.Point(303, 671);
+            this.btnPrecedent.Name = "btnPrecedent";
+            this.btnPrecedent.Size = new System.Drawing.Size(125, 37);
+            this.btnPrecedent.TabIndex = 25;
+            this.btnPrecedent.Text = "Précédent";
+            this.btnPrecedent.UseVisualStyleBackColor = false;
+            // 
+            // txtRecherche
+            // 
+            this.txtRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecherche.Location = new System.Drawing.Point(523, 42);
+            this.txtRecherche.Name = "txtRecherche";
+            this.txtRecherche.Size = new System.Drawing.Size(137, 27);
+            this.txtRecherche.TabIndex = 24;
+            // 
+            // lblRecherche
+            // 
+            this.lblRecherche.AutoSize = true;
+            this.lblRecherche.BackColor = System.Drawing.Color.Teal;
+            this.lblRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecherche.Location = new System.Drawing.Point(311, 46);
+            this.lblRecherche.Name = "lblRecherche";
+            this.lblRecherche.Size = new System.Drawing.Size(167, 21);
+            this.lblRecherche.TabIndex = 23;
+            this.lblRecherche.Text = "Recherche par Nom";
+            // 
+            // lblTitre
+            // 
+            this.lblTitre.AutoSize = true;
+            this.lblTitre.BackColor = System.Drawing.Color.Teal;
+            this.lblTitre.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.Location = new System.Drawing.Point(-7, 0);
+            this.lblTitre.Name = "lblTitre";
+            this.lblTitre.Size = new System.Drawing.Size(231, 39);
+            this.lblTitre.TabIndex = 22;
+            this.lblTitre.Text = "GESTION STAR";
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.BackColor = System.Drawing.Color.Teal;
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.Location = new System.Drawing.Point(867, 19);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(121, 50);
+            this.btnAjouter.TabIndex = 21;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = false;
             // 
             // star4
             // 
@@ -427,9 +628,9 @@
             this.pnlStarDetail.Controls.Add(this.textBox7);
             this.pnlStarDetail.Controls.Add(this.label11);
             this.pnlStarDetail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlStarDetail.Location = new System.Drawing.Point(332, 131);
+            this.pnlStarDetail.Location = new System.Drawing.Point(21, 42);
             this.pnlStarDetail.Name = "pnlStarDetail";
-            this.pnlStarDetail.Size = new System.Drawing.Size(97, 52);
+            this.pnlStarDetail.Size = new System.Drawing.Size(1052, 658);
             this.pnlStarDetail.TabIndex = 3;
             // 
             // button9
@@ -667,212 +868,11 @@
             this.label11.TabIndex = 15;
             this.label11.Text = "Nom";
             // 
-            // txtRecherche
-            // 
-            this.txtRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecherche.Location = new System.Drawing.Point(523, 42);
-            this.txtRecherche.Name = "txtRecherche";
-            this.txtRecherche.Size = new System.Drawing.Size(137, 27);
-            this.txtRecherche.TabIndex = 24;
-            // 
-            // lblRecherche
-            // 
-            this.lblRecherche.AutoSize = true;
-            this.lblRecherche.BackColor = System.Drawing.Color.Teal;
-            this.lblRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecherche.Location = new System.Drawing.Point(311, 46);
-            this.lblRecherche.Name = "lblRecherche";
-            this.lblRecherche.Size = new System.Drawing.Size(167, 21);
-            this.lblRecherche.TabIndex = 23;
-            this.lblRecherche.Text = "Recherche par Nom";
-            // 
-            // lblTitre
-            // 
-            this.lblTitre.AutoSize = true;
-            this.lblTitre.BackColor = System.Drawing.Color.Teal;
-            this.lblTitre.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(-7, 0);
-            this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(231, 39);
-            this.lblTitre.TabIndex = 22;
-            this.lblTitre.Text = "GESTION STAR";
-            // 
-            // btnAjouter
-            // 
-            this.btnAjouter.BackColor = System.Drawing.Color.Teal;
-            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouter.Location = new System.Drawing.Point(867, 19);
-            this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(121, 50);
-            this.btnAjouter.TabIndex = 21;
-            this.btnAjouter.Text = "Ajouter";
-            this.btnAjouter.UseVisualStyleBackColor = false;
-            // 
-            // lblPages
-            // 
-            this.lblPages.AutoSize = true;
-            this.lblPages.BackColor = System.Drawing.Color.Teal;
-            this.lblPages.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPages.Location = new System.Drawing.Point(442, 679);
-            this.lblPages.Name = "lblPages";
-            this.lblPages.Size = new System.Drawing.Size(167, 21);
-            this.lblPages.TabIndex = 27;
-            this.lblPages.Text = "Recherche par Nom";
-            // 
-            // btnSuivant
-            // 
-            this.btnSuivant.BackColor = System.Drawing.Color.Teal;
-            this.btnSuivant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuivant.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuivant.Location = new System.Drawing.Point(645, 671);
-            this.btnSuivant.Name = "btnSuivant";
-            this.btnSuivant.Size = new System.Drawing.Size(118, 36);
-            this.btnSuivant.TabIndex = 26;
-            this.btnSuivant.Text = "Suivant";
-            this.btnSuivant.UseVisualStyleBackColor = false;
-            // 
-            // btnPrecedent
-            // 
-            this.btnPrecedent.BackColor = System.Drawing.Color.Teal;
-            this.btnPrecedent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrecedent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrecedent.Location = new System.Drawing.Point(303, 671);
-            this.btnPrecedent.Name = "btnPrecedent";
-            this.btnPrecedent.Size = new System.Drawing.Size(125, 37);
-            this.btnPrecedent.TabIndex = 25;
-            this.btnPrecedent.Text = "Précédent";
-            this.btnPrecedent.UseVisualStyleBackColor = false;
-            // 
-            // star5
-            // 
-            this.star5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.star5.Location = new System.Drawing.Point(82, 357);
-            this.star5.Name = "star5";
-            this.star5.Size = new System.Drawing.Size(190, 278);
-            this.star5.TabIndex = 28;
-            // 
-            // star6
-            // 
-            this.star6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.star6.Location = new System.Drawing.Point(288, 353);
-            this.star6.Name = "star6";
-            this.star6.Size = new System.Drawing.Size(190, 278);
-            this.star6.TabIndex = 29;
-            // 
-            // star7
-            // 
-            this.star7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.star7.Location = new System.Drawing.Point(522, 357);
-            this.star7.Name = "star7";
-            this.star7.Size = new System.Drawing.Size(190, 278);
-            this.star7.TabIndex = 30;
-            // 
-            // star8
-            // 
-            this.star8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.star8.Location = new System.Drawing.Point(765, 357);
-            this.star8.Name = "star8";
-            this.star8.Size = new System.Drawing.Size(190, 278);
-            this.star8.TabIndex = 31;
-            // 
-            // btnExemplaires
-            // 
-            this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExemplaires.Location = new System.Drawing.Point(3, 476);
-            this.btnExemplaires.Name = "btnExemplaires";
-            this.btnExemplaires.Size = new System.Drawing.Size(161, 53);
-            this.btnExemplaires.TabIndex = 18;
-            this.btnExemplaires.Text = "Exemplaires";
-            this.btnExemplaires.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(3, 671);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(161, 53);
-            this.btnExit.TabIndex = 17;
-            this.btnExit.Text = "Quitter";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // btnStats
-            // 
-            this.btnStats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStats.Location = new System.Drawing.Point(3, 606);
-            this.btnStats.Name = "btnStats";
-            this.btnStats.Size = new System.Drawing.Size(161, 53);
-            this.btnStats.TabIndex = 16;
-            this.btnStats.Text = "Statistiques";
-            this.btnStats.UseVisualStyleBackColor = true;
-            // 
-            // btnParametres
-            // 
-            this.btnParametres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnParametres.Location = new System.Drawing.Point(3, 541);
-            this.btnParametres.Name = "btnParametres";
-            this.btnParametres.Size = new System.Drawing.Size(161, 53);
-            this.btnParametres.TabIndex = 15;
-            this.btnParametres.Text = "Paramètres";
-            this.btnParametres.UseVisualStyleBackColor = true;
-            // 
-            // btnAdherent
-            // 
-            this.btnAdherent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdherent.Location = new System.Drawing.Point(3, 346);
-            this.btnAdherent.Name = "btnAdherent";
-            this.btnAdherent.Size = new System.Drawing.Size(161, 53);
-            this.btnAdherent.TabIndex = 14;
-            this.btnAdherent.Text = "Adhérents";
-            this.btnAdherent.UseVisualStyleBackColor = true;
-            // 
-            // btnLocations
-            // 
-            this.btnLocations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocations.Location = new System.Drawing.Point(3, 411);
-            this.btnLocations.Name = "btnLocations";
-            this.btnLocations.Size = new System.Drawing.Size(161, 53);
-            this.btnLocations.TabIndex = 13;
-            this.btnLocations.Text = "Locations";
-            this.btnLocations.UseVisualStyleBackColor = true;
-            // 
-            // btnTournage
-            // 
-            this.btnTournage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTournage.Location = new System.Drawing.Point(3, 281);
-            this.btnTournage.Name = "btnTournage";
-            this.btnTournage.Size = new System.Drawing.Size(161, 53);
-            this.btnTournage.TabIndex = 12;
-            this.btnTournage.Text = "Lieu Tournage";
-            this.btnTournage.UseVisualStyleBackColor = true;
-            // 
-            // btnFilms
-            // 
-            this.btnFilms.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilms.Location = new System.Drawing.Point(3, 221);
-            this.btnFilms.Name = "btnFilms";
-            this.btnFilms.Size = new System.Drawing.Size(161, 50);
-            this.btnFilms.TabIndex = 20;
-            this.btnFilms.Text = "Films";
-            this.btnFilms.UseVisualStyleBackColor = true;
-            // 
-            // BtnStars
-            // 
-            this.BtnStars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStars.Location = new System.Drawing.Point(3, 156);
-            this.BtnStars.Name = "BtnStars";
-            this.BtnStars.Size = new System.Drawing.Size(161, 50);
-            this.BtnStars.TabIndex = 19;
-            this.BtnStars.Text = "Stars";
-            this.BtnStars.UseVisualStyleBackColor = true;
-            this.BtnStars.Click += new System.EventHandler(this.BtnStars_Click);
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1246, 736);
-            this.Controls.Add(this.pnlStarDetail);
             this.Controls.Add(this.pnlParametres);
             this.Controls.Add(this.pnlStarGestion);
             this.Controls.Add(this.pnlMenu);
@@ -903,10 +903,10 @@
 
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlStarGestion;
-        private vue.star.star star3;
-        private vue.star.star star2;
-        private vue.star.star star1;
-        private vue.star.star star4;
+        private vue.star.StarVue star3;
+        private vue.star.StarVue star2;
+        private vue.star.StarVue star1;
+        private vue.star.StarVue star4;
         private System.Windows.Forms.Panel pnlParametres;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -961,10 +961,10 @@
         private System.Windows.Forms.Label lblPages;
         private System.Windows.Forms.Button btnSuivant;
         private System.Windows.Forms.Button btnPrecedent;
-        private vue.star.star star8;
-        private vue.star.star star7;
-        private vue.star.star star6;
-        private vue.star.star star5;
+        private vue.star.StarVue star8;
+        private vue.star.StarVue star7;
+        private vue.star.StarVue star6;
+        private vue.star.StarVue star5;
         private System.Windows.Forms.Button btnExemplaires;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnStats;

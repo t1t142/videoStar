@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using videoStar.entity;
 
 namespace videoStar
 {
     public class eventClickDetail : EventArgs
     
     {
-        public eventClickDetail(string id)
+        public eventClickDetail(Star st)
         {
-            this.Id = id;
+            this.St = st;
         }
-        private string id;
+        private Star st;
 
-        public string Id { get => id; set => id = value; }
+        public Star St { get => st; set => st = value; }
     }
 }

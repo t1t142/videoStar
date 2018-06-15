@@ -18,7 +18,7 @@ namespace videoStar
         public Form3()
         {
             InitializeComponent();
-            star1.RaiseeventClickDetail += HandleeventClickDetail;
+            star1.ClickDetail += HandleClickDetail;
             //pnlMenu.Hide();
             pnlParametres.Hide();
             pnlStarDetail.Hide();
@@ -33,16 +33,7 @@ namespace videoStar
         private int pageActive = 1;
         private int items = 8;
 
-        
-           
-
-      
-
-
-
-
-
-
+  
 
 
 
@@ -51,7 +42,7 @@ namespace videoStar
             foreach (Control control in this.Controls)
             {
 
-                if (control is star)
+                if (control is StarVue)
                 {
                     control.Hide();
                 }
@@ -88,7 +79,7 @@ namespace videoStar
 
                 int j = i + 1;
                 Star st = stars[i];
-                star ctn = (star)Controls.Find("star" + j.ToString(), false)[0];
+                StarVue ctn = (StarVue)Controls.Find("star" + j.ToString(), false)[0];
                 ctn.GetStar(st);
                 ctn.Show();
                 // MessageBox.Show("ol");
@@ -115,9 +106,9 @@ namespace videoStar
             Actualise();
         }
 
-        void HandleeventClickDetail(object sender, eventClickDetail e)
+        void HandleClickDetail(object sender, eventClickDetail e)
         {
-            OnRaiseeventClickDetail(new eventClickDetail(e.Id));
+            OnRaiseeventClickDetail(new eventClickDetail(e.St));
         }
 
 

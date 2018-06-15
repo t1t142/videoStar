@@ -66,29 +66,23 @@
     <Compile Include="vue\star\ajoutStar.Designer.cs">
       <DependentUpon>ajoutStar.cs</DependentUpon>
     </Compile>
-    <Compile Include="vue\star\gestionStars.cs">
+    <Compile Include="vue\star\DetailStar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="vue\star\gestionStars.Designer.cs">
-      <DependentUpon>gestionStars.cs</DependentUpon>
+    <Compile Include="vue\star\DetailStar.Designer.cs">
+      <DependentUpon>DetailStar.cs</DependentUpon>
     </Compile>
-    <Compile Include="vue\star\star.cs">
+    <Compile Include="vue\star\GestStars.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="vue\star\star.Designer.cs">
-      <DependentUpon>star.cs</DependentUpon>
+    <Compile Include="vue\star\GestStars.Designer.cs">
+      <DependentUpon>GestStars.cs</DependentUpon>
     </Compile>
-    <Compile Include="vue\villes\conteneurItem.cs">
+    <Compile Include="vue\star\StarVue.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="vue\villes\conteneurItem.Designer.cs">
-      <DependentUpon>conteneurItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="vue\villes\detailVille.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="vue\villes\detailVille.Designer.cs">
-      <DependentUpon>detailVille.cs</DependentUpon>
+    <Compile Include="vue\star\StarVue.Designer.cs">
+      <DependentUpon>StarVue.cs</DependentUpon>
     </Compile>
     <Compile Include="entity\Adherent.cs" />
     <Compile Include="entity\CodePostal.cs" />
@@ -109,12 +103,6 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="vue\villes\gestionville.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="vue\villes\gestionville.Designer.cs">
-      <DependentUpon>gestionville.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="entity\Ville.cs" />
@@ -124,26 +112,20 @@
     <EmbeddedResource Include="vue\star\ajoutStar.resx">
       <DependentUpon>ajoutStar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vue\star\gestionStars.resx">
-      <DependentUpon>gestionStars.cs</DependentUpon>
+    <EmbeddedResource Include="vue\star\DetailStar.resx">
+      <DependentUpon>DetailStar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vue\star\star.resx">
-      <DependentUpon>star.cs</DependentUpon>
+    <EmbeddedResource Include="vue\star\GestStars.resx">
+      <DependentUpon>GestStars.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vue\villes\conteneurItem.resx">
-      <DependentUpon>conteneurItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vue\villes\detailVille.resx">
-      <DependentUpon>detailVille.cs</DependentUpon>
+    <EmbeddedResource Include="vue\star\StarVue.resx">
+      <DependentUpon>StarVue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vue\villes\gestionville.resx">
-      <DependentUpon>gestionville.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

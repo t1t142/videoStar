@@ -150,11 +150,21 @@ namespace videoStar.entity
             }
             //close connection
 
+           
 
 
         }
 
+        public Star GetStarDetail()
+        {
+            //todo methode get document by stars
 
+            //puis instancie ...
+
+
+
+            return this;
+        }
 
 
 
