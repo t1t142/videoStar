@@ -30,6 +30,7 @@ namespace videoStar
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnFilms = new System.Windows.Forms.Button();
             this.BtnStars = new System.Windows.Forms.Button();
@@ -42,13 +43,15 @@ namespace videoStar
             this.btnTournage = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gestStars1 = new GestStars();
+            this.gestStars1 = new videoStar.GestStars();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
+            this.pnlMenu.Controls.Add(this.button1);
             this.pnlMenu.Controls.Add(this.btnFilms);
             this.pnlMenu.Controls.Add(this.BtnStars);
             this.pnlMenu.Controls.Add(this.btnExemplaires);
@@ -88,7 +91,7 @@ namespace videoStar
             // btnExemplaires
             // 
             this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExemplaires.Location = new System.Drawing.Point(3, 476);
+            this.btnExemplaires.Location = new System.Drawing.Point(3, 470);
             this.btnExemplaires.Name = "btnExemplaires";
             this.btnExemplaires.Size = new System.Drawing.Size(161, 53);
             this.btnExemplaires.TabIndex = 18;
@@ -98,7 +101,7 @@ namespace videoStar
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(3, 671);
+            this.btnExit.Location = new System.Drawing.Point(3, 709);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(161, 53);
             this.btnExit.TabIndex = 17;
@@ -108,7 +111,7 @@ namespace videoStar
             // btnStats
             // 
             this.btnStats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStats.Location = new System.Drawing.Point(3, 606);
+            this.btnStats.Location = new System.Drawing.Point(3, 650);
             this.btnStats.Name = "btnStats";
             this.btnStats.Size = new System.Drawing.Size(161, 53);
             this.btnStats.TabIndex = 16;
@@ -118,7 +121,7 @@ namespace videoStar
             // btnParametres
             // 
             this.btnParametres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnParametres.Location = new System.Drawing.Point(3, 541);
+            this.btnParametres.Location = new System.Drawing.Point(3, 588);
             this.btnParametres.Name = "btnParametres";
             this.btnParametres.Size = new System.Drawing.Size(161, 53);
             this.btnParametres.TabIndex = 15;
@@ -177,12 +180,24 @@ namespace videoStar
             // gestStars1
             // 
             this.gestStars1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.gestStars1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestStars1.BackgroundImage")));
+            this.gestStars1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gestStars1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.gestStars1.Location = new System.Drawing.Point(51, 59);
             this.gestStars1.Name = "gestStars1";
             this.gestStars1.Size = new System.Drawing.Size(46, 81);
             this.gestStars1.TabIndex = 0;
             this.gestStars1.Load += new System.EventHandler(this.gestStars1_Load);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(3, 529);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 53);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Annexes";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -219,5 +234,6 @@ namespace videoStar
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private GestStars gestStars1;
+        private System.Windows.Forms.Button button1;
     }
 }

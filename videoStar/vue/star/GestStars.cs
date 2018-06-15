@@ -14,13 +14,24 @@ namespace videoStar
 {
     public partial class GestStars : UserControl
     {
-        public event EventHandler<eventClickDetail> eventClickDetail;
+      
         Star slctStar;
+        Point point1 = new Point(0, 0);
         public GestStars()
         {
             InitializeComponent();
-            starVue1.ClickDetail += HandleClickDetail;
+            
+        starVue1.ClickDetail += HandleClickDetail;
+        starVue2.ClickDetail += HandleClickDetail;
+        starVue3.ClickDetail += HandleClickDetail;
+        starVue4.ClickDetail += HandleClickDetail;
+        starVue5.ClickDetail += HandleClickDetail;
+        starVue6.ClickDetail += HandleClickDetail;
+        starVue7.ClickDetail += HandleClickDetail;
+        starVue8.ClickDetail += HandleClickDetail;
+
             detailStar1.Hide();
+            ajoutStar1.Hide();
         }
 
         
@@ -33,11 +44,11 @@ namespace videoStar
 
         private void HandleClickDetail(object sender, eventClickDetail e)
         {
-            Point point1 = new Point(0, 0);
+           
             e.St.GetStarDetail();
             slctStar = e.St;
 
-
+            // todo fonction générale affiche
             detailStar1.Show();
             detailStar1.BringToFront();
 
@@ -120,6 +131,17 @@ namespace videoStar
 
         private void lblTitre_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        { // todo fonction générale affiche
+            ajoutStar1.Show();
+            ajoutStar1.BringToFront();
+
+
+            ajoutStar1.Location = point1;
+            ajoutStar1.Size = this.Parent.Size;
 
         }
     }

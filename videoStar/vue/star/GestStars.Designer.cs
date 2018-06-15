@@ -30,6 +30,7 @@ namespace videoStar
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestStars));
             this.lblPages = new System.Windows.Forms.Label();
             this.btnSuivant = new System.Windows.Forms.Button();
             this.btnPrecedent = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@ namespace videoStar
             this.starVue2 = new videoStar.vue.star.StarVue();
             this.starVue1 = new videoStar.vue.star.StarVue();
             this.detailStar1 = new videoStar.vue.star.DetailStar();
+            this.ajoutStar1 = new videoStar.vue.star.ajoutStar();
             this.SuspendLayout();
             // 
             // lblPages
@@ -113,6 +115,7 @@ namespace videoStar
             this.btnAjouter.TabIndex = 36;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = false;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // lblTitre
             // 
@@ -196,6 +199,16 @@ namespace videoStar
             this.detailStar1.Size = new System.Drawing.Size(73, 90);
             this.detailStar1.TabIndex = 47;
             // 
+            // ajoutStar1
+            // 
+            this.ajoutStar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ajoutStar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutStar1.BackgroundImage")));
+            this.ajoutStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ajoutStar1.Location = new System.Drawing.Point(18, 260);
+            this.ajoutStar1.Name = "ajoutStar1";
+            this.ajoutStar1.Size = new System.Drawing.Size(55, 86);
+            this.ajoutStar1.TabIndex = 48;
+            // 
             // GestStars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +216,7 @@ namespace videoStar
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::videoStar.Properties.Resources.tunnel_3233082_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.ajoutStar1);
             this.Controls.Add(this.detailStar1);
             this.Controls.Add(this.lblTitre);
             this.Controls.Add(this.starVue8);
@@ -245,5 +259,6 @@ namespace videoStar
         private StarVue starVue1;
         private System.Windows.Forms.Label lblTitre;
         private DetailStar detailStar1;
+        private ajoutStar ajoutStar1;
     }
 }

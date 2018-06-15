@@ -63,6 +63,16 @@ namespace videoStar.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bb8_2558877_1920 {
+            get {
+                object obj = ResourceManager.GetObject("bb8-2558877_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap christmas_2871064_1920 {
             get {
                 object obj = ResourceManager.GetObject("christmas-2871064_1920", resourceCulture);
@@ -86,6 +96,16 @@ namespace videoStar.Properties {
         internal static System.Drawing.Bitmap darth_maul_1555343_1280 {
             get {
                 object obj = ResourceManager.GetObject("darth-maul-1555343_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tunisia_2444524_1920 {
+            get {
+                object obj = ResourceManager.GetObject("tunisia-2444524_1920", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

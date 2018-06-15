@@ -28,15 +28,11 @@ namespace videoStar.vue.star
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
 
-
-
-
-
-
-
-
-
-
+       
     }
 }

@@ -60,6 +60,30 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="vue\lieu\LieuVue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\lieu\LieuVue.Designer.cs">
+      <DependentUpon>LieuVue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\role\AjoutRole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\role\AjoutRole.Designer.cs">
+      <DependentUpon>AjoutRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\role\RoleVue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\role\RoleVue.Designer.cs">
+      <DependentUpon>RoleVue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\role\UpdateRole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\role\UpdateRole.Designer.cs">
+      <DependentUpon>UpdateRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="vue\star\ajoutStar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +132,18 @@
     <Compile Include="entity\Ville.cs" />
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\lieu\LieuVue.resx">
+      <DependentUpon>LieuVue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\role\AjoutRole.resx">
+      <DependentUpon>AjoutRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\role\RoleVue.resx">
+      <DependentUpon>RoleVue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\role\UpdateRole.resx">
+      <DependentUpon>UpdateRole.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\star\ajoutStar.resx">
       <DependentUpon>ajoutStar.cs</DependentUpon>
@@ -162,6 +198,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\darth-maul-1555343_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="vue\document\" />
+    <Folder Include="vue\etat\" />
+    <Folder Include="vue\exemplaire\" />
+    <Folder Include="vue\typedocument\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tunisia-2444524_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb8-2558877_1920.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

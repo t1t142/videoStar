@@ -84,7 +84,7 @@
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(232, 110);
+            this.textBox8.Location = new System.Drawing.Point(273, 82);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(141, 27);
             this.textBox8.TabIndex = 44;
@@ -186,6 +186,7 @@
             this.button4.TabIndex = 42;
             this.button4.Text = "Retour";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -230,7 +231,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(232, 64);
+            this.textBox5.Location = new System.Drawing.Point(195, 22);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(141, 27);
             this.textBox5.TabIndex = 36;
