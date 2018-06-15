@@ -44,8 +44,8 @@ namespace videoStar
             this.btnTournage = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.annexeVue1 = new videoStar.vue.annexes.annexeVue();
-            this.gestStars1 = new videoStar.GestStars();
+            this.annexeVue1 = new annexeVue();
+            this.gestStars1 = new GestStars();
             this.pnlMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -243,6 +243,6 @@ namespace videoStar
         private System.Windows.Forms.Panel panel2;
         private GestStars gestStars1;
         private System.Windows.Forms.Button btnAnx;
-        private vue.annexes.annexeVue annexeVue1;
+        private annexeVue annexeVue1;
     }
 }

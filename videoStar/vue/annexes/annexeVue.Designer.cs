@@ -1,4 +1,7 @@
-﻿namespace videoStar.vue.annexes
+﻿using videoStar.vue;
+using videoStar.vue.role;
+
+namespace videoStar
 {
     partial class annexeVue
     {
@@ -32,10 +35,10 @@
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnFilms = new System.Windows.Forms.Button();
             this.BtnStars = new System.Windows.Forms.Button();
+            this.btnExemplaires = new System.Windows.Forms.Button();
             this.btnAdherent = new System.Windows.Forms.Button();
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnTournage = new System.Windows.Forms.Button();
-            this.btnExemplaires = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roleVue1 = new videoStar.vue.role.RoleVue();
             this.pnlMenu.SuspendLayout();
@@ -54,13 +57,13 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(1279, 59);
+            this.pnlMenu.Size = new System.Drawing.Size(1030, 59);
             this.pnlMenu.TabIndex = 2;
             // 
             // btnFilms
             // 
             this.btnFilms.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilms.Location = new System.Drawing.Point(290, 3);
+            this.btnFilms.Location = new System.Drawing.Point(183, 3);
             this.btnFilms.Name = "btnFilms";
             this.btnFilms.Size = new System.Drawing.Size(161, 50);
             this.btnFilms.TabIndex = 20;
@@ -70,17 +73,27 @@
             // BtnStars
             // 
             this.BtnStars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStars.Location = new System.Drawing.Point(123, 3);
+            this.BtnStars.Location = new System.Drawing.Point(16, 3);
             this.BtnStars.Name = "BtnStars";
             this.BtnStars.Size = new System.Drawing.Size(161, 50);
             this.BtnStars.TabIndex = 19;
             this.BtnStars.Text = "Roles";
             this.BtnStars.UseVisualStyleBackColor = true;
             // 
+            // btnExemplaires
+            // 
+            this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExemplaires.Location = new System.Drawing.Point(851, 0);
+            this.btnExemplaires.Name = "btnExemplaires";
+            this.btnExemplaires.Size = new System.Drawing.Size(161, 53);
+            this.btnExemplaires.TabIndex = 18;
+            this.btnExemplaires.Text = "Exemplaires";
+            this.btnExemplaires.UseVisualStyleBackColor = true;
+            // 
             // btnAdherent
             // 
             this.btnAdherent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdherent.Location = new System.Drawing.Point(624, 0);
+            this.btnAdherent.Location = new System.Drawing.Point(517, 0);
             this.btnAdherent.Name = "btnAdherent";
             this.btnAdherent.Size = new System.Drawing.Size(161, 53);
             this.btnAdherent.TabIndex = 14;
@@ -90,7 +103,7 @@
             // btnLocations
             // 
             this.btnLocations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocations.Location = new System.Drawing.Point(791, 0);
+            this.btnLocations.Location = new System.Drawing.Point(684, 0);
             this.btnLocations.Name = "btnLocations";
             this.btnLocations.Size = new System.Drawing.Size(161, 53);
             this.btnLocations.TabIndex = 13;
@@ -100,22 +113,12 @@
             // btnTournage
             // 
             this.btnTournage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTournage.Location = new System.Drawing.Point(457, 0);
+            this.btnTournage.Location = new System.Drawing.Point(350, 0);
             this.btnTournage.Name = "btnTournage";
             this.btnTournage.Size = new System.Drawing.Size(161, 53);
             this.btnTournage.TabIndex = 12;
             this.btnTournage.Text = "etat";
             this.btnTournage.UseVisualStyleBackColor = true;
-            // 
-            // btnExemplaires
-            // 
-            this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExemplaires.Location = new System.Drawing.Point(958, 0);
-            this.btnExemplaires.Name = "btnExemplaires";
-            this.btnExemplaires.Size = new System.Drawing.Size(161, 53);
-            this.btnExemplaires.TabIndex = 18;
-            this.btnExemplaires.Text = "Exemplaires";
-            this.btnExemplaires.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -123,7 +126,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 59);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1279, 864);
+            this.panel1.Size = new System.Drawing.Size(1030, 864);
             this.panel1.TabIndex = 3;
             // 
             // roleVue1
@@ -142,7 +145,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenu);
             this.Name = "annexeVue";
-            this.Size = new System.Drawing.Size(1279, 923);
+            this.Size = new System.Drawing.Size(1030, 923);
             this.pnlMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -159,6 +162,6 @@
         private System.Windows.Forms.Button btnLocations;
         private System.Windows.Forms.Button btnTournage;
         private System.Windows.Forms.Panel panel1;
-        private role.RoleVue roleVue1;
+        private RoleVue roleVue1;
     }
 }

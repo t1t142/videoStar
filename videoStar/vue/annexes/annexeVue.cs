@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace videoStar.vue.annexes
+namespace videoStar
 {
     public partial class annexeVue : UserControl
     {
