@@ -18,11 +18,11 @@ namespace videoStar
         public Form2()
         {
             InitializeComponent();
-            
-            // gestionville1.RaiseeventClickDetail += HandleeventClickDetail;
-         
-           
 
+            // gestionville1.RaiseeventClickDetail += HandleeventClickDetail;
+
+            gestStars1.Hide();
+            annexeVue1.Hide();
             
 
         }
@@ -39,35 +39,7 @@ namespace videoStar
 
         
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnStars_Click(object sender, EventArgs e)
         {
@@ -80,9 +52,16 @@ namespace videoStar
             gestStars1.ActuGestStar();
         }
 
-        private void gestStars1_Load(object sender, EventArgs e)
-        {
+       
 
+        private void btnAnx_Click(object sender, EventArgs e)
+        {
+            annexeVue1.Show();
+            annexeVue1.BringToFront();
+
+
+            annexeVue1.Location = point1;
+            annexeVue1.Size = panel2.Size;
         }
     }
 

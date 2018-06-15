@@ -1,4 +1,4 @@
-﻿using videoStar.vue.star;
+﻿using videoStar.vue;
 
 namespace videoStar
 {
@@ -32,6 +32,7 @@ namespace videoStar
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnAnx = new System.Windows.Forms.Button();
             this.btnFilms = new System.Windows.Forms.Button();
             this.BtnStars = new System.Windows.Forms.Button();
             this.btnExemplaires = new System.Windows.Forms.Button();
@@ -43,15 +44,15 @@ namespace videoStar
             this.btnTournage = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.annexeVue1 = new videoStar.vue.annexes.annexeVue();
             this.gestStars1 = new videoStar.GestStars();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
-            this.pnlMenu.Controls.Add(this.button1);
+            this.pnlMenu.Controls.Add(this.btnAnx);
             this.pnlMenu.Controls.Add(this.btnFilms);
             this.pnlMenu.Controls.Add(this.BtnStars);
             this.pnlMenu.Controls.Add(this.btnExemplaires);
@@ -66,6 +67,17 @@ namespace videoStar
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(170, 792);
             this.pnlMenu.TabIndex = 1;
+            // 
+            // btnAnx
+            // 
+            this.btnAnx.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnx.Location = new System.Drawing.Point(3, 529);
+            this.btnAnx.Name = "btnAnx";
+            this.btnAnx.Size = new System.Drawing.Size(161, 53);
+            this.btnAnx.TabIndex = 21;
+            this.btnAnx.Text = " Annexes";
+            this.btnAnx.UseVisualStyleBackColor = true;
+            this.btnAnx.Click += new System.EventHandler(this.btnAnx_Click);
             // 
             // btnFilms
             // 
@@ -170,12 +182,20 @@ namespace videoStar
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.annexeVue1);
             this.panel2.Controls.Add(this.gestStars1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(170, 76);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1032, 716);
             this.panel2.TabIndex = 3;
+            // 
+            // annexeVue1
+            // 
+            this.annexeVue1.Location = new System.Drawing.Point(128, 59);
+            this.annexeVue1.Name = "annexeVue1";
+            this.annexeVue1.Size = new System.Drawing.Size(54, 88);
+            this.annexeVue1.TabIndex = 1;
             // 
             // gestStars1
             // 
@@ -187,17 +207,6 @@ namespace videoStar
             this.gestStars1.Name = "gestStars1";
             this.gestStars1.Size = new System.Drawing.Size(46, 81);
             this.gestStars1.TabIndex = 0;
-            this.gestStars1.Load += new System.EventHandler(this.gestStars1_Load);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 529);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 53);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Annexes";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -212,7 +221,6 @@ namespace videoStar
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.pnlMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -234,6 +242,7 @@ namespace videoStar
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private GestStars gestStars1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAnx;
+        private vue.annexes.annexeVue annexeVue1;
     }
 }
