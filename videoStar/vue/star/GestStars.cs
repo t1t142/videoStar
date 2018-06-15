@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using videoStar.entity;
 using videoStar.vue.star;
 
-namespace videoStar
+namespace videoStar.vue.star
 {
     public partial class GestStars : UserControl
     {

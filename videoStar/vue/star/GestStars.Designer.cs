@@ -1,6 +1,6 @@
 ﻿using videoStar.vue.star;
 
-namespace videoStar
+namespace videoStar.vue.star
 {
     partial class GestStars
     {

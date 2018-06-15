@@ -34,22 +34,22 @@ namespace videoStar
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(annexeVue));
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnFilms = new System.Windows.Forms.Button();
-            this.BtnStars = new System.Windows.Forms.Button();
+            this.BtnRoles = new System.Windows.Forms.Button();
             this.btnExemplaires = new System.Windows.Forms.Button();
             this.btnAdherent = new System.Windows.Forms.Button();
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnTournage = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlAnnexe = new System.Windows.Forms.Panel();
             this.roleVue1 = new videoStar.vue.role.RoleVue();
             this.pnlMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlAnnexe.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.Teal;
             this.pnlMenu.Controls.Add(this.btnFilms);
-            this.pnlMenu.Controls.Add(this.BtnStars);
+            this.pnlMenu.Controls.Add(this.BtnRoles);
             this.pnlMenu.Controls.Add(this.btnExemplaires);
             this.pnlMenu.Controls.Add(this.btnAdherent);
             this.pnlMenu.Controls.Add(this.btnLocations);
@@ -70,15 +70,16 @@ namespace videoStar
             this.btnFilms.Text = "Support";
             this.btnFilms.UseVisualStyleBackColor = true;
             // 
-            // BtnStars
+            // BtnRoles
             // 
-            this.BtnStars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStars.Location = new System.Drawing.Point(16, 3);
-            this.BtnStars.Name = "BtnStars";
-            this.BtnStars.Size = new System.Drawing.Size(161, 50);
-            this.BtnStars.TabIndex = 19;
-            this.BtnStars.Text = "Roles";
-            this.BtnStars.UseVisualStyleBackColor = true;
+            this.BtnRoles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRoles.Location = new System.Drawing.Point(16, 3);
+            this.BtnRoles.Name = "BtnRoles";
+            this.BtnRoles.Size = new System.Drawing.Size(161, 50);
+            this.BtnRoles.TabIndex = 19;
+            this.BtnRoles.Text = "Roles";
+            this.BtnRoles.UseVisualStyleBackColor = true;
+            this.BtnRoles.Click += new System.EventHandler(this.BtnRoles_Click);
             // 
             // btnExemplaires
             // 
@@ -120,34 +121,34 @@ namespace videoStar
             this.btnTournage.Text = "etat";
             this.btnTournage.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnlAnnexe
             // 
-            this.panel1.Controls.Add(this.roleVue1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 59);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1030, 864);
-            this.panel1.TabIndex = 3;
+            this.pnlAnnexe.Controls.Add(this.roleVue1);
+            this.pnlAnnexe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAnnexe.Location = new System.Drawing.Point(0, 59);
+            this.pnlAnnexe.Name = "pnlAnnexe";
+            this.pnlAnnexe.Size = new System.Drawing.Size(1030, 864);
+            this.pnlAnnexe.TabIndex = 3;
             // 
             // roleVue1
             // 
             this.roleVue1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roleVue1.BackgroundImage")));
             this.roleVue1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roleVue1.Location = new System.Drawing.Point(3, 0);
+            this.roleVue1.Location = new System.Drawing.Point(42, 18);
             this.roleVue1.Name = "roleVue1";
-            this.roleVue1.Size = new System.Drawing.Size(1027, 695);
+            this.roleVue1.Size = new System.Drawing.Size(49, 98);
             this.roleVue1.TabIndex = 0;
             // 
             // annexeVue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlAnnexe);
             this.Controls.Add(this.pnlMenu);
             this.Name = "annexeVue";
             this.Size = new System.Drawing.Size(1030, 923);
             this.pnlMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.pnlAnnexe.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -156,12 +157,12 @@ namespace videoStar
 
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Button btnFilms;
-        private System.Windows.Forms.Button BtnStars;
+        private System.Windows.Forms.Button BtnRoles;
         private System.Windows.Forms.Button btnExemplaires;
         private System.Windows.Forms.Button btnAdherent;
         private System.Windows.Forms.Button btnLocations;
         private System.Windows.Forms.Button btnTournage;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlAnnexe;
         private RoleVue roleVue1;
     }
 }

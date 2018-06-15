@@ -15,6 +15,25 @@ namespace videoStar.vue.role
         public RoleVue()
         {
             InitializeComponent();
+            ajoutRole1.Hide();
+            updateRole1.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ajoutRole1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(this.Parent.Name=="pnlAnnexe")
+            {
+                MessageBox.Show("ok");
+            }
+            else
+            {
+                MessageBox.Show(this.Parent.Name);
+            }
         }
     }
 }

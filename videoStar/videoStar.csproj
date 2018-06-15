@@ -50,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dimensionnement.cs" />
     <Compile Include="entity\Etat.cs" />
     <Compile Include="entity\Role.cs" />
     <Compile Include="entity\Star.cs" />
@@ -60,10 +61,10 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="vue\annexes\annexeVue.cs">
+    <Compile Include="vue\annexe\annexeVue.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="vue\annexes\annexeVue.Designer.cs">
+    <Compile Include="vue\annexe\annexeVue.Designer.cs">
       <DependentUpon>annexeVue.cs</DependentUpon>
     </Compile>
     <Compile Include="vue\lieu\LieuVue.cs">
@@ -139,7 +140,7 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vue\annexes\annexeVue.resx">
+    <EmbeddedResource Include="vue\annexe\annexeVue.resx">
       <DependentUpon>annexeVue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\lieu\LieuVue.resx">

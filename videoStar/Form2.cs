@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using videoStar.vue.star;
 
+
 namespace videoStar
 {
     public partial class Form2 : Form
@@ -43,12 +44,13 @@ namespace videoStar
 
         private void BtnStars_Click(object sender, EventArgs e)
         {
-            gestStars1.Show();
+            Dimensionnement.Dimensionner(gestStars1, 0, 0, true, 0, 0);
+           /* gestStars1.Show();
             gestStars1.BringToFront();
             
 
             gestStars1.Location = point1;
-            gestStars1.Size = panel2.Size;
+            gestStars1.Size = panel2.Size;*/
             gestStars1.ActuGestStar();
         }
 
@@ -56,12 +58,13 @@ namespace videoStar
 
         private void btnAnx_Click(object sender, EventArgs e)
         {
-            annexeVue1.Show();
+            Dimensionnement.Dimensionner(annexeVue1, 0,0,true,0,0);
+            /*  annexeVue1.Show();
             annexeVue1.BringToFront();
 
 
             annexeVue1.Location = point1;
-            annexeVue1.Size = panel2.Size;
+            annexeVue1.Size = panel2.Size;*/
         }
     }
 

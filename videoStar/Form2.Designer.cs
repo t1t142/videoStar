@@ -1,4 +1,4 @@
-﻿using videoStar.vue;
+﻿using videoStar.vue.star;
 
 namespace videoStar
 {

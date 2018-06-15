@@ -16,5 +16,10 @@ namespace videoStar
         {
             InitializeComponent();
         }
+
+        private void BtnRoles_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(roleVue1, 0, 0, true, 0, 0);
+        }
     }
 }
