@@ -45,6 +45,7 @@ namespace videoStar
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.annexeVue1 = new videoStar.annexeVue();
+            this.docListe1 = new videoStar.vue.document.DocListe();
             this.gestStars1 = new videoStar.vue.star.GestStars();
             this.pnlMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -88,6 +89,7 @@ namespace videoStar
             this.btnFilms.TabIndex = 20;
             this.btnFilms.Text = "Films";
             this.btnFilms.UseVisualStyleBackColor = true;
+            this.btnFilms.Click += new System.EventHandler(this.btnFilms_Click);
             // 
             // BtnStars
             // 
@@ -182,6 +184,7 @@ namespace videoStar
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.docListe1);
             this.panel2.Controls.Add(this.annexeVue1);
             this.panel2.Controls.Add(this.gestStars1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -196,6 +199,13 @@ namespace videoStar
             this.annexeVue1.Name = "annexeVue1";
             this.annexeVue1.Size = new System.Drawing.Size(54, 88);
             this.annexeVue1.TabIndex = 1;
+            // 
+            // docListe1
+            // 
+            this.docListe1.Location = new System.Drawing.Point(209, 52);
+            this.docListe1.Name = "docListe1";
+            this.docListe1.Size = new System.Drawing.Size(47, 98);
+            this.docListe1.TabIndex = 2;
             // 
             // gestStars1
             // 
@@ -244,5 +254,6 @@ namespace videoStar
         private GestStars gestStars1;
         private System.Windows.Forms.Button btnAnx;
         private annexeVue annexeVue1;
+        private vue.document.DocListe docListe1;
     }
 }

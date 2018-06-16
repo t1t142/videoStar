@@ -92,6 +92,7 @@ namespace videoStar.vue.star
             this.txtRecherche.Name = "txtRecherche";
             this.txtRecherche.Size = new System.Drawing.Size(137, 27);
             this.txtRecherche.TabIndex = 38;
+            this.txtRecherche.TextChanged += new System.EventHandler(this.txtRecherche_TextChanged);
             // 
             // lblRecherche
             // 

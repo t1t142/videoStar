@@ -55,6 +55,7 @@
     <Compile Include="entity\Role.cs" />
     <Compile Include="entity\Star.cs" />
     <Compile Include="entity\TypeDocument.cs" />
+    <Compile Include="events\EventAjtStar.cs" />
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +241,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\star-wars-2897280_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sci-fi-3233076_1920.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

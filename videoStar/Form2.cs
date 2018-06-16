@@ -24,7 +24,7 @@ namespace videoStar
 
             gestStars1.Hide();
             annexeVue1.Hide();
-            
+            docListe1.Hide();
 
         }
 
@@ -45,12 +45,7 @@ namespace videoStar
         private void BtnStars_Click(object sender, EventArgs e)
         {
             Dimensionnement.Dimensionner(gestStars1, 0, 0, true, 0, 0);
-           /* gestStars1.Show();
-            gestStars1.BringToFront();
-            
-
-            gestStars1.Location = point1;
-            gestStars1.Size = panel2.Size;*/
+           
             gestStars1.ActuGestStar();
         }
 
@@ -65,6 +60,11 @@ namespace videoStar
 
             annexeVue1.Location = point1;
             annexeVue1.Size = panel2.Size;*/
+        }
+
+        private void btnFilms_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(docListe1, 0, 0, true, 0, 0);
         }
     }
 

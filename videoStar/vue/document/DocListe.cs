@@ -15,6 +15,14 @@ namespace videoStar.vue.document
         public DocListe()
         {
             InitializeComponent();
+            ajoutDoc1.Hide();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(ajoutDoc1, 0, 0, true, 0, 0);
+           
         }
     }
 }

@@ -103,6 +103,16 @@ namespace videoStar.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sci_fi_3233076_1920 {
+            get {
+                object obj = ResourceManager.GetObject("sci-fi-3233076_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap star_wars_2897280_1920 {
             get {
                 object obj = ResourceManager.GetObject("star-wars-2897280_1920", resourceCulture);

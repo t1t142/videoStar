@@ -7,15 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using videoStar.entity;
 
 namespace videoStar.vue.document
 {
     public partial class AjoutDoc : UserControl
     {
+        private Star st;
+
+        public Star St { get => st; set => st = value; }
+
         public AjoutDoc()
         {
             InitializeComponent();
+            gestStars1.Hide();
+
         }
+
+        
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -25,6 +34,12 @@ namespace videoStar.vue.document
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(gestStars1, 0, 0, true, 0, 0);
+            gestStars1.ActuGestStar();
         }
     }
 }

@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using videoStar.entity;
 using Tulpep.NotificationWindow;
+using videoStar.events;
 
 namespace videoStar.vue.star
 {
     public partial class ajoutStar : UserControl
+
     {
+        public event EventHandler<EventAjtStar> AjtStar;
         public ajoutStar()
         {
             InitializeComponent();
@@ -109,7 +112,21 @@ namespace videoStar.vue.star
             popup.TitleText = "un popup perso et un";
             popup.ContentText = "la nouvelle star a bien été ajoutée ";
              popup.Popup();
-                }
+            OnAjtStar(new EventAjtStar(st));
+        }
+
+
+        protected virtual void OnAjtStar(EventAjtStar e)
+        {
+            EventHandler<EventAjtStar> handler = AjtStar;
+
+            if (handler != null)
+            {
+                handler(this, e);
+            }
+        }
+
+
 
         private void ajoutStar_Load(object sender, EventArgs e)
         {

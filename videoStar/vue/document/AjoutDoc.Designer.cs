@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AjoutDoc));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -38,6 +39,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.gestStars1 = new videoStar.vue.star.GestStars();
             this.SuspendLayout();
             // 
             // label1
@@ -144,6 +146,18 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // gestStars1
+            // 
+            this.gestStars1.BackColor = System.Drawing.Color.MintCream;
+            this.gestStars1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestStars1.BackgroundImage")));
+            this.gestStars1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gestStars1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.gestStars1.Location = new System.Drawing.Point(72, 569);
+            this.gestStars1.Name = "gestStars1";
+            this.gestStars1.Size = new System.Drawing.Size(130, 67);
+            this.gestStars1.TabIndex = 22;
             // 
             // AjoutDoc
             // 
@@ -151,6 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::videoStar.Properties.Resources.star_wars_2897280_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.gestStars1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -180,5 +195,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
+        private star.GestStars gestStars1;
     }
 }

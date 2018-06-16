@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using videoStar.entity;
 using videoStar.vue.star;
+using videoStar.events;
 
 namespace videoStar.vue.star
 {
@@ -29,12 +30,15 @@ namespace videoStar.vue.star
         starVue6.ClickDetail += HandleClickDetail;
         starVue7.ClickDetail += HandleClickDetail;
         starVue8.ClickDetail += HandleClickDetail;
-
+        ajoutStar1.AjtStar += HandleAjtStar;
             detailStar1.Hide();
             ajoutStar1.Hide();
         }
 
-        
+        private void HandleAjtStar(object sender, EventAjtStar e)
+        {
+            ActuGestStar();
+        }
 
         private int pageCount;
         private int pageActive = 1;
@@ -142,6 +146,11 @@ namespace videoStar.vue.star
 
             ajoutStar1.Location = point1;
             ajoutStar1.Size = this.Parent.Size;
+
+        }
+
+        private void txtRecherche_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
