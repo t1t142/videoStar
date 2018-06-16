@@ -67,6 +67,18 @@
     <Compile Include="vue\annexe\annexeVue.Designer.cs">
       <DependentUpon>annexeVue.cs</DependentUpon>
     </Compile>
+    <Compile Include="vue\document\AjoutDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\document\AjoutDoc.Designer.cs">
+      <DependentUpon>AjoutDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\document\DocListe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\document\DocListe.Designer.cs">
+      <DependentUpon>DocListe.cs</DependentUpon>
+    </Compile>
     <Compile Include="vue\lieu\LieuVue.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,7 +132,7 @@
     <Compile Include="entity\Civilite.cs" />
     <Compile Include="DbConnect.cs" />
     <Compile Include="entity\Document.cs" />
-    <Compile Include="eventClickDetail.cs" />
+    <Compile Include="events\eventClickDetail.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +154,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vue\annexe\annexeVue.resx">
       <DependentUpon>annexeVue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\document\AjoutDoc.resx">
+      <DependentUpon>AjoutDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\document\DocListe.resx">
+      <DependentUpon>DocListe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\lieu\LieuVue.resx">
       <DependentUpon>LieuVue.cs</DependentUpon>
@@ -210,7 +228,6 @@
     <None Include="Resources\darth-maul-1555343_1280.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="vue\document\" />
     <Folder Include="vue\etat\" />
     <Folder Include="vue\exemplaire\" />
     <Folder Include="vue\typedocument\" />
@@ -220,6 +237,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bb8-2558877_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-2897280_1920.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

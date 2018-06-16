@@ -8,23 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace videoStar.vue.role
+namespace videoStar.vue.document
 {
-    public partial class AjoutRole : UserControl
+    public partial class AjoutDoc : UserControl
     {
-        public AjoutRole()
+        public AjoutDoc()
         {
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

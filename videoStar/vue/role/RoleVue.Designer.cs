@@ -32,22 +32,25 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.ajoutRole1 = new videoStar.vue.role.AjoutRole();
-            this.updateRole1 = new videoStar.vue.role.UpdateRole();
             this.txtRecherche = new System.Windows.Forms.TextBox();
             this.lblRecherche = new System.Windows.Forms.Label();
             this.lblPages = new System.Windows.Forms.Label();
             this.btnSuivant = new System.Windows.Forms.Button();
             this.btnPrecedent = new System.Windows.Forms.Button();
+            this.ajoutRole1 = new videoStar.vue.role.AjoutRole();
+            this.updateRole1 = new videoStar.vue.role.UpdateRole();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(442, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(631, 55);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(420, 533);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(219, 533);
             this.dataGridView1.TabIndex = 0;
             // 
             // button2
@@ -87,22 +90,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "Supprimer";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // ajoutRole1
-            // 
-            this.ajoutRole1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.ajoutRole1.Location = new System.Drawing.Point(667, 81);
-            this.ajoutRole1.Name = "ajoutRole1";
-            this.ajoutRole1.Size = new System.Drawing.Size(117, 167);
-            this.ajoutRole1.TabIndex = 18;
-            // 
-            // updateRole1
-            // 
-            this.updateRole1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.updateRole1.Location = new System.Drawing.Point(480, 81);
-            this.updateRole1.Name = "updateRole1";
-            this.updateRole1.Size = new System.Drawing.Size(91, 189);
-            this.updateRole1.TabIndex = 19;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtRecherche
             // 
@@ -158,18 +146,34 @@
             this.btnPrecedent.Text = "Précédent";
             this.btnPrecedent.UseVisualStyleBackColor = false;
             // 
+            // ajoutRole1
+            // 
+            this.ajoutRole1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.ajoutRole1.Location = new System.Drawing.Point(667, 81);
+            this.ajoutRole1.Name = "ajoutRole1";
+            this.ajoutRole1.Size = new System.Drawing.Size(147, 248);
+            this.ajoutRole1.TabIndex = 18;
+            // 
+            // updateRole1
+            // 
+            this.updateRole1.BackColor = System.Drawing.Color.Transparent;
+            this.updateRole1.Location = new System.Drawing.Point(463, 12);
+            this.updateRole1.Name = "updateRole1";
+            this.updateRole1.Size = new System.Drawing.Size(162, 496);
+            this.updateRole1.TabIndex = 45;
+            // 
             // RoleVue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::videoStar.Properties.Resources.bb8_2558877_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.updateRole1);
             this.Controls.Add(this.lblPages);
             this.Controls.Add(this.btnSuivant);
             this.Controls.Add(this.btnPrecedent);
             this.Controls.Add(this.txtRecherche);
             this.Controls.Add(this.lblRecherche);
-            this.Controls.Add(this.updateRole1);
             this.Controls.Add(this.ajoutRole1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -177,6 +181,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "RoleVue";
             this.Size = new System.Drawing.Size(1027, 695);
+            this.Load += new System.EventHandler(this.RoleVue_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,11 +195,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private AjoutRole ajoutRole1;
-        private UpdateRole updateRole1;
         private System.Windows.Forms.TextBox txtRecherche;
         private System.Windows.Forms.Label lblRecherche;
         private System.Windows.Forms.Label lblPages;
         private System.Windows.Forms.Button btnSuivant;
         private System.Windows.Forms.Button btnPrecedent;
+        private UpdateRole updateRole1;
     }
 }

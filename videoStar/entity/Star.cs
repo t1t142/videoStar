@@ -117,7 +117,7 @@ namespace videoStar.entity
 
 
 
-        public static void InsertStar(Star st)
+        public void InsertStar(Star st)
         {
 
 

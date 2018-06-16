@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using videoStar.entity;
 
 namespace videoStar.vue.role
 {
@@ -17,11 +18,12 @@ namespace videoStar.vue.role
             InitializeComponent();
             ajoutRole1.Hide();
             updateRole1.Hide();
+            ActuRole();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ajoutRole1.Show();
+            Dimensionnement.Dimensionner(ajoutRole1, 450, 60, false, 400, 700);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,6 +36,21 @@ namespace videoStar.vue.role
             {
                 MessageBox.Show(this.Parent.Name);
             }
+        }
+
+        private void RoleVue_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void ActuRole()
+        {
+          dataGridView1.DataSource= Role.SelectRole().Tables[0].DefaultView;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(updateRole1, 0, 0, true, 400, 700);
         }
     }
 }

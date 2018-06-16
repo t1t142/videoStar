@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace videoStar.vue.role
+namespace videoStar.vue.document
 {
-    public partial class UpdateRole : UserControl
+    public partial class DocListe : UserControl
     {
-        public UpdateRole()
+        public DocListe()
         {
             InitializeComponent();
-         
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Hide();
         }
     }
 }

@@ -97,10 +97,13 @@ namespace videoStar.vue.star
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Todo asécuriser
+
+
             Star st = new Star( textBox1.Text, textBox2.Text, dateTimePicker1.Value, comboBox1.Text);
 
             st.Photo = textBox3.Text;
-            Star.InsertStar(st);
+            st.InsertStar(st);
             
             PopupNotifier popup = new PopupNotifier();
             popup.TitleText = "un popup perso et un";
