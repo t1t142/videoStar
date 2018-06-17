@@ -43,11 +43,16 @@ namespace videoStar
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnTournage = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitre = new System.Windows.Forms.Label();
+            this.lblRecherche = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlPrinc = new System.Windows.Forms.Panel();
+            this.listExpl1 = new videoStar.vue.exemplaire.ListExpl();
             this.docListe1 = new videoStar.vue.document.DocListe();
             this.annexeVue1 = new videoStar.annexeVue();
             this.gestStars1 = new videoStar.vue.star.GestStars();
             this.pnlMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnlPrinc.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,6 +116,7 @@ namespace videoStar
             this.btnExemplaires.TabIndex = 18;
             this.btnExemplaires.Text = "Exemplaires";
             this.btnExemplaires.UseVisualStyleBackColor = true;
+            this.btnExemplaires.Click += new System.EventHandler(this.btnExemplaires_Click);
             // 
             // btnExit
             // 
@@ -176,15 +182,53 @@ namespace videoStar
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.lblTitre);
+            this.panel1.Controls.Add(this.lblRecherche);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(170, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1081, 76);
             this.panel1.TabIndex = 2;
             // 
+            // lblTitre
+            // 
+            this.lblTitre.AutoSize = true;
+            this.lblTitre.BackColor = System.Drawing.Color.Teal;
+            this.lblTitre.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.Location = new System.Drawing.Point(3, 0);
+            this.lblTitre.Name = "lblTitre";
+            this.lblTitre.Size = new System.Drawing.Size(374, 78);
+            this.lblTitre.TabIndex = 48;
+            this.lblTitre.Text = "VIDEOSTAR";
+            // 
+            // lblRecherche
+            // 
+            this.lblRecherche.AutoSize = true;
+            this.lblRecherche.BackColor = System.Drawing.Color.Teal;
+            this.lblRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecherche.Location = new System.Drawing.Point(728, 27);
+            this.lblRecherche.Name = "lblRecherche";
+            this.lblRecherche.Size = new System.Drawing.Size(151, 21);
+            this.lblRecherche.TabIndex = 47;
+            this.lblRecherche.Text = "utilisateur identifié";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(908, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 50);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Stars";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // pnlPrinc
             // 
             this.pnlPrinc.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlPrinc.BackgroundImage = global::videoStar.Properties.Resources.darth_vader_1207142_1920;
+            this.pnlPrinc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPrinc.Controls.Add(this.listExpl1);
             this.pnlPrinc.Controls.Add(this.docListe1);
             this.pnlPrinc.Controls.Add(this.annexeVue1);
             this.pnlPrinc.Controls.Add(this.gestStars1);
@@ -193,6 +237,17 @@ namespace videoStar
             this.pnlPrinc.Name = "pnlPrinc";
             this.pnlPrinc.Size = new System.Drawing.Size(1081, 716);
             this.pnlPrinc.TabIndex = 3;
+            this.pnlPrinc.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPrinc_Paint);
+            // 
+            // listExpl1
+            // 
+            this.listExpl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listExpl1.BackgroundImage")));
+            this.listExpl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.listExpl1.Location = new System.Drawing.Point(291, 52);
+            this.listExpl1.Name = "listExpl1";
+            this.listExpl1.Size = new System.Drawing.Size(44, 109);
+            this.listExpl1.TabIndex = 3;
+            this.listExpl1.Load += new System.EventHandler(this.listExpl1_Load);
             // 
             // docListe1
             // 
@@ -235,6 +290,8 @@ namespace videoStar
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.pnlMenu.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnlPrinc.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -258,5 +315,9 @@ namespace videoStar
         private System.Windows.Forms.Button btnAnx;
         private annexeVue annexeVue1;
         private vue.document.DocListe docListe1;
+        private vue.exemplaire.ListExpl listExpl1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblTitre;
+        private System.Windows.Forms.Label lblRecherche;
     }
 }

@@ -21,5 +21,15 @@ namespace videoStar
         {
             Dimensionnement.Dimensionner(roleVue1, 0, 0, true, 0, 0);
         }
+
+        private void btnTournage_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(listEtat1, 0, 0, true, 0, 0);
+        }
+
+        private void btnAdherent_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(typeDocList1, 0, 0, true, 0, 0);
+        }
     }
 }

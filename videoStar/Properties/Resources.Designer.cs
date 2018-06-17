@@ -103,6 +103,16 @@ namespace videoStar.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap darth_vader_1207142_1920 {
+            get {
+                object obj = ResourceManager.GetObject("darth-vader-1207142_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sci_fi_3233076_1920 {
             get {
                 object obj = ResourceManager.GetObject("sci-fi-3233076_1920", resourceCulture);
@@ -113,9 +123,29 @@ namespace videoStar.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap star_wars_2592430_1920 {
+            get {
+                object obj = ResourceManager.GetObject("star-wars-2592430_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap star_wars_2897280_1920 {
             get {
                 object obj = ResourceManager.GetObject("star-wars-2897280_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stormtrooper_1936251_1920 {
+            get {
+                object obj = ResourceManager.GetObject("stormtrooper-1936251_1920", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +166,16 @@ namespace videoStar.Properties {
         internal static System.Drawing.Bitmap tunnel_3233082_1920 {
             get {
                 object obj = ResourceManager.GetObject("tunnel-3233082_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yoda_1726764_1920 {
+            get {
+                object obj = ResourceManager.GetObject("yoda-1726764_1920", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

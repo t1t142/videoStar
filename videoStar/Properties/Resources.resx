@@ -121,6 +121,9 @@
   <data name="christmas-2871064_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\christmas-2871064_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sci-fi-3233076_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sci-fi-3233076_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tunnel-3233082_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tunnel-3233082_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,10 +139,19 @@
   <data name="bb8-2558877_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bb8-2558877_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="yoda-1726764_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yoda-1726764_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star-wars-2592430_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star-wars-2592430_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="star-wars-2897280_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star-wars-2897280_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sci-fi-3233076_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sci-fi-3233076_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stormtrooper-1936251_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stormtrooper-1936251_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="darth-vader-1207142_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\darth-vader-1207142_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -62,6 +62,18 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="vue\Adherent\AjoutAdherent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\Adherent\AjoutAdherent.Designer.cs">
+      <DependentUpon>AjoutAdherent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\Adherent\ListeAdherents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\Adherent\ListeAdherents.Designer.cs">
+      <DependentUpon>ListeAdherents.cs</DependentUpon>
+    </Compile>
     <Compile Include="vue\annexe\annexeVue.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,6 +97,36 @@
     </Compile>
     <Compile Include="vue\document\DocVue.Designer.cs">
       <DependentUpon>DocVue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\etat\AjoutEtat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\etat\AjoutEtat.Designer.cs">
+      <DependentUpon>AjoutEtat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\etat\ListEtat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\etat\ListEtat.Designer.cs">
+      <DependentUpon>ListEtat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\exemplaire\AjoutExp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\exemplaire\AjoutExp.Designer.cs">
+      <DependentUpon>AjoutExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\exemplaire\ListExpl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\exemplaire\ListExpl.Designer.cs">
+      <DependentUpon>ListExpl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\lieu\AjoutLieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\lieu\AjoutLieu.Designer.cs">
+      <DependentUpon>AjoutLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="vue\lieu\LieuVue.cs">
       <SubType>UserControl</SubType>
@@ -156,8 +198,26 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="entity\Ville.cs" />
+    <Compile Include="vue\typedocument\AjoutTypeDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\typedocument\AjoutTypeDoc.Designer.cs">
+      <DependentUpon>AjoutTypeDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\typedocument\TypeDocList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\typedocument\TypeDocList.Designer.cs">
+      <DependentUpon>TypeDocList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\Adherent\AjoutAdherent.resx">
+      <DependentUpon>AjoutAdherent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\Adherent\ListeAdherents.resx">
+      <DependentUpon>ListeAdherents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\annexe\annexeVue.resx">
       <DependentUpon>annexeVue.cs</DependentUpon>
@@ -170,6 +230,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vue\document\DocVue.resx">
       <DependentUpon>DocVue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\etat\AjoutEtat.resx">
+      <DependentUpon>AjoutEtat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\etat\ListEtat.resx">
+      <DependentUpon>ListEtat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\exemplaire\ListExpl.resx">
+      <DependentUpon>ListExpl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\lieu\LieuVue.resx">
       <DependentUpon>LieuVue.cs</DependentUpon>
@@ -211,6 +280,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="vue\typedocument\AjoutTypeDoc.resx">
+      <DependentUpon>AjoutTypeDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\typedocument\TypeDocList.resx">
+      <DependentUpon>TypeDocList.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -238,9 +313,7 @@
     <None Include="Resources\darth-maul-1555343_1280.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="vue\etat\" />
-    <Folder Include="vue\exemplaire\" />
-    <Folder Include="vue\typedocument\" />
+    <None Include="Resources\yoda-1726764_1920.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tunisia-2444524_1920.jpg" />
@@ -253,6 +326,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sci-fi-3233076_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-2592430_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stormtrooper-1936251_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-vader-1207142_1920.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

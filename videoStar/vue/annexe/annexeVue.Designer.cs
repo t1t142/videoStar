@@ -41,6 +41,8 @@ namespace videoStar
             this.btnTournage = new System.Windows.Forms.Button();
             this.pnlAnnexe = new System.Windows.Forms.Panel();
             this.roleVue1 = new videoStar.vue.role.RoleVue();
+            this.typeDocList1 = new videoStar.vue.typedocument.TypeDocList();
+            this.listEtat1 = new videoStar.vue.etat.ListEtat();
             this.pnlMenu.SuspendLayout();
             this.pnlAnnexe.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +102,7 @@ namespace videoStar
             this.btnAdherent.TabIndex = 14;
             this.btnAdherent.Text = "Type Films";
             this.btnAdherent.UseVisualStyleBackColor = true;
+            this.btnAdherent.Click += new System.EventHandler(this.btnAdherent_Click);
             // 
             // btnLocations
             // 
@@ -120,9 +123,12 @@ namespace videoStar
             this.btnTournage.TabIndex = 12;
             this.btnTournage.Text = "etat";
             this.btnTournage.UseVisualStyleBackColor = true;
+            this.btnTournage.Click += new System.EventHandler(this.btnTournage_Click);
             // 
             // pnlAnnexe
             // 
+            this.pnlAnnexe.Controls.Add(this.listEtat1);
+            this.pnlAnnexe.Controls.Add(this.typeDocList1);
             this.pnlAnnexe.Controls.Add(this.roleVue1);
             this.pnlAnnexe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAnnexe.Location = new System.Drawing.Point(0, 59);
@@ -138,6 +144,24 @@ namespace videoStar
             this.roleVue1.Name = "roleVue1";
             this.roleVue1.Size = new System.Drawing.Size(49, 98);
             this.roleVue1.TabIndex = 0;
+            // 
+            // typeDocList1
+            // 
+            this.typeDocList1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("typeDocList1.BackgroundImage")));
+            this.typeDocList1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.typeDocList1.Location = new System.Drawing.Point(142, 18);
+            this.typeDocList1.Name = "typeDocList1";
+            this.typeDocList1.Size = new System.Drawing.Size(57, 98);
+            this.typeDocList1.TabIndex = 1;
+            // 
+            // listEtat1
+            // 
+            this.listEtat1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listEtat1.BackgroundImage")));
+            this.listEtat1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.listEtat1.Location = new System.Drawing.Point(246, 18);
+            this.listEtat1.Name = "listEtat1";
+            this.listEtat1.Size = new System.Drawing.Size(49, 98);
+            this.listEtat1.TabIndex = 2;
             // 
             // annexeVue
             // 
@@ -164,5 +188,7 @@ namespace videoStar
         private System.Windows.Forms.Button btnTournage;
         private System.Windows.Forms.Panel pnlAnnexe;
         private RoleVue roleVue1;
+        private vue.etat.ListEtat listEtat1;
+        private vue.typedocument.TypeDocList typeDocList1;
     }
 }

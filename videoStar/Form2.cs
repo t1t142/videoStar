@@ -58,6 +58,21 @@ namespace videoStar
         {
 
         }
+
+        private void btnExemplaires_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(listExpl1, 0, 0, true, 0, 0);
+        }
+
+        private void listExpl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlPrinc_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 
