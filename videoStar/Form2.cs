@@ -20,25 +20,12 @@ namespace videoStar
         {
             InitializeComponent();
 
-            // gestionville1.RaiseeventClickDetail += HandleeventClickDetail;
-
             gestStars1.Hide();
             annexeVue1.Hide();
             docListe1.Hide();
 
         }
 
-
-        void ClickDetail(object sender, eventClickDetail e)
-        {
-            //detailVille1.BringToFront();
-            //detailVille1.GetVilledetail(e.Id);
-            MessageBox.Show("ok");
-        }
-
-        
-
-        
 
 
 

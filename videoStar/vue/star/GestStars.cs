@@ -38,12 +38,17 @@ namespace videoStar.vue.star
         starVue7.ClickDetail += HandleClickDetail;
         starVue8.ClickDetail += HandleClickDetail;
         ajoutStar1.AjtStar += HandleAjtStar;
-            detailStar1.Hide();
-            ajoutStar1.Hide();
-            
+        detailStar1.Hide();
+        ajoutStar1.Hide();
+        btnReturn.Hide();
+          
         }
 
-       
+        public void Reglages() { 
+         
+        btnReturn.Show();
+        btnselect.Text="Selectionner";
+        }
         private void HandleAjtStar(object sender, EventAjtStar e)
         {
             ActuGestStar();
@@ -170,7 +175,7 @@ namespace videoStar.vue.star
             }
         }
 
-        private void DoubleClick(object sender, EventArgs e)
+        private void starVue_DoubleClick(object sender, EventArgs e)
         {
             MessageBox.Show("cool");
         }
@@ -178,6 +183,24 @@ namespace videoStar.vue.star
         private void GestStars_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnselect_Click(object sender, EventArgs e)
+        {
+            if(btnselect.Text != "Selectionner")
+            {
+                MessageBox.Show("cool");
+            }
+            else
+            {
+                MessageBox.Show(" pas cool");
+            }
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            slctStar = null;
+            Hide();
         }
     }
 }

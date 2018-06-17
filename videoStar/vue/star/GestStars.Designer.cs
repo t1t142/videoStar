@@ -39,8 +39,8 @@ namespace videoStar.vue.star
             this.btnAjouter = new System.Windows.Forms.Button();
             this.lblTitre = new System.Windows.Forms.Label();
             this.btnselect = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.ajoutStar1 = new videoStar.vue.star.ajoutStar();
             this.detailStar1 = new videoStar.vue.star.DetailStar();
             this.starVue8 = new videoStar.vue.star.StarVue();
@@ -143,30 +143,32 @@ namespace videoStar.vue.star
             this.btnselect.TabIndex = 49;
             this.btnselect.Text = "Editer";
             this.btnselect.UseVisualStyleBackColor = false;
+            this.btnselect.Click += new System.EventHandler(this.btnselect_Click);
             // 
-            // button1
+            // btnDelete
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(931, 187);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 39);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "Supprimer";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.Teal;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(931, 187);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(121, 39);
+            this.btnDelete.TabIndex = 50;
+            this.btnDelete.Text = "Supprimer";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnReturn
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(931, 248);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 39);
-            this.button2.TabIndex = 51;
-            this.button2.Text = "Retour";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnReturn.BackColor = System.Drawing.Color.Teal;
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Location = new System.Drawing.Point(931, 248);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(121, 39);
+            this.btnReturn.TabIndex = 51;
+            this.btnReturn.Text = "Retour";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // ajoutStar1
             // 
@@ -239,7 +241,7 @@ namespace videoStar.vue.star
             this.starVue4.Star = null;
             this.starVue4.TabIndex = 35;
             this.starVue4.Click += new System.EventHandler(this.starVue_Click);
-            this.starVue4.DoubleClick += new System.EventHandler(this.DoubleClick);
+            this.starVue4.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // starVue3
             // 
@@ -273,7 +275,7 @@ namespace videoStar.vue.star
             this.starVue1.Star = null;
             this.starVue1.TabIndex = 32;
             this.starVue1.Click += new System.EventHandler(this.starVue_Click);
-            this.starVue1.DoubleClick += new System.EventHandler(this.DoubleClick);
+            this.starVue1.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // GestStars
             // 
@@ -282,8 +284,8 @@ namespace videoStar.vue.star
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::videoStar.Properties.Resources.tunnel_3233082_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnselect);
             this.Controls.Add(this.ajoutStar1);
             this.Controls.Add(this.detailStar1);
@@ -331,7 +333,7 @@ namespace videoStar.vue.star
         private DetailStar detailStar1;
         private ajoutStar ajoutStar1;
         private System.Windows.Forms.Button btnselect;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnReturn;
     }
 }

@@ -80,6 +80,12 @@
     <Compile Include="vue\document\DocListe.Designer.cs">
       <DependentUpon>DocListe.cs</DependentUpon>
     </Compile>
+    <Compile Include="vue\document\DocVue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\document\DocVue.Designer.cs">
+      <DependentUpon>DocVue.cs</DependentUpon>
+    </Compile>
     <Compile Include="vue\lieu\LieuVue.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vue\document\DocListe.resx">
       <DependentUpon>DocListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\document\DocVue.resx">
+      <DependentUpon>DocVue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\lieu\LieuVue.resx">
       <DependentUpon>LieuVue.cs</DependentUpon>

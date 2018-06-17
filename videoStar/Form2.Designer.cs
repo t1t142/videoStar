@@ -43,12 +43,12 @@ namespace videoStar
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnTournage = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlPrinc = new System.Windows.Forms.Panel();
             this.docListe1 = new videoStar.vue.document.DocListe();
             this.annexeVue1 = new videoStar.annexeVue();
             this.gestStars1 = new videoStar.vue.star.GestStars();
             this.pnlMenu.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlPrinc.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -182,17 +182,17 @@ namespace videoStar
             this.panel1.Size = new System.Drawing.Size(1081, 76);
             this.panel1.TabIndex = 2;
             // 
-            // panel2
+            // pnlPrinc
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel2.Controls.Add(this.docListe1);
-            this.panel2.Controls.Add(this.annexeVue1);
-            this.panel2.Controls.Add(this.gestStars1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(170, 76);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1081, 716);
-            this.panel2.TabIndex = 3;
+            this.pnlPrinc.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlPrinc.Controls.Add(this.docListe1);
+            this.pnlPrinc.Controls.Add(this.annexeVue1);
+            this.pnlPrinc.Controls.Add(this.gestStars1);
+            this.pnlPrinc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPrinc.Location = new System.Drawing.Point(170, 76);
+            this.pnlPrinc.Name = "pnlPrinc";
+            this.pnlPrinc.Size = new System.Drawing.Size(1081, 716);
+            this.pnlPrinc.TabIndex = 3;
             // 
             // docListe1
             // 
@@ -227,7 +227,7 @@ namespace videoStar
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1251, 792);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlPrinc);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -235,7 +235,7 @@ namespace videoStar
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.pnlMenu.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.pnlPrinc.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -253,7 +253,7 @@ namespace videoStar
         private System.Windows.Forms.Button btnLocations;
         private System.Windows.Forms.Button btnTournage;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlPrinc;
         private GestStars gestStars1;
         private System.Windows.Forms.Button btnAnx;
         private annexeVue annexeVue1;

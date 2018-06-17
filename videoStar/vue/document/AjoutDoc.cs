@@ -36,9 +36,10 @@ namespace videoStar.vue.document
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAjtStar_Click(object sender, EventArgs e)
         {
             Dimensionnement.Dimensionner(gestStars1, 0, 0, true, 0, 0);
+            gestStars1.Reglages();
             gestStars1.ActuGestStar();
         }
     }
