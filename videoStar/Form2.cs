@@ -66,6 +66,11 @@ namespace videoStar
         {
             Dimensionnement.Dimensionner(docListe1, 0, 0, true, 0, 0);
         }
+
+        private void btnTournage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

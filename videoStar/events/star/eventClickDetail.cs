@@ -10,12 +10,18 @@ namespace videoStar
     public class eventClickDetail : EventArgs
     
     {
-        public eventClickDetail(Star st)
-        {
-            this.St = st;
-        }
         private Star st;
+        private string name;
+
 
         public Star St { get => st; set => st = value; }
+        public string Name { get => name; set => name = value; }
+
+        public eventClickDetail(string name,Star st)
+        {
+            this.St = st;
+            this.Name = name;
+        }
+        
     }
 }

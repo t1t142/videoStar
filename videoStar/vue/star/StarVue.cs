@@ -8,32 +8,41 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using videoStar.entity;
+using videoStar.events;
 
 namespace videoStar.vue.star
 {
     public partial class StarVue : UserControl
     {
-        Star st;
+      private  Star star;
+
+        public Star Star { get => star;
+            set
+            { star = value;
+                if (star != null)
+                {
+                    lblNom.Text = star.Nom;
+                    lblPrenom.Text = star.Prenom;
+                    picBox.ImageLocation = star.Photo;
+                }
+            }
+        }
+
 
         public event EventHandler<eventClickDetail> ClickDetail;
+       
         public StarVue()
         {
             InitializeComponent();
         }
 
     
-
-        public void GetStar(Star st)
-        {
-            this.st = st;
-            lblNom.Text = st.Nom;
-            lblPrenom.Text = st.Prenom;
-            picBox.ImageLocation = st.Photo;
-        }
-
+        /*
+        
+        */
         private void button1_Click(object sender, EventArgs e)
         {
-            OnClickDetail(new eventClickDetail(st));
+            OnClickDetail(new eventClickDetail(this.Name,Star));
         }
 
 
@@ -47,7 +56,7 @@ namespace videoStar.vue.star
             }
         }
 
-        private void star_Load(object sender, EventArgs e)
+        private void picBox_Click(object sender, EventArgs e)
         {
 
         }

@@ -62,12 +62,14 @@
             // picBox
             // 
             this.picBox.BackColor = System.Drawing.Color.White;
+            this.picBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.picBox.Location = new System.Drawing.Point(49, 79);
             this.picBox.Name = "picBox";
             this.picBox.Size = new System.Drawing.Size(93, 123);
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBox.TabIndex = 26;
             this.picBox.TabStop = false;
+            this.picBox.Click += new System.EventHandler(this.picBox_Click);
             // 
             // lblNom
             // 
@@ -91,7 +93,7 @@
             this.lblPrenom.TabIndex = 28;
             this.lblPrenom.Text = "label2";
             // 
-            // star
+            // StarVue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,9 +103,9 @@
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.textBox3);
-            this.Name = "star";
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Name = "StarVue";
             this.Size = new System.Drawing.Size(190, 278);
-            this.Load += new System.EventHandler(this.star_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

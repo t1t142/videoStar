@@ -16,8 +16,15 @@ namespace videoStar.vue.star
     public partial class GestStars : UserControl
     {
       
-        Star slctStar;
-        Point point1 = new Point(0, 0);
+       private Star slctStar;
+      private  Point point1 = new Point(0, 0);
+
+
+        public Star SlctStar { get => slctStar; set => slctStar = value; }
+
+
+
+
         public GestStars()
         {
             InitializeComponent();
@@ -33,8 +40,10 @@ namespace videoStar.vue.star
         ajoutStar1.AjtStar += HandleAjtStar;
             detailStar1.Hide();
             ajoutStar1.Hide();
+            
         }
 
+       
         private void HandleAjtStar(object sender, EventAjtStar e)
         {
             ActuGestStar();
@@ -44,13 +53,13 @@ namespace videoStar.vue.star
         private int pageActive = 1;
         private int items = 8;
 
-
-
+        
+       
         private void HandleClickDetail(object sender, eventClickDetail e)
         {
-           
+
             e.St.GetStarDetail();
-            slctStar = e.St;
+            SlctStar = e.St;
 
             // todo fonction générale affiche
             detailStar1.Show();
@@ -61,17 +70,7 @@ namespace videoStar.vue.star
             detailStar1.Size = this.Parent.Size;
             detailStar1.AfficheStarDetail(e.St);
 
-            //MessageBox.Show("ok");
         }
-
-
-
-
-
-
-
-
-
 
         private void HideItems()
         {
@@ -116,7 +115,7 @@ namespace videoStar.vue.star
                 int j = i + 1;
                 Star st = stars[i];
                 StarVue ctn = (StarVue)Controls.Find("starVue" + j.ToString(), false)[0];
-                ctn.GetStar(st);
+                ctn.Star=st;
                 ctn.Show();
                 
 
@@ -133,10 +132,7 @@ namespace videoStar.vue.star
 
         }
 
-        private void lblTitre_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnAjouter_Click(object sender, EventArgs e)
         { // todo fonction générale affiche
@@ -150,6 +146,36 @@ namespace videoStar.vue.star
         }
 
         private void txtRecherche_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void starVue_Click(object sender, EventArgs e)
+        {
+            StarVue starVue = (StarVue)sender;
+            SlctStar= starVue.Star;
+            foreach (Control stv in this.Controls)
+            {
+                if (stv is StarVue stv1)
+                {
+                    if (starVue.Name == stv.Name)
+                    {
+                        stv1.BorderStyle = BorderStyle.Fixed3D;
+                    }
+                    else
+                    {
+                        stv1.BorderStyle = BorderStyle.None;
+                    }
+                }
+            }
+        }
+
+        private void DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("cool");
+        }
+
+        private void GestStars_Load(object sender, EventArgs e)
         {
 
         }

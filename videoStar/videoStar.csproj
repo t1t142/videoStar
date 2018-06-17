@@ -55,7 +55,7 @@
     <Compile Include="entity\Role.cs" />
     <Compile Include="entity\Star.cs" />
     <Compile Include="entity\TypeDocument.cs" />
-    <Compile Include="events\EventAjtStar.cs" />
+    <Compile Include="events\star\EventAjtStar.cs" />
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,7 +133,7 @@
     <Compile Include="entity\Civilite.cs" />
     <Compile Include="DbConnect.cs" />
     <Compile Include="entity\Document.cs" />
-    <Compile Include="events\eventClickDetail.cs" />
+    <Compile Include="events\star\eventClickDetail.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
