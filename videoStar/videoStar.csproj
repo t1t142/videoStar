@@ -56,11 +56,18 @@
     <Compile Include="entity\Star.cs" />
     <Compile Include="entity\TypeDocument.cs" />
     <Compile Include="events\star\EventAjtStar.cs" />
+    <Compile Include="events\star\EventSlctStar.cs" />
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuth.Designer.cs">
+      <DependentUpon>FrmAuth.cs</DependentUpon>
     </Compile>
     <Compile Include="vue\Adherent\AjoutAdherent.cs">
       <SubType>UserControl</SubType>
@@ -85,6 +92,12 @@
     </Compile>
     <Compile Include="vue\document\AjoutDoc.Designer.cs">
       <DependentUpon>AjoutDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\document\AjoutJouer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\document\AjoutJouer.Designer.cs">
+      <DependentUpon>AjoutJouer.cs</DependentUpon>
     </Compile>
     <Compile Include="vue\document\DocListe.cs">
       <SubType>UserControl</SubType>
@@ -225,6 +238,9 @@
     <EmbeddedResource Include="vue\document\AjoutDoc.resx">
       <DependentUpon>AjoutDoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vue\document\AjoutJouer.resx">
+      <DependentUpon>AjoutJouer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vue\document\DocListe.resx">
       <DependentUpon>DocListe.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,8 +253,14 @@
     <EmbeddedResource Include="vue\etat\ListEtat.resx">
       <DependentUpon>ListEtat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vue\exemplaire\AjoutExp.resx">
+      <DependentUpon>AjoutExp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vue\exemplaire\ListExpl.resx">
       <DependentUpon>ListExpl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\lieu\AjoutLieu.resx">
+      <DependentUpon>AjoutLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\lieu\LieuVue.resx">
       <DependentUpon>LieuVue.cs</DependentUpon>

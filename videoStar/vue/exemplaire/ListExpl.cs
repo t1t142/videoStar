@@ -15,6 +15,14 @@ namespace videoStar.vue.exemplaire
         public ListExpl()
         {
             InitializeComponent();
+            ajoutExp1.Hide();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dimensionnement.Dimensionner(ajoutExp1, 0, 0, true, 0, 0);
+            
         }
     }
 }

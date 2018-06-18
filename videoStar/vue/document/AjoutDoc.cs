@@ -20,7 +20,7 @@ namespace videoStar.vue.document
         public AjoutDoc()
         {
             InitializeComponent();
-            gestStars1.Hide();
+            ajoutJouer1.Hide();
 
         }
 
@@ -38,9 +38,15 @@ namespace videoStar.vue.document
 
         private void btnAjtStar_Click(object sender, EventArgs e)
         {
-            Dimensionnement.Dimensionner(gestStars1, 0, 0, true, 0, 0);
+            Dimensionnement.Dimensionner(ajoutJouer1, 0, 0, true, 0, 0);
+            /* Dimensionnement.Dimensionner(gestStars1, 0, 0, true, 0, 0);
             gestStars1.Reglages();
-            gestStars1.ActuGestStar();
+            gestStars1.ActuGestStar();*/
+        }
+
+        private void btnRetour_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

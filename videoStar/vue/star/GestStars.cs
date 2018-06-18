@@ -10,19 +10,21 @@ using System.Windows.Forms;
 using videoStar.entity;
 using videoStar.vue.star;
 using videoStar.events;
+using videoStar.events.star;
 
 namespace videoStar.vue.star
 {
     public partial class GestStars : UserControl
     {
-      
-       private Star slctStar;
+       
+
+      private Star slctStar;
       private  Point point1 = new Point(0, 0);
 
 
         public Star SlctStar { get => slctStar; set => slctStar = value; }
 
-
+        public event EventHandler<EventSlctStar> EventSlctStar;
 
 
         public GestStars()
@@ -38,11 +40,24 @@ namespace videoStar.vue.star
         starVue7.ClickDetail += HandleClickDetail;
         starVue8.ClickDetail += HandleClickDetail;
         ajoutStar1.AjtStar += HandleAjtStar;
+         
         detailStar1.Hide();
         ajoutStar1.Hide();
         btnReturn.Hide();
           
         }
+
+
+        protected virtual void OnEventSlctStar(EventSlctStar e)
+        {
+            EventHandler<EventSlctStar> handler = EventSlctStar;
+
+            if (handler != null)
+            {
+                handler(this, e);
+            }
+        }
+
 
         public void Reglages() { 
          
@@ -58,8 +73,8 @@ namespace videoStar.vue.star
         private int pageActive = 1;
         private int items = 8;
 
-        
        
+
         private void HandleClickDetail(object sender, eventClickDetail e)
         {
 
@@ -178,6 +193,7 @@ namespace videoStar.vue.star
         private void starVue_DoubleClick(object sender, EventArgs e)
         {
             MessageBox.Show("cool");
+            OnEventSlctStar(new EventSlctStar(SlctStar));
         }
 
         private void GestStars_Load(object sender, EventArgs e)
@@ -194,6 +210,7 @@ namespace videoStar.vue.star
             else
             {
                 MessageBox.Show(" pas cool");
+                OnEventSlctStar(new EventSlctStar(SlctStar));
             }
         }
 
