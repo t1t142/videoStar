@@ -15,8 +15,9 @@ namespace videoStar.vue.document
     public partial class AjoutJouer : UserControl
     {
         private Star slctStar;
-
+        private Document slctDoc;
         public Star SlctStar { get => slctStar; set => slctStar = value; }
+        public Document SlctDoc { get => slctDoc; set => slctDoc = value; }
 
         private List<Jouer> jouers = new List<Jouer>();
         private Jouer jouer = null;
@@ -27,16 +28,22 @@ namespace videoStar.vue.document
 
         public AjoutJouer()
         {
-            InitializeComponent();
+           InitializeComponent();
             gestStars1.EventSlctStar += HandleEventSlctStar;
-         
+            docListe1.Hide();
             gestStars1.Hide();
-            AffichageInit();
+           // AffichageInit();
 
         }
-
+     
         private void AffichageInit()
         {
+          /*  if (SlctDoc != null)
+            {
+                btnAjoutFilm.Visible = false;
+                textBox1.Text = SlctDoc.Titre;
+            }
+            btnModiFilm.Visible = false;
             txtPerso.Visible = false;
             txtStar.Visible = false;
             lblPerso.Visible = false;
@@ -49,7 +56,8 @@ namespace videoStar.vue.document
             role = null;
             jouer = null;
             jouers.Clear();
-        }
+        
+    */}
 
 
 
@@ -94,10 +102,7 @@ namespace videoStar.vue.document
                 roles = Role.GetRolesByName(comboBox1.Text, 1, 10);
 
                 comboBox1.Items.Clear();
-                /*foreach (Role unRole in roles)
-                {
-                    comboBox1.Items.Add(unRole.Libelle);
-                }*/
+                
                 foreach (Role role in roles)
                 {
                     comboBox1.Items.Add(role);
@@ -125,31 +130,36 @@ namespace videoStar.vue.document
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-
             role = (Role)comboBox1.SelectedItem;
             // MessageBox.Show(((Role)comboBox1.SelectedItem).Id.ToString());
-
         }
 
 
         private void btnAjout_Click(object sender, EventArgs e)
         {
+          /*  Boolean control = true;
+
+            if (slctDoc == null)
+            {
+                MessageBox.Show("le Film ne peux pas etre vide");
+                control = false;
+            }
 
 
-
+            if (SlctStar == null)
+            {
+                MessageBox.Show("la Star ne peux pas etre vide");
+                control = false;
+            }
             if (role == null)
             {
                 MessageBox.Show("le Role ne peux pas etre vide");
+                control = false;
             }
 
-            else
-            {
-                if (SlctStar != null)
-                {
-
-                    jouer = new Jouer();
+            if(control)
+            { 
+            jouer = new Jouer();
                     jouer.Star = slctStar;
                     jouer.Role = role;
                     jouer.Personnage = txtPerso.Text;
@@ -158,21 +168,16 @@ namespace videoStar.vue.document
                     Actualise();
                     //dataGridView1.DataSource = Convert.ConvertToDataTable(roles);
                     AffichageInit();
-
-
-
-
-                }
-                else
-                {
-
-                    MessageBox.Show("la Star ne peux pas etre vide");
-                }
-
-            }
-
-
         }
+
+
+
+*/
+
+
+
+
+    }
 
         private void btnAnnul_Click(object sender, EventArgs e)
         {
@@ -187,6 +192,8 @@ namespace videoStar.vue.document
 
 
         }
+
+       
     } 
 }
 

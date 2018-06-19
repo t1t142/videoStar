@@ -54,6 +54,7 @@
     <Compile Include="Dimensionnement.cs" />
     <Compile Include="entity\Etat.cs" />
     <Compile Include="entity\Jouer.cs" />
+    <Compile Include="entity\Lieux.cs" />
     <Compile Include="entity\Role.cs" />
     <Compile Include="entity\Star.cs" />
     <Compile Include="entity\TypeDocument.cs" />
@@ -99,6 +100,12 @@
     </Compile>
     <Compile Include="vue\document\AjoutJouer.Designer.cs">
       <DependentUpon>AjoutJouer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\document\AjoutLieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\document\AjoutLieu.Designer.cs">
+      <DependentUpon>AjoutLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="vue\document\DocListe.cs">
       <SubType>UserControl</SubType>
@@ -232,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vue\document\AjoutJouer.resx">
       <DependentUpon>AjoutJouer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\document\AjoutLieu.resx">
+      <DependentUpon>AjoutLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\document\DocListe.resx">
       <DependentUpon>DocListe.cs</DependentUpon>

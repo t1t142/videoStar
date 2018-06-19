@@ -5,16 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using videoStar.entity;
+
 namespace videoStar
 {
-    class Document
+   public class Document
     {
         
-        String code;
-        String titre;
+       private String code;
+       private String titre;
+       private  String annee;
+       private String photo;
+       private  List<Lieux> lieuTournage;
+       private List<Jouer> jouers;
 
         public string Code { get => code; set => code = value; }
         public string Titre { get => titre; set => titre = value; }
+        public string Annee { get => annee; set => annee = value; }
+        public string Photo { get => photo; set => photo = value; }
 
         public Document()
         {
