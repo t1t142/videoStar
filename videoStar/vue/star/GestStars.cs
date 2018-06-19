@@ -125,7 +125,6 @@ namespace videoStar.vue.star
         private void Affiche()
         {
 
-
             List<Star> stars = Star.GetStarsPages(txtRecherche.Text, pageActive, items);
             //MessageBox.Show(villes.Count.ToString());
 
@@ -137,12 +136,12 @@ namespace videoStar.vue.star
                 StarVue ctn = (StarVue)Controls.Find("starVue" + j.ToString(), false)[0];
                 ctn.Star=st;
                 ctn.Show();
-                
+                ctn.BorderStyle = BorderStyle.None;
+                  
 
 
-            }
+             }
         }
-
 
         public void ActuGestStar()
         {
@@ -150,24 +149,21 @@ namespace videoStar.vue.star
             Affiche();
             Totalpages();
 
-        }
 
-        
+        }
+ 
 
         private void btnAjouter_Click(object sender, EventArgs e)
         { // todo fonction générale affiche
-            ajoutStar1.Show();
-            ajoutStar1.BringToFront();
-
-
-            ajoutStar1.Location = point1;
-            ajoutStar1.Size = this.Parent.Size;
+            Dimensionnement.Dimensionner(ajoutStar1, 0, 0, true, 0, 0);
 
         }
 
         private void txtRecherche_TextChanged(object sender, EventArgs e)
         {
-
+            
+            pageActive = 1;
+            ActuGestStar();
         }
 
         private void starVue_Click(object sender, EventArgs e)
@@ -192,26 +188,14 @@ namespace videoStar.vue.star
 
         private void starVue_DoubleClick(object sender, EventArgs e)
         {
-            MessageBox.Show("cool");
-            OnEventSlctStar(new EventSlctStar(SlctStar));
+            editer();
         }
 
-        private void GestStars_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnselect_Click(object sender, EventArgs e)
         {
-            if(btnselect.Text != "Selectionner")
-            {
-                MessageBox.Show("cool");
-            }
-            else
-            {
-                MessageBox.Show(" pas cool");
-                OnEventSlctStar(new EventSlctStar(SlctStar));
-            }
+            editer();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
@@ -219,5 +203,46 @@ namespace videoStar.vue.star
             slctStar = null;
             Hide();
         }
+
+        private void btnPrecedent_Click(object sender, EventArgs e)
+        {
+           
+            if (pageActive > 1)
+            {
+                pageActive--;
+                ActuGestStar();
+            }
+        }
+
+        private void btnSuivant_Click(object sender, EventArgs e)
+        {
+            if (pageActive < pageCount)
+            {
+                pageActive++;
+                ActuGestStar();
+            }
+        }
+        private void editer()
+        {
+            if (btnselect.Text != "Selectionner")
+            {               
+                if (slctStar == null)
+                {
+                    MessageBox.Show("merci de bien vouloir selectionner une star");
+                 }
+                else
+                {
+                    Dimensionnement.Dimensionner(detailStar1, 0, 0, true, 0, 0);
+                    detailStar1.AfficheStarDetail(slctStar);
+                }
+            }
+            else
+            {
+                OnEventSlctStar(new EventSlctStar(SlctStar));
+            }
+           
+        }
+
+
     }
 }

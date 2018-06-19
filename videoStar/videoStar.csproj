@@ -50,24 +50,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Convert.cs" />
     <Compile Include="Dimensionnement.cs" />
     <Compile Include="entity\Etat.cs" />
+    <Compile Include="entity\Jouer.cs" />
     <Compile Include="entity\Role.cs" />
     <Compile Include="entity\Star.cs" />
     <Compile Include="entity\TypeDocument.cs" />
     <Compile Include="events\star\EventAjtStar.cs" />
     <Compile Include="events\star\EventSlctStar.cs" />
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmAuth.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAuth.Designer.cs">
       <DependentUpon>FrmAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="vue\Adherent\AjoutAdherent.cs">
       <SubType>UserControl</SubType>
@@ -195,12 +196,6 @@
     <Compile Include="DbConnect.cs" />
     <Compile Include="entity\Document.cs" />
     <Compile Include="events\star\eventClickDetail.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="entity\Pays.cs" />
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -223,9 +218,6 @@
     <Compile Include="vue\typedocument\TypeDocList.Designer.cs">
       <DependentUpon>TypeDocList.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="vue\Adherent\AjoutAdherent.resx">
       <DependentUpon>AjoutAdherent.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,22 +278,15 @@
     <EmbeddedResource Include="vue\star\StarVue.resx">
       <DependentUpon>StarVue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="vue\typedocument\AjoutTypeDoc.resx">
       <DependentUpon>AjoutTypeDoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,12 +309,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tunnel-3233082_1920.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\christmas-2871064_1920.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\christmas-2871064_19201.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\darth-maul-1555343_1280.png" />
@@ -358,5 +337,9 @@
   <ItemGroup>
     <None Include="Resources\darth-vader-1207142_1920.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-1703175_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

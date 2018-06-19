@@ -28,11 +28,11 @@ namespace videoStar.vue.star
 
         }
 
-        
 
-       
 
-        
+
+
+
 
         private void pictureBox1_DragEnter(object sender, DragEventArgs e)
         {
@@ -45,8 +45,8 @@ namespace videoStar.vue.star
             foreach (string file in files)
             {
                 MessageBox.Show(file);
-               
-                String[] elements = file.Split(new char[] {'\\', '.' });
+
+                String[] elements = file.Split(new char[] { '\\', '.' });
                 foreach (string element in elements)
                 {
                     MessageBox.Show(element);
@@ -70,12 +70,12 @@ namespace videoStar.vue.star
             {
                 string rech = comboBox1.Text;
 
-                List<Pays> pays = Pays.GetPaysByName(comboBox1.Text,1,20);
+                List<Pays> pays = Pays.GetPaysByName(comboBox1.Text, 1, 20);
 
                 comboBox1.Items.Clear();
-                foreach ( Pays unPays in pays)
+                foreach (Pays unPays in pays)
                 {
-                   
+
                     comboBox1.Items.Add(unPays.Libelle);
 
 
@@ -88,11 +88,6 @@ namespace videoStar.vue.star
 
         }
 
-        
-       
-          
-       
-
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             //comboBox1.Text = comboBox1.SelectedIndex.ToString();
@@ -101,18 +96,24 @@ namespace videoStar.vue.star
         private void button1_Click(object sender, EventArgs e)
         {
             //Todo asécuriser
-
-
-            Star st = new Star( textBox1.Text, textBox2.Text, dateTimePicker1.Value, comboBox1.Text);
-
-            st.Photo = textBox3.Text;
-            st.InsertStar(st);
             
-            PopupNotifier popup = new PopupNotifier();
-            popup.TitleText = "un popup perso et un";
-            popup.ContentText = "la nouvelle star a bien été ajoutée ";
-             popup.Popup();
-            OnAjtStar(new EventAjtStar(st));
+            
+
+                Star st = new Star(textBox1.Text, textBox2.Text, dateTimePicker1.Value, comboBox1.Text);
+
+                st.Photo = textBox3.Text;
+                st.InsertStar(st);
+
+                PopupNotifier popup = new PopupNotifier();
+                popup.TitleText = "un popup perso et un";
+                popup.ContentText = "la nouvelle star a bien été ajoutée ";
+                popup.Popup();
+                OnAjtStar(new EventAjtStar(st));
+            
+
+
+
+
         }
 
 
@@ -126,9 +127,28 @@ namespace videoStar.vue.star
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text.Length >= 2 && comboBox1.Text.Length <= 4)
+            {
+                string rech = comboBox1.Text;
 
+                List<Pays> pays = Pays.GetPaysByName(comboBox1.Text, 1, 20);
 
-        private void ajoutStar_Load(object sender, EventArgs e)
+                comboBox1.Items.Clear();
+
+                foreach (Pays unPays in pays)
+                {
+
+                    comboBox1.Items.Add(unPays.Libelle);
+                }
+                comboBox1.DroppedDown = true;
+                comboBox1.Select(comboBox1.Text.Length, 0);
+               
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

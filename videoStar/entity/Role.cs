@@ -11,9 +11,9 @@ namespace videoStar.entity
 {
     public class Role
     {
-        int id;
-        String libelle;
-
+       private int id;
+        private String libelle;
+        private String service;
         public int Id { get => id; set => id = value; }
         public string Libelle { get => libelle; set => libelle = value; }
 
@@ -27,8 +27,42 @@ namespace videoStar.entity
             Libelle = libelle;
         }
 
+        public static List<Role> GetRolesByName(string recherche, int activepage, int pageitem)
+        {
+            List < Role > roles= new List<Role>();
+            string query = "SELECT * FROM role WHERE libelle LIKE @recherche  LIMIT @active,@pageitem";
 
-        public static DataSet SelectRole()
+
+
+            MySqlCommand cmd = DBConnect.GetConnexion().CreateCommand();
+
+            cmd.Parameters.AddWithValue("@recherche", recherche + '%');
+            cmd.Parameters.AddWithValue("@active", ((activepage - 1) * pageitem));
+            cmd.Parameters.AddWithValue("@pageitem", pageitem);
+            cmd.CommandText = query;
+
+
+            //Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            //Read the data and store them in the list
+            while (dataReader.Read())
+            {
+
+                int id = int.Parse(dataReader["idrole"].ToString());
+                String libelle = dataReader["libelle"].ToString();
+                Role unRole = new Role(id, libelle);
+
+                roles.Add(unRole);
+
+            }
+            dataReader.Close();
+
+            return roles;
+            
+        }
+        
+
+            public static DataSet SelectRole()
         {
             string query = "SELECT libelle FROM role";
 
@@ -78,6 +112,8 @@ namespace videoStar.entity
 
         }
 
+       
+      
     }
 
 

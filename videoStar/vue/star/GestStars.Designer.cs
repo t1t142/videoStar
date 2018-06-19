@@ -75,6 +75,7 @@ namespace videoStar.vue.star
             this.btnSuivant.TabIndex = 40;
             this.btnSuivant.Text = "Suivant";
             this.btnSuivant.UseVisualStyleBackColor = false;
+            this.btnSuivant.Click += new System.EventHandler(this.btnSuivant_Click);
             // 
             // btnPrecedent
             // 
@@ -87,6 +88,7 @@ namespace videoStar.vue.star
             this.btnPrecedent.TabIndex = 39;
             this.btnPrecedent.Text = "Précédent";
             this.btnPrecedent.UseVisualStyleBackColor = false;
+            this.btnPrecedent.Click += new System.EventHandler(this.btnPrecedent_Click);
             // 
             // txtRecherche
             // 
@@ -197,6 +199,7 @@ namespace videoStar.vue.star
             this.starVue8.Star = null;
             this.starVue8.TabIndex = 45;
             this.starVue8.Click += new System.EventHandler(this.starVue_Click);
+            this.starVue8.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // starVue7
             // 
@@ -208,6 +211,7 @@ namespace videoStar.vue.star
             this.starVue7.Star = null;
             this.starVue7.TabIndex = 44;
             this.starVue7.Click += new System.EventHandler(this.starVue_Click);
+            this.starVue7.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // starVue6
             // 
@@ -219,6 +223,7 @@ namespace videoStar.vue.star
             this.starVue6.Star = null;
             this.starVue6.TabIndex = 43;
             this.starVue6.Click += new System.EventHandler(this.starVue_Click);
+            this.starVue6.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // starVue5
             // 
@@ -230,6 +235,7 @@ namespace videoStar.vue.star
             this.starVue5.Star = null;
             this.starVue5.TabIndex = 42;
             this.starVue5.Click += new System.EventHandler(this.starVue_Click);
+            this.starVue5.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // starVue4
             // 
@@ -253,6 +259,7 @@ namespace videoStar.vue.star
             this.starVue3.Star = null;
             this.starVue3.TabIndex = 34;
             this.starVue3.Click += new System.EventHandler(this.starVue_Click);
+            this.starVue3.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // starVue2
             // 
@@ -264,6 +271,7 @@ namespace videoStar.vue.star
             this.starVue2.Star = null;
             this.starVue2.TabIndex = 33;
             this.starVue2.Click += new System.EventHandler(this.starVue_Click);
+            this.starVue2.DoubleClick += new System.EventHandler(this.starVue_DoubleClick);
             // 
             // starVue1
             // 
@@ -307,7 +315,6 @@ namespace videoStar.vue.star
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "GestStars";
             this.Size = new System.Drawing.Size(1082, 724);
-            this.Load += new System.EventHandler(this.GestStars_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

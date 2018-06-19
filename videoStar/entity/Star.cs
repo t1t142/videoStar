@@ -59,7 +59,7 @@ namespace videoStar.entity
         public static List<Star> GetStarsPages(string recherche, int activepage, int pageitem)//int number,int start)
         {
 
-            string query = "SELECT * FROM star";// WHERE nom LIKE @recherche  LIMIT @active,8";
+            string query = "SELECT * FROM star WHERE nom LIKE @recherche  LIMIT @active,@pageitem";
 
 
 
@@ -67,7 +67,7 @@ namespace videoStar.entity
 
             cmd.Parameters.AddWithValue("@recherche", recherche + '%');
             cmd.Parameters.AddWithValue("@active", ((activepage - 1) * pageitem));
-
+            cmd.Parameters.AddWithValue("@pageitem",  pageitem);
             cmd.CommandText = query;
 
 
