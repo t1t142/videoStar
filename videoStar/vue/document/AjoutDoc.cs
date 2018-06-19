@@ -15,23 +15,25 @@ namespace videoStar.vue.document
     {
         private Star st;
         private Document film;
+
         public Star St { get => st; set => st = value; }
+        public Document Film { get => film; set => film = value; }
 
         public AjoutDoc()
         {
             InitializeComponent();
             ajoutJouer1.Hide();
-           // ajoutJouer1.SlctDoc = film;
+            ajoutJouer1.SlctDoc = Film;
         }
 
-        
 
-        
+
+
 
         private void btnAjtStar_Click(object sender, EventArgs e)
         {
             Dimensionnement.Dimensionner(ajoutJouer1, 0, 0, true, 0, 0);
-           
+
         }
 
         private void btnRetour_Click(object sender, EventArgs e)
@@ -46,13 +48,20 @@ namespace videoStar.vue.document
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-           /* btnAjoutLieux.Visible = true;
+            btnAjoutLieux.Visible = true;
             btnAjoutStar.Visible = true;
-            film = new Document();
-            film.Code = txtCode.Text;
-            film.Titre = txtTitre.Text;
-            film.Annee = txtAnnee.Text;
-            film.Photo = txtPhoto.Text;*/
+            Film = new Document();
+            Film.Code = txtCode.Text;
+            Film.Titre = txtTitre.Text;
+            Film.Annee = txtAnnee.Text;
+            Film.Photo = txtPhoto.Text;
+            ajoutJouer1.SlctDoc = film;
+
+        }
+
+        private void AjoutDoc_VisibleChanged(object sender, EventArgs e)
+        {
+
         }
     }
-}
+    }

@@ -42,9 +42,9 @@
             this.btnretour = new System.Windows.Forms.Button();
             this.btnAjoutStar = new System.Windows.Forms.Button();
             this.btnAjoutLieux = new System.Windows.Forms.Button();
-            this.ajoutJouer1 = new videoStar.vue.document.AjoutJouer();
             this.txtCode = new System.Windows.Forms.TextBox();
             this.lblCode = new System.Windows.Forms.Label();
+            this.ajoutJouer1 = new videoStar.vue.document.AjoutJouer();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,15 +191,6 @@
             this.btnAjoutLieux.UseVisualStyleBackColor = false;
             this.btnAjoutLieux.Visible = false;
             // 
-            // ajoutJouer1
-            // 
-            this.ajoutJouer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutJouer1.BackgroundImage")));
-            this.ajoutJouer1.Location = new System.Drawing.Point(506, 519);
-            this.ajoutJouer1.Name = "ajoutJouer1";
-            this.ajoutJouer1.Size = new System.Drawing.Size(102, 105);
-            this.ajoutJouer1.SlctStar = null;
-            this.ajoutJouer1.TabIndex = 32;
-            // 
             // txtCode
             // 
             this.txtCode.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,6 +210,16 @@
             this.lblCode.Size = new System.Drawing.Size(54, 21);
             this.lblCode.TabIndex = 33;
             this.lblCode.Text = "Code";
+            // 
+            // ajoutJouer1
+            // 
+            this.ajoutJouer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutJouer1.BackgroundImage")));
+            this.ajoutJouer1.Location = new System.Drawing.Point(506, 519);
+            this.ajoutJouer1.Name = "ajoutJouer1";
+            this.ajoutJouer1.Size = new System.Drawing.Size(102, 105);
+            this.ajoutJouer1.SlctDoc = null;
+            this.ajoutJouer1.SlctStar = null;
+            this.ajoutJouer1.TabIndex = 32;
             // 
             // AjoutDoc
             // 
@@ -244,6 +245,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AjoutDoc";
             this.Size = new System.Drawing.Size(1036, 689);
+            this.VisibleChanged += new System.EventHandler(this.AjoutDoc_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

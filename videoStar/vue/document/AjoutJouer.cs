@@ -30,15 +30,15 @@ namespace videoStar.vue.document
         {
            InitializeComponent();
             gestStars1.EventSlctStar += HandleEventSlctStar;
-            docListe1.Hide();
+           // docListe1.Hide();
             gestStars1.Hide();
-           // AffichageInit();
+            AffichageInit();
 
         }
      
         private void AffichageInit()
         {
-          /*  if (SlctDoc != null)
+            if (SlctDoc != null)
             {
                 btnAjoutFilm.Visible = false;
                 textBox1.Text = SlctDoc.Titre;
@@ -57,7 +57,7 @@ namespace videoStar.vue.document
             jouer = null;
             jouers.Clear();
         
-    */}
+    }
 
 
 
@@ -137,7 +137,7 @@ namespace videoStar.vue.document
 
         private void btnAjout_Click(object sender, EventArgs e)
         {
-          /*  Boolean control = true;
+            Boolean control = true;
 
             if (slctDoc == null)
             {
@@ -172,7 +172,7 @@ namespace videoStar.vue.document
 
 
 
-*/
+
 
 
 
@@ -193,7 +193,10 @@ namespace videoStar.vue.document
 
         }
 
-       
+        private void AjoutJouer_VisibleChanged(object sender, EventArgs e)
+        {
+            AffichageInit();
+        }
     } 
 }
 
