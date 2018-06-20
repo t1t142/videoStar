@@ -43,9 +43,9 @@ namespace videoStar
             this.btnLocations = new System.Windows.Forms.Button();
             this.btnTournage = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.lblTitre = new System.Windows.Forms.Label();
             this.lblRecherche = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnlPrinc = new System.Windows.Forms.Panel();
             this.listExpl1 = new videoStar.vue.exemplaire.ListExpl();
             this.docListe1 = new videoStar.vue.document.DocListe();
@@ -191,12 +191,22 @@ namespace videoStar
             this.panel1.Size = new System.Drawing.Size(1081, 76);
             this.panel1.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(908, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 50);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Stars";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // lblTitre
             // 
             this.lblTitre.AutoSize = true;
             this.lblTitre.BackColor = System.Drawing.Color.Teal;
             this.lblTitre.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(3, 0);
+            this.lblTitre.Location = new System.Drawing.Point(-13, -2);
             this.lblTitre.Name = "lblTitre";
             this.lblTitre.Size = new System.Drawing.Size(374, 78);
             this.lblTitre.TabIndex = 48;
@@ -212,16 +222,6 @@ namespace videoStar
             this.lblRecherche.Size = new System.Drawing.Size(151, 21);
             this.lblRecherche.TabIndex = 47;
             this.lblRecherche.Text = "utilisateur identifié";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(908, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 50);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Stars";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // pnlPrinc
             // 

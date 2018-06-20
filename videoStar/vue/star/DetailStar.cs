@@ -29,7 +29,7 @@ namespace videoStar.vue.star
             txtDetStarPrenom.Text = st.Prenom;
             datePickerDetail.Value = st.Datenaisance;
             cbxDetPays.Text = st.PaysOrigine;
-            pictureBox1.ImageLocation = st.Photo;
+            pictureBox1.ImageLocation = @"C:\Users\Solene\source\repos\videoStar\images\star\"+ st.Photo;
             txtPhoto.Text = st.Photo;
             txtid.Text = st.Id.ToString();
         }
@@ -91,7 +91,7 @@ namespace videoStar.vue.star
                     MessageBox.Show(element);
                 }
 
-                pictureBox1.ImageLocation = file;
+                pictureBox1.ImageLocation =@"C:\Users\Solene\source\repos\videoStar\images\star\"+ file;
                 txtPhoto.Text = file;
 
             }
@@ -99,6 +99,11 @@ namespace videoStar.vue.star
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DetailStar_Load(object sender, EventArgs e)
         {
 
         }

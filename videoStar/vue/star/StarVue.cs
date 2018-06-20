@@ -23,7 +23,7 @@ namespace videoStar.vue.star
                 {
                     lblNom.Text = star.Nom;
                     lblPrenom.Text = star.Prenom;
-                    picBox.ImageLocation = star.Photo;
+                    picBox.ImageLocation = @"C:\Users\Solene\source\repos\videoStar\images\star\" + star.Photo;
                 }
             }
         }

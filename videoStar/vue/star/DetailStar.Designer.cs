@@ -330,6 +330,7 @@
             this.Controls.Add(this.label11);
             this.Name = "DetailStar";
             this.Size = new System.Drawing.Size(980, 713);
+            this.Load += new System.EventHandler(this.DetailStar_Load);
             this.tabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
