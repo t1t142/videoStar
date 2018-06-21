@@ -23,6 +23,8 @@ namespace videoStar
             gestStars1.Hide();
             annexeVue1.Hide();
             docListe1.Hide();
+            docListe1.Hide();
+            listExpl1.Hide();
 
         }
 

@@ -69,6 +69,7 @@
             this.cbxType.Size = new System.Drawing.Size(141, 29);
             this.cbxType.TabIndex = 20;
             this.cbxType.SelectedIndexChanged += new System.EventHandler(this.cbxType_SelectedIndexChanged);
+            this.cbxType.TextChanged += new System.EventHandler(this.cbxType_TextChanged);
             // 
             // label3
             // 

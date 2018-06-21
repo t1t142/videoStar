@@ -55,6 +55,7 @@
     <Compile Include="entity\Etat.cs" />
     <Compile Include="entity\Jouer.cs" />
     <Compile Include="entity\Lieux.cs" />
+    <Compile Include="entity\Parametres.cs" />
     <Compile Include="entity\Role.cs" />
     <Compile Include="entity\Star.cs" />
     <Compile Include="entity\TypeDocument.cs" />
@@ -154,6 +155,12 @@
     </Compile>
     <Compile Include="vue\lieu\LieuVue.Designer.cs">
       <DependentUpon>LieuVue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vue\parametre\Parametre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vue\parametre\Parametre.Designer.cs">
+      <DependentUpon>Parametre.cs</DependentUpon>
     </Compile>
     <Compile Include="vue\role\AjoutRole.cs">
       <SubType>UserControl</SubType>
@@ -266,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vue\lieu\LieuVue.resx">
       <DependentUpon>LieuVue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vue\parametre\Parametre.resx">
+      <DependentUpon>Parametre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vue\role\AjoutRole.resx">
       <DependentUpon>AjoutRole.cs</DependentUpon>

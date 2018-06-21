@@ -55,7 +55,11 @@ namespace videoStar.vue.document
             Film.Titre = txtTitre.Text;
             Film.Annee = txtAnnee.Text;
             Film.Photo = txtPhoto.Text;
+           
+            Film.DocType = (TypeDocument)cbxType.SelectedItem ;
             ajoutJouer1.SlctDoc = film;
+
+            film.Insertdocument(film);
 
         }
 
@@ -63,5 +67,28 @@ namespace videoStar.vue.document
         {
 
         }
+
+        private void cbxType_TextChanged(object sender, EventArgs e)
+        {
+            if (cbxType.Text.Length > 0)
+            {
+                string rech = cbxType.Text;
+
+                List<TypeDocument> types = TypeDocument.GetTypeDocByCode(cbxType.Text, 1, 10);
+
+                cbxType.Items.Clear();
+
+                foreach (TypeDocument type in types)
+                {
+                    cbxType.Items.Add(type);
+                }
+                cbxType.DisplayMember = "CodeTypeDocument";
+                cbxType.ValueMember = "TypeNom";
+                cbxType.DroppedDown = true;
+                cbxType.Select(cbxType.Text.Length, 0);
+
+
+            }
+        }
     }
-    }
+}

@@ -19,7 +19,7 @@ namespace videoStar.vue.document
         public Star SlctStar { get => slctStar; set => slctStar = value; }
         public Document SlctDoc { get => slctDoc; set => slctDoc = value; }
 
-        private List<Jouer> jouers = new List<Jouer>();
+       // private List<Jouer> jouers = new List<Jouer>();
         private Jouer jouer = null;
         private Role role = null;
         List<Role> roles;
@@ -55,7 +55,7 @@ namespace videoStar.vue.document
             slctStar = null;
             role = null;
             jouer = null;
-            jouers.Clear();
+            
         
     }
 
@@ -137,47 +137,28 @@ namespace videoStar.vue.document
 
         private void btnAjout_Click(object sender, EventArgs e)
         {
-            Boolean control = true;
-
-            if (slctDoc == null)
-            {
-                MessageBox.Show("le Film ne peux pas etre vide");
-                control = false;
-            }
-
-
-            if (SlctStar == null)
-            {
-                MessageBox.Show("la Star ne peux pas etre vide");
-                control = false;
-            }
-            if (role == null)
-            {
-                MessageBox.Show("le Role ne peux pas etre vide");
-                control = false;
-            }
-
-            if(control)
+          
+            if(Control())
             { 
             jouer = new Jouer();
                     jouer.Star = slctStar;
                     jouer.Role = role;
                     jouer.Personnage = txtPerso.Text;
 
-                    jouers.Add(jouer);
+                   
                     Actualise();
                     //dataGridView1.DataSource = Convert.ConvertToDataTable(roles);
                     AffichageInit();
+            }
+
+
+
+
+
+
+
+
         }
-
-
-
-
-
-
-
-
-    }
 
         private void btnAnnul_Click(object sender, EventArgs e)
         {
@@ -197,6 +178,34 @@ namespace videoStar.vue.document
         {
             AffichageInit();
         }
+
+        private Boolean Control()
+        {
+
+            Boolean control = true;
+
+            if (slctDoc == null)
+            {
+                MessageBox.Show("le Film ne peux pas etre vide");
+                control = false;
+            }
+
+            if (SlctStar == null)
+            {
+                MessageBox.Show("la Star ne peux pas etre vide");
+                control = false;
+            }
+            if (role == null)
+            {
+                MessageBox.Show("le Role ne peux pas etre vide");
+                control = false;
+            }
+
+            return control;
+
+        }
+
+
     } 
 }
 
