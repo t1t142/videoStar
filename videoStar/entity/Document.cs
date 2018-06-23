@@ -18,7 +18,7 @@ namespace videoStar
        private String photo;
        private TypeDocument docType;
        private  List<Lieux> lieuTournage;
-       private List<Jouer> jouers;
+       private List<Participer> participants;
 
         public string Code { get => code; set => code = value; }
         public string Titre { get => titre; set => titre = value; }
@@ -26,7 +26,7 @@ namespace videoStar
         public string Photo { get => photo; set => photo = value; }
         internal TypeDocument DocType { get => docType; set => docType = value; }
         public List<Lieux> LieuTournage { get => lieuTournage; set => lieuTournage = value; }
-        public List<Jouer> Jouers { get => jouers; set => jouers = value; }
+        public List<Participer> Jouers { get => participants; set => participants = value; }
 
         public Document()
         {

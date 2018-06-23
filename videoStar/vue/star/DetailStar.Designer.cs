@@ -28,19 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.txtPhoto = new System.Windows.Forms.TextBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnparticip = new System.Windows.Forms.Button();
+            this.dgvParticip = new System.Windows.Forms.DataGridView();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.btnModif = new System.Windows.Forms.Button();
             this.cbxDetPays = new System.Windows.Forms.ComboBox();
             this.datePickerDetail = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,36 +45,36 @@
             this.txtDetStarNom = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabControl2.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnAjout = new System.Windows.Forms.Button();
+            this.btnSupFromList = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvParticip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button9
+            // btnEdit
             // 
-            this.button9.BackColor = System.Drawing.Color.Teal;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(788, 15);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(121, 50);
-            this.button9.TabIndex = 46;
-            this.button9.Text = "Editer";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btnEdit.BackColor = System.Drawing.Color.Teal;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Location = new System.Drawing.Point(788, 15);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(121, 50);
+            this.btnEdit.TabIndex = 46;
+            this.btnEdit.Text = "Editer";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button8
+            // btnDelete
             // 
-            this.button8.BackColor = System.Drawing.Color.Teal;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(788, 156);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(121, 50);
-            this.button8.TabIndex = 45;
-            this.button8.Text = "Effacer";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.Teal;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(788, 156);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(121, 50);
+            this.btnDelete.TabIndex = 45;
+            this.btnDelete.Text = "Effacer";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // txtPhoto
             // 
@@ -89,118 +83,54 @@
             this.txtPhoto.Name = "txtPhoto";
             this.txtPhoto.Size = new System.Drawing.Size(141, 27);
             this.txtPhoto.TabIndex = 44;
+            this.txtPhoto.Visible = false;
             // 
-            // tabControl2
+            // btnparticip
             // 
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Controls.Add(this.tabPage8);
-            this.tabControl2.Location = new System.Drawing.Point(3, 383);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(939, 327);
-            this.tabControl2.TabIndex = 43;
+            this.btnparticip.BackColor = System.Drawing.Color.Teal;
+            this.btnparticip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnparticip.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnparticip.Location = new System.Drawing.Point(-33, 389);
+            this.btnparticip.Name = "btnparticip";
+            this.btnparticip.Size = new System.Drawing.Size(416, 50);
+            this.btnparticip.TabIndex = 27;
+            this.btnparticip.Text = "Voir participation dans les films";
+            this.btnparticip.UseVisualStyleBackColor = false;
+            this.btnparticip.Click += new System.EventHandler(this.button7_Click);
             // 
-            // tabPage7
+            // dgvParticip
             // 
-            this.tabPage7.Controls.Add(this.comboBox2);
-            this.tabPage7.Controls.Add(this.label12);
-            this.tabPage7.Controls.Add(this.button6);
-            this.tabPage7.Controls.Add(this.button7);
-            this.tabPage7.Controls.Add(this.dataGridView1);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(931, 301);
-            this.tabPage7.TabIndex = 0;
-            this.tabPage7.Text = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
+            this.dgvParticip.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvParticip.Location = new System.Drawing.Point(174, 467);
+            this.dgvParticip.Name = "dgvParticip";
+            this.dgvParticip.Size = new System.Drawing.Size(518, 222);
+            this.dgvParticip.TabIndex = 0;
+            this.dgvParticip.Visible = false;
             // 
-            // comboBox2
+            // btnReturn
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(766, 58);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(141, 29);
-            this.comboBox2.TabIndex = 30;
+            this.btnReturn.BackColor = System.Drawing.Color.Teal;
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Location = new System.Drawing.Point(788, 233);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(121, 50);
+            this.btnReturn.TabIndex = 42;
+            this.btnReturn.Text = "Retour";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label12
+            // btnModif
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(632, 61);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(114, 21);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "Pays d\'origine";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Teal;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(494, 129);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(121, 50);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "Retour";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Teal;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(494, 37);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(121, 50);
-            this.button7.TabIndex = 27;
-            this.button7.Text = "Ajouter";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(470, 222);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(931, 301);
-            this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "tabPage8";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Teal;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(788, 233);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(121, 50);
-            this.button4.TabIndex = 42;
-            this.button4.Text = "Retour";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Teal;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(788, 91);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(121, 50);
-            this.button5.TabIndex = 41;
-            this.button5.Text = "Modifier";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnModif.BackColor = System.Drawing.Color.Teal;
+            this.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModif.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModif.Location = new System.Drawing.Point(788, 91);
+            this.btnModif.Name = "btnModif";
+            this.btnModif.Size = new System.Drawing.Size(121, 50);
+            this.btnModif.TabIndex = 41;
+            this.btnModif.Text = "Modifier";
+            this.btnModif.UseVisualStyleBackColor = false;
             // 
             // cbxDetPays
             // 
@@ -306,18 +236,46 @@
             this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
             this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
             // 
+            // btnAjout
+            // 
+            this.btnAjout.BackColor = System.Drawing.Color.Teal;
+            this.btnAjout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjout.Location = new System.Drawing.Point(740, 486);
+            this.btnAjout.Name = "btnAjout";
+            this.btnAjout.Size = new System.Drawing.Size(121, 50);
+            this.btnAjout.TabIndex = 47;
+            this.btnAjout.Text = "ajouter";
+            this.btnAjout.UseVisualStyleBackColor = false;
+            this.btnAjout.Click += new System.EventHandler(this.btnAjout_Click);
+            // 
+            // btnSupFromList
+            // 
+            this.btnSupFromList.BackColor = System.Drawing.Color.Teal;
+            this.btnSupFromList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupFromList.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupFromList.Location = new System.Drawing.Point(740, 542);
+            this.btnSupFromList.Name = "btnSupFromList";
+            this.btnSupFromList.Size = new System.Drawing.Size(121, 50);
+            this.btnSupFromList.TabIndex = 48;
+            this.btnSupFromList.Text = "Supprimer";
+            this.btnSupFromList.UseVisualStyleBackColor = false;
+            // 
             // DetailStar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::videoStar.Properties.Resources.star_wars_2592430_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnSupFromList);
+            this.Controls.Add(this.btnAjout);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtPhoto);
-            this.Controls.Add(this.tabControl2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.dgvParticip);
+            this.Controls.Add(this.btnparticip);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.btnModif);
             this.Controls.Add(this.cbxDetPays);
             this.Controls.Add(this.datePickerDetail);
             this.Controls.Add(this.pictureBox1);
@@ -330,11 +288,8 @@
             this.Controls.Add(this.label11);
             this.Name = "DetailStar";
             this.Size = new System.Drawing.Size(980, 713);
-            this.Load += new System.EventHandler(this.DetailStar_Load);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.VisibleChanged += new System.EventHandler(this.DetailStar_VisibleChanged);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvParticip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -343,19 +298,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtPhoto;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnparticip;
+        private System.Windows.Forms.DataGridView dgvParticip;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Button btnModif;
         private System.Windows.Forms.ComboBox cbxDetPays;
         private System.Windows.Forms.DateTimePicker datePickerDetail;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -366,5 +315,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtDetStarNom;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnAjout;
+        private System.Windows.Forms.Button btnSupFromList;
     }
 }

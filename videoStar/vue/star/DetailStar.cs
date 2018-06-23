@@ -15,11 +15,12 @@ namespace videoStar.vue.star
     {
         Boolean editable = false;
 
-
+        private Star slctStar;
         public DetailStar()
         {
             InitializeComponent();
             Editable(editable);
+            AffichageInit();
         }
 
 
@@ -29,9 +30,10 @@ namespace videoStar.vue.star
             txtDetStarPrenom.Text = st.Prenom;
             datePickerDetail.Value = st.Datenaisance;
             cbxDetPays.Text = st.PaysOrigine;
-            pictureBox1.ImageLocation = @"C:\Users\Solene\source\repos\videoStar\images\star\"+ st.Photo;
-            txtPhoto.Text = st.Photo;
-            txtid.Text = st.Id.ToString();
+            //pictureBox1.ImageLocation = @"C:\Users\Solene\source\repos\videoStar\images\star\"+ st.Photo;
+            pictureBox1.ImageLocation = @"C:\Users\Thierry\source\repos\videoStar\images\star\" + st.Photo;
+           
+            this.slctStar = st;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -39,30 +41,30 @@ namespace videoStar.vue.star
             Hide();
         }
 
-       
+
 
         private void Editable(Boolean editable)
         {
 
-           
-                foreach (Control cont in Controls)
-                {
-                    if (cont is Button){
 
+            foreach (Control cont in Controls)
+            {
+                if (cont is Button) {
+
+                }
+                else
+                {
+                    if (editable)
+                    {
+                        cont.Enabled = true;
+                        pictureBox1.AllowDrop = true;
                     }
                     else
                     {
-                        if (editable)
-                        {
-                            cont.Enabled = true;
-                        pictureBox1.AllowDrop = true;
-                    }
-                        else
-                        {
                         cont.Enabled = false;
                         pictureBox1.AllowDrop = false;
                     }
-                    
+
                 }
             }
 
@@ -91,21 +93,45 @@ namespace videoStar.vue.star
                     MessageBox.Show(element);
                 }
 
-                pictureBox1.ImageLocation =@"C:\Users\Solene\source\repos\videoStar\images\star\"+ file;
+                pictureBox1.ImageLocation = @"C:\Users\Solene\source\repos\videoStar\images\star\" + file;
                 txtPhoto.Text = file;
 
             }
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Actualise()
+        {
+            dgvParticip.DataSource = Participer.SelectParticipationByStar(slctStar.Id).Tables[0].DefaultView;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            dgvParticip.Visible = true;
+            btnSupFromList.Visible = true;
+            btnAjout.Visible = true;
+            Actualise();
+        }
+
+       private void AffichageInit()
+        {
+            dgvParticip.Visible = false;
+            btnSupFromList.Visible = false;
+            btnAjout.Visible = false;
+        }
+
+        private void btnAjout_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void DetailStar_Load(object sender, EventArgs e)
-        {
+       
 
+        private void DetailStar_VisibleChanged(object sender, EventArgs e)
+        {
+            AffichageInit();
         }
+
+        
     }
 }

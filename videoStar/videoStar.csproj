@@ -53,7 +53,7 @@
     <Compile Include="Convert.cs" />
     <Compile Include="Dimensionnement.cs" />
     <Compile Include="entity\Etat.cs" />
-    <Compile Include="entity\Jouer.cs" />
+    <Compile Include="entity\Participer.cs" />
     <Compile Include="entity\Lieux.cs" />
     <Compile Include="entity\Parametres.cs" />
     <Compile Include="entity\Role.cs" />
@@ -232,6 +232,9 @@
     <Compile Include="vue\typedocument\TypeDocList.Designer.cs">
       <DependentUpon>TypeDocList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAuth.resx">
+      <DependentUpon>FrmAuth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vue\Adherent\AjoutAdherent.resx">
       <DependentUpon>AjoutAdherent.cs</DependentUpon>
     </EmbeddedResource>

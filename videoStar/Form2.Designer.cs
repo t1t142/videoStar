@@ -127,6 +127,7 @@ namespace videoStar
             this.btnExit.TabIndex = 17;
             this.btnExit.Text = "Quitter";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnStats
             // 

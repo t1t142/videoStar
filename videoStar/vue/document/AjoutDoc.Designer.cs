@@ -70,6 +70,7 @@
             this.cbxType.TabIndex = 20;
             this.cbxType.SelectedIndexChanged += new System.EventHandler(this.cbxType_SelectedIndexChanged);
             this.cbxType.TextChanged += new System.EventHandler(this.cbxType_TextChanged);
+            this.cbxType.Leave += new System.EventHandler(this.cbxType_SelectedIndexChanged);
             // 
             // label3
             // 

@@ -34,7 +34,6 @@
             this.txtStar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnModifStar = new System.Windows.Forms.Button();
-            this.btnValider = new System.Windows.Forms.Button();
             this.btnRetour = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtPerso = new System.Windows.Forms.TextBox();
@@ -113,18 +112,6 @@
             this.btnModifStar.UseVisualStyleBackColor = false;
             this.btnModifStar.Click += new System.EventHandler(this.btnAjtStar_Click);
             // 
-            // btnValider
-            // 
-            this.btnValider.BackColor = System.Drawing.Color.Teal;
-            this.btnValider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnValider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValider.Location = new System.Drawing.Point(676, 573);
-            this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(101, 33);
-            this.btnValider.TabIndex = 32;
-            this.btnValider.Text = "Valider";
-            this.btnValider.UseVisualStyleBackColor = false;
-            // 
             // btnRetour
             // 
             this.btnRetour.BackColor = System.Drawing.Color.Teal;
@@ -134,7 +121,7 @@
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(101, 33);
             this.btnRetour.TabIndex = 33;
-            this.btnRetour.Text = "Annuler";
+            this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = false;
             this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
@@ -143,7 +130,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(118, 502);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(477, 141);
+            this.dataGridView1.Size = new System.Drawing.Size(533, 141);
             this.dataGridView1.TabIndex = 34;
             // 
             // txtPerso
@@ -188,6 +175,7 @@
             this.comboBox1.TabIndex = 40;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            this.comboBox1.Leave += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -318,7 +306,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnRetour);
-            this.Controls.Add(this.btnValider);
             this.DoubleBuffered = true;
             this.Name = "AjoutJouer";
             this.Size = new System.Drawing.Size(1004, 657);
@@ -337,7 +324,6 @@
         private System.Windows.Forms.TextBox txtStar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnModifStar;
-        private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Button btnRetour;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtPerso;

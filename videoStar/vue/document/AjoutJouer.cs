@@ -20,7 +20,7 @@ namespace videoStar.vue.document
         public Document SlctDoc { get => slctDoc; set => slctDoc = value; }
 
        // private List<Jouer> jouers = new List<Jouer>();
-        private Jouer jouer = null;
+        private Participer participant = null;
         private Role role = null;
         List<Role> roles;
 
@@ -54,7 +54,7 @@ namespace videoStar.vue.document
             txtPerso.Text = "";
             slctStar = null;
             role = null;
-            jouer = null;
+            participant = null;
             
         
     }
@@ -95,11 +95,10 @@ namespace videoStar.vue.document
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text.Length > 0)
-            {
+           
                 string rech = comboBox1.Text;
 
-                roles = Role.GetRolesByName(comboBox1.Text, 1, 10);
+                roles = Role.GetRolesByName(comboBox1.Text, 1, 20);
 
                 comboBox1.Items.Clear();
                 
@@ -121,7 +120,7 @@ namespace videoStar.vue.document
                     txtPerso.Visible = false;
                     lblPerso.Visible = false;
                 }
-            }
+            
         }
 
 
@@ -139,15 +138,16 @@ namespace videoStar.vue.document
         {
           
             if(Control())
-            { 
-            jouer = new Jouer();
-                    jouer.Star = slctStar;
-                    jouer.Role = role;
-                    jouer.Personnage = txtPerso.Text;
+            {
+                participant = new Participer();
+                participant.Doc = slctDoc;
+                participant.Star = slctStar;
+                participant.Role = role;
+                participant.Personnage = txtPerso.Text;
 
-                   
+                participant.AjouterParticipant(participant);
                     Actualise();
-                    //dataGridView1.DataSource = Convert.ConvertToDataTable(roles);
+                    //dataGridView1.DataSource = Convert.ConvertToDataTable(jouer);
                     AffichageInit();
             }
 
@@ -169,7 +169,7 @@ namespace videoStar.vue.document
 
         {
             //  dataGridView1.DataSource  = jouers;
-
+            dataGridView1.DataSource = Participer.SelectParticipantsByFilm(slctDoc.Code).Tables[0].DefaultView;
 
 
         }
