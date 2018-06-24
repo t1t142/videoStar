@@ -90,7 +90,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(141, 27);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Visible = false;
             // 
             // label3
             // 
@@ -198,6 +197,7 @@
             this.DoubleBuffered = true;
             this.Name = "ajoutStar";
             this.Size = new System.Drawing.Size(1070, 599);
+            this.Load += new System.EventHandler(this.ajoutStar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

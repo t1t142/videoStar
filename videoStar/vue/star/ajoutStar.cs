@@ -11,6 +11,7 @@ using System.Text.RegularExpressions;
 using videoStar.entity;
 using Tulpep.NotificationWindow;
 using videoStar.events;
+using videoStar.outils;
 
 namespace videoStar.vue.star
 {
@@ -30,10 +31,6 @@ namespace videoStar.vue.star
 
 
 
-
-
-
-
         private void pictureBox1_DragEnter(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.All;
@@ -42,18 +39,12 @@ namespace videoStar.vue.star
         private void pictureBox1_DragDrop(object sender, DragEventArgs e)
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
-            foreach (string file in files)
-            {
-                MessageBox.Show(file);
+            
+           Boolean fileVerif= Photo.VerifierPhoto(files);
 
-                String[] elements = file.Split(new char[] { '\\', '.' });
-                foreach (string element in elements)
-                {
-                    MessageBox.Show(element);
-                }
-
-                pictureBox1.ImageLocation = file;
-                textBox3.Text = file;
+            if (fileVerif) { 
+            pictureBox1.ImageLocation = files[0];
+            textBox3.Text = files[0];
 
             }
 
@@ -75,11 +66,7 @@ namespace videoStar.vue.star
                 comboBox1.Items.Clear();
                 foreach (Pays unPays in pays)
                 {
-
                     comboBox1.Items.Add(unPays.Libelle);
-
-
-
                 }
                 comboBox1.DroppedDown = true;
                 comboBox1.Select(comboBox1.Text.Length, 0);
@@ -95,9 +82,7 @@ namespace videoStar.vue.star
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Todo asécuriser
-            
-            
+            //Todo asécuriser                
 
                 Star st = new Star(textBox1.Text, textBox2.Text, dateTimePicker1.Value, comboBox1.Text);
 
@@ -110,9 +95,6 @@ namespace videoStar.vue.star
                 popup.Popup();
                 OnAjtStar(new EventAjtStar(st));
             
-
-
-
 
         }
 
@@ -149,6 +131,11 @@ namespace videoStar.vue.star
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ajoutStar_Load(object sender, EventArgs e)
         {
 
         }

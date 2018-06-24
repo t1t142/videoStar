@@ -45,6 +45,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+    </Reference>
     <Reference Include="Tulpep.NotificationWindow, Version=1.1.25.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
     </Reference>
@@ -61,12 +64,21 @@
     <Compile Include="entity\TypeDocument.cs" />
     <Compile Include="events\star\EventAjtStar.cs" />
     <Compile Include="events\star\EventSlctStar.cs" />
+    <Compile Include="exception\photoException\PhotoFormatExeption.cs" />
+    <Compile Include="exception\photoException\PhotoNbreFichierException.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAuth.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAuth.Designer.cs">
       <DependentUpon>FrmAuth.cs</DependentUpon>
     </Compile>
+    <Compile Include="outils\photo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

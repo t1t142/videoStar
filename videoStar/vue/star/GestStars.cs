@@ -126,8 +126,8 @@ namespace videoStar.vue.star
         {
 
             List<Star> stars = Star.GetStarsPages(txtRecherche.Text, pageActive, items);
-            //MessageBox.Show(villes.Count.ToString());
-
+            
+            
             for (int i = 0; i <= stars.Count - 1; i++)
             {
 
@@ -135,17 +135,30 @@ namespace videoStar.vue.star
                 Star st = stars[i];
                 StarVue ctn = (StarVue)Controls.Find("starVue" + j.ToString(), false)[0];
                 ctn.Star=st;
-                ctn.Show();
+                if (ctn.Visible == false)
+                {
+                    ctn.Show();
+                }
+                
                 ctn.BorderStyle = BorderStyle.None;
                   
-
-
              }
+            Hide();
+            for (int i = stars.Count+1; i <= items; i++)
+            {
+                StarVue ctn = (StarVue)Controls.Find("starVue" + i.ToString(), false)[0];
+                 ctn.Hide();
+            }
+
+            Show();
+            txtRecherche.Focus();
+            txtRecherche.Select(txtRecherche.Text.Length, 0);
+
         }
 
         public void ActuGestStar()
         {
-            HideItems();
+           // HideItems();
             Affiche();
             Totalpages();
 
@@ -243,6 +256,11 @@ namespace videoStar.vue.star
            
         }
 
+     
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }

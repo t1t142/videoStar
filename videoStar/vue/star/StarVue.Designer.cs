@@ -29,11 +29,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnDetail = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblPrenom = new System.Windows.Forms.Label();
             this.picBox = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +94,12 @@
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBox.TabIndex = 26;
             this.picBox.TabStop = false;
-            this.picBox.Click += new System.EventHandler(this.picBox_Click);
+ 
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 400;
+
             // 
             // StarVue
             // 
@@ -105,8 +113,7 @@
             this.Controls.Add(this.textBox3);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "StarVue";
-            this.Size = new System.Drawing.Size(190, 278);
-            this.Load += new System.EventHandler(this.StarVue_Load);
+            this.Size = new System.Drawing.Size(190, 280);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,5 +127,7 @@
         private System.Windows.Forms.PictureBox picBox;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblPrenom;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

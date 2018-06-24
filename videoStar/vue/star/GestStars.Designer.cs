@@ -158,6 +158,7 @@ namespace videoStar.vue.star
             this.btnDelete.TabIndex = 50;
             this.btnDelete.Text = "Supprimer";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnReturn
             // 
@@ -184,6 +185,8 @@ namespace videoStar.vue.star
             // 
             // detailStar1
             // 
+            this.detailStar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("detailStar1.BackgroundImage")));
+            this.detailStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.detailStar1.Location = new System.Drawing.Point(1006, 357);
             this.detailStar1.Name = "detailStar1";
             this.detailStar1.Size = new System.Drawing.Size(73, 90);

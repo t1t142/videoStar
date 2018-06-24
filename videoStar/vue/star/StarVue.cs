@@ -57,14 +57,6 @@ namespace videoStar.vue.star
             }
         }
 
-        private void picBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StarVue_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
