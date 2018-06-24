@@ -94,12 +94,10 @@
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBox.TabIndex = 26;
             this.picBox.TabStop = false;
- 
             // 
             // timer1
             // 
             this.timer1.Interval = 400;
-
             // 
             // StarVue
             // 
@@ -114,6 +112,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "StarVue";
             this.Size = new System.Drawing.Size(190, 280);
+            this.Load += new System.EventHandler(this.StarVue_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

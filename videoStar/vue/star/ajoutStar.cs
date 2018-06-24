@@ -24,8 +24,7 @@ namespace videoStar.vue.star
             InitializeComponent();
             pictureBox1.AllowDrop = true;
             pictureBox1.ImageLocation = @"D:\image\drag-drop-upload-1.gif";
-            label1.BackColor = System.Drawing.Color.Transparent;
-            comboBox1.DroppedDown = true;
+            cbxPays.DroppedDown = true;
 
         }
 
@@ -50,54 +49,64 @@ namespace videoStar.vue.star
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRetour_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void comboBox1_TextChanged(object sender, EventArgs e)
+        private void cbxPays_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text.Length >= 2 && comboBox1.Text.Length <= 4)
+            if (cbxPays.Text.Length >= 2 && cbxPays.Text.Length <= 4)
             {
-                string rech = comboBox1.Text;
+                string rech = cbxPays.Text;
 
-                List<Pays> pays = Pays.GetPaysByName(comboBox1.Text, 1, 20);
+                List<Pays> pays = Pays.GetPaysByName(cbxPays.Text, 1, 20);
 
-                comboBox1.Items.Clear();
+                cbxPays.Items.Clear();
                 foreach (Pays unPays in pays)
                 {
-                    comboBox1.Items.Add(unPays.Libelle);
+                    cbxPays.Items.Add(unPays.Libelle);
                 }
-                comboBox1.DroppedDown = true;
-                comboBox1.Select(comboBox1.Text.Length, 0);
-                // comboBox1.Text = comboBox1.Text;
+                cbxPays.DroppedDown = true;
+                cbxPays.Select(cbxPays.Text.Length, 0);
+                
             }
 
         }
 
-        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        private void cbxPays_SelectedValueChanged(object sender, EventArgs e)
         {
             //comboBox1.Text = comboBox1.SelectedIndex.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAjouter_Click(object sender, EventArgs e)
         {
             //Todo asécuriser                
+            Star st= null;
 
-                Star st = new Star(textBox1.Text, textBox2.Text, dateTimePicker1.Value, comboBox1.Text);
+            try
+            { 
+                 st = new Star(txtNom.Text, txtPrenom.Text, dtpNaissance.Value, cbxPays.Text);
+            }
+            catch(Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
 
-                st.Photo = textBox3.Text;
+            if (st != null) {
+
+                string dossier = @"C:\Users\Thierry\source\repos\videoStar\images\star";
+                string photo= Photo.SavePhoto(textBox3.Text,dossier);
+                st.Photo =photo;
                 st.InsertStar(st);
-
+            
                 PopupNotifier popup = new PopupNotifier();
                 popup.TitleText = "un popup perso et un";
                 popup.ContentText = "la nouvelle star a bien été ajoutée ";
                 popup.Popup();
                 OnAjtStar(new EventAjtStar(st));
-            
-
+            }
         }
-
 
         protected virtual void OnAjtStar(EventAjtStar e)
         {
@@ -109,35 +118,28 @@ namespace videoStar.vue.star
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbxPays_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text.Length >= 2 && comboBox1.Text.Length <= 4)
+            if (cbxPays.Text.Length >= 2 )
             {
-                string rech = comboBox1.Text;
+                string rech = cbxPays.Text;
 
-                List<Pays> pays = Pays.GetPaysByName(comboBox1.Text, 1, 20);
+                List<Pays> pays = Pays.GetPaysByName(cbxPays.Text, 1, 20);
 
-                comboBox1.Items.Clear();
+                cbxPays.Items.Clear();
 
                 foreach (Pays unPays in pays)
                 {
 
-                    comboBox1.Items.Add(unPays.Libelle);
+                    cbxPays.Items.Add(unPays.Libelle);
                 }
-                comboBox1.DroppedDown = true;
-                comboBox1.Select(comboBox1.Text.Length, 0);
+                cbxPays.DroppedDown = true;
+                cbxPays.Select(cbxPays.Text.Length, 0);
                
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ajoutStar_Load(object sender, EventArgs e)
-        {
-
-        }
+        
+       
     }
 }

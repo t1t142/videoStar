@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using videoStar.exception.Star;
 
 namespace videoStar.entity
 {
@@ -22,8 +23,38 @@ namespace videoStar.entity
         List<Document> aCompose;
 
         public int Id { get => id; set => id = value; }
-        public string Nom { get => nom; set => nom = value; }
-        public string Prenom { get => prenom; set => prenom = value; }
+        public string Nom
+        {
+            get => nom;
+            set
+            {
+                if (value.Length >= 1)
+                {
+                    nom = value;
+                }
+                else
+                {
+                    throw new StarNomException();
+                }
+            }
+        }
+
+
+        public string Prenom
+        {
+         get => prenom;
+            set
+             {
+                   if (value.Length >= 1)
+                   {
+                      prenom = value;
+                   }
+                 else
+                  {
+                   throw new StarPrenomException();
+                  }
+             }
+        }
         public DateTime Datenaisance { get => datenaisance; set => datenaisance = value; }
         public string Photo { get => photo; set => photo = value; }
         internal String PaysOrigine { get => paysOrigine; set => paysOrigine = value; }

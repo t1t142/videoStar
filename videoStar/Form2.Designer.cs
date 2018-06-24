@@ -76,108 +76,128 @@ namespace videoStar
             // 
             // btnAnx
             // 
+            this.btnAnx.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnAnx.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAnx.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnx.Location = new System.Drawing.Point(3, 529);
+            this.btnAnx.Location = new System.Drawing.Point(0, 529);
             this.btnAnx.Name = "btnAnx";
-            this.btnAnx.Size = new System.Drawing.Size(161, 53);
+            this.btnAnx.Size = new System.Drawing.Size(170, 53);
             this.btnAnx.TabIndex = 21;
             this.btnAnx.Text = " Annexes";
-            this.btnAnx.UseVisualStyleBackColor = true;
+            this.btnAnx.UseVisualStyleBackColor = false;
             this.btnAnx.Click += new System.EventHandler(this.btnAnx_Click);
             // 
             // btnFilms
             // 
+            this.btnFilms.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnFilms.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFilms.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilms.Location = new System.Drawing.Point(3, 221);
+            this.btnFilms.Location = new System.Drawing.Point(0, 221);
             this.btnFilms.Name = "btnFilms";
-            this.btnFilms.Size = new System.Drawing.Size(161, 50);
+            this.btnFilms.Size = new System.Drawing.Size(170, 50);
             this.btnFilms.TabIndex = 20;
             this.btnFilms.Text = "Films";
-            this.btnFilms.UseVisualStyleBackColor = true;
+            this.btnFilms.UseVisualStyleBackColor = false;
             this.btnFilms.Click += new System.EventHandler(this.btnFilms_Click);
             // 
             // BtnStars
             // 
+            this.BtnStars.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnStars.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnStars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStars.Location = new System.Drawing.Point(3, 156);
+            this.BtnStars.Location = new System.Drawing.Point(0, 156);
             this.BtnStars.Name = "BtnStars";
-            this.BtnStars.Size = new System.Drawing.Size(161, 50);
+            this.BtnStars.Size = new System.Drawing.Size(170, 50);
             this.BtnStars.TabIndex = 19;
             this.BtnStars.Text = "Stars";
-            this.BtnStars.UseVisualStyleBackColor = true;
+            this.BtnStars.UseVisualStyleBackColor = false;
             this.BtnStars.Click += new System.EventHandler(this.BtnStars_Click);
             // 
             // btnExemplaires
             // 
+            this.btnExemplaires.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnExemplaires.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExemplaires.Location = new System.Drawing.Point(3, 470);
+            this.btnExemplaires.Location = new System.Drawing.Point(0, 470);
             this.btnExemplaires.Name = "btnExemplaires";
-            this.btnExemplaires.Size = new System.Drawing.Size(161, 53);
+            this.btnExemplaires.Size = new System.Drawing.Size(170, 53);
             this.btnExemplaires.TabIndex = 18;
             this.btnExemplaires.Text = "Exemplaires";
-            this.btnExemplaires.UseVisualStyleBackColor = true;
+            this.btnExemplaires.UseVisualStyleBackColor = false;
             this.btnExemplaires.Click += new System.EventHandler(this.btnExemplaires_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(3, 709);
+            this.btnExit.Location = new System.Drawing.Point(0, 706);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(161, 53);
+            this.btnExit.Size = new System.Drawing.Size(170, 53);
             this.btnExit.TabIndex = 17;
             this.btnExit.Text = "Quitter";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnStats
             // 
+            this.btnStats.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStats.Location = new System.Drawing.Point(3, 650);
+            this.btnStats.Location = new System.Drawing.Point(0, 647);
             this.btnStats.Name = "btnStats";
-            this.btnStats.Size = new System.Drawing.Size(161, 53);
+            this.btnStats.Size = new System.Drawing.Size(170, 53);
             this.btnStats.TabIndex = 16;
             this.btnStats.Text = "Statistiques";
-            this.btnStats.UseVisualStyleBackColor = true;
+            this.btnStats.UseVisualStyleBackColor = false;
             // 
             // btnParametres
             // 
+            this.btnParametres.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnParametres.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnParametres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnParametres.Location = new System.Drawing.Point(3, 588);
+            this.btnParametres.Location = new System.Drawing.Point(0, 588);
             this.btnParametres.Name = "btnParametres";
-            this.btnParametres.Size = new System.Drawing.Size(161, 53);
+            this.btnParametres.Size = new System.Drawing.Size(170, 53);
             this.btnParametres.TabIndex = 15;
             this.btnParametres.Text = "Paramètres";
-            this.btnParametres.UseVisualStyleBackColor = true;
+            this.btnParametres.UseVisualStyleBackColor = false;
             // 
             // btnAdherent
             // 
+            this.btnAdherent.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnAdherent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdherent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdherent.Location = new System.Drawing.Point(3, 346);
+            this.btnAdherent.Location = new System.Drawing.Point(0, 346);
             this.btnAdherent.Name = "btnAdherent";
-            this.btnAdherent.Size = new System.Drawing.Size(161, 53);
+            this.btnAdherent.Size = new System.Drawing.Size(170, 53);
             this.btnAdherent.TabIndex = 14;
             this.btnAdherent.Text = "Adhérents";
-            this.btnAdherent.UseVisualStyleBackColor = true;
+            this.btnAdherent.UseVisualStyleBackColor = false;
             // 
             // btnLocations
             // 
+            this.btnLocations.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnLocations.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLocations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocations.Location = new System.Drawing.Point(3, 411);
+            this.btnLocations.Location = new System.Drawing.Point(0, 411);
             this.btnLocations.Name = "btnLocations";
-            this.btnLocations.Size = new System.Drawing.Size(161, 53);
+            this.btnLocations.Size = new System.Drawing.Size(170, 53);
             this.btnLocations.TabIndex = 13;
             this.btnLocations.Text = "Locations";
-            this.btnLocations.UseVisualStyleBackColor = true;
+            this.btnLocations.UseVisualStyleBackColor = false;
             // 
             // btnTournage
             // 
+            this.btnTournage.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnTournage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTournage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTournage.Location = new System.Drawing.Point(3, 281);
+            this.btnTournage.Location = new System.Drawing.Point(0, 281);
             this.btnTournage.Name = "btnTournage";
-            this.btnTournage.Size = new System.Drawing.Size(161, 53);
+            this.btnTournage.Size = new System.Drawing.Size(170, 53);
             this.btnTournage.TabIndex = 12;
-            this.btnTournage.Text = "Lieu Tournage";
-            this.btnTournage.UseVisualStyleBackColor = true;
+            this.btnTournage.Text = "Lieux Tournage";
+            this.btnTournage.UseVisualStyleBackColor = false;
             this.btnTournage.Click += new System.EventHandler(this.btnTournage_Click);
             // 
             // panel1
@@ -194,13 +214,15 @@ namespace videoStar
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(908, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 50);
             this.button1.TabIndex = 22;
-            this.button1.Text = "Stars";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Déconnexion";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // lblTitre
             // 
@@ -216,7 +238,7 @@ namespace videoStar
             // lblRecherche
             // 
             this.lblRecherche.AutoSize = true;
-            this.lblRecherche.BackColor = System.Drawing.Color.Teal;
+            this.lblRecherche.BackColor = System.Drawing.Color.Transparent;
             this.lblRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecherche.Location = new System.Drawing.Point(728, 27);
             this.lblRecherche.Name = "lblRecherche";

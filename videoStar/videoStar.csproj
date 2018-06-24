@@ -66,6 +66,8 @@
     <Compile Include="events\star\EventSlctStar.cs" />
     <Compile Include="exception\photoException\PhotoFormatExeption.cs" />
     <Compile Include="exception\photoException\PhotoNbreFichierException.cs" />
+    <Compile Include="exception\Star\StarNomException.cs" />
+    <Compile Include="exception\Star\StarPrenomException.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

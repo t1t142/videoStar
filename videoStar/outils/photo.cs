@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,10 +65,25 @@ namespace videoStar.outils
                     throw new PhotoFormatExeption(elements[elements.Length - 1]);
                 }
 
-                
-
-
             return file;
         }
+
+        public static String SavePhoto(string file, string dossier)
+        {
+            String nom = null;
+            String[] elements = file.Split(new char[] { '\\', '.' });
+            String copy = dossier + @"\" + elements[elements.Length - 2] + "." + elements[elements.Length - 1];
+            File.Copy(file, copy,true);
+
+            nom = elements[elements.Length - 2] + "." + elements[elements.Length - 1];
+
+            return nom;
+        }
+
+
+
+
+
+
     }
 }
