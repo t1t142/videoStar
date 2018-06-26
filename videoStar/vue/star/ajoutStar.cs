@@ -43,7 +43,7 @@ namespace videoStar.vue.star
 
             if (fileVerif) { 
             pictureBox1.ImageLocation = files[0];
-            textBox3.Text = files[0];
+            txtPhoto.Text = files[0];
 
             }
 
@@ -81,7 +81,7 @@ namespace videoStar.vue.star
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            //Todo asécuriser                
+                          
             Star st= null;
 
             try
@@ -96,7 +96,7 @@ namespace videoStar.vue.star
             if (st != null) {
 
                 string dossier = @"C:\Users\Thierry\source\repos\videoStar\images\star";
-                string photo= Photo.SavePhoto(textBox3.Text,dossier);
+                string photo= Photo.SavePhoto(txtPhoto.Text,dossier);
                 st.Photo =photo;
                 st.InsertStar(st);
             

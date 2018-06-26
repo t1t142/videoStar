@@ -54,11 +54,12 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Teal;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(934, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 41);
             this.button1.TabIndex = 22;
-            this.button1.Text = "button1";
+            this.button1.Text = "Ajouter";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -66,6 +67,7 @@
             // 
             this.ajoutDoc1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutDoc1.BackgroundImage")));
             this.ajoutDoc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ajoutDoc1.Film = null;
             this.ajoutDoc1.Location = new System.Drawing.Point(934, 334);
             this.ajoutDoc1.Name = "ajoutDoc1";
             this.ajoutDoc1.Size = new System.Drawing.Size(119, 130);
@@ -77,6 +79,7 @@
             this.btnReturn.BackColor = System.Drawing.Color.Teal;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
             this.btnReturn.Location = new System.Drawing.Point(934, 256);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(121, 39);
@@ -89,6 +92,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.Teal;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(934, 195);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(121, 39);
@@ -101,6 +105,7 @@
             this.btnselect.BackColor = System.Drawing.Color.Teal;
             this.btnselect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnselect.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnselect.ForeColor = System.Drawing.Color.White;
             this.btnselect.Location = new System.Drawing.Point(934, 136);
             this.btnselect.Name = "btnselect";
             this.btnselect.Size = new System.Drawing.Size(121, 39);
@@ -113,6 +118,7 @@
             this.lblTitre.AutoSize = true;
             this.lblTitre.BackColor = System.Drawing.Color.Teal;
             this.lblTitre.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.ForeColor = System.Drawing.Color.White;
             this.lblTitre.Location = new System.Drawing.Point(-7, 0);
             this.lblTitre.Name = "lblTitre";
             this.lblTitre.Size = new System.Drawing.Size(244, 39);
@@ -122,7 +128,7 @@
             // txtRecherche
             // 
             this.txtRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecherche.Location = new System.Drawing.Point(485, 12);
+            this.txtRecherche.Location = new System.Drawing.Point(627, 12);
             this.txtRecherche.Name = "txtRecherche";
             this.txtRecherche.Size = new System.Drawing.Size(137, 27);
             this.txtRecherche.TabIndex = 56;
@@ -130,9 +136,9 @@
             // lblRecherche
             // 
             this.lblRecherche.AutoSize = true;
-            this.lblRecherche.BackColor = System.Drawing.Color.Teal;
+            this.lblRecherche.BackColor = System.Drawing.Color.Transparent;
             this.lblRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecherche.Location = new System.Drawing.Point(289, 12);
+            this.lblRecherche.Location = new System.Drawing.Point(431, 12);
             this.lblRecherche.Name = "lblRecherche";
             this.lblRecherche.Size = new System.Drawing.Size(167, 21);
             this.lblRecherche.TabIndex = 55;
@@ -143,6 +149,7 @@
             this.lblPages.AutoSize = true;
             this.lblPages.BackColor = System.Drawing.Color.Teal;
             this.lblPages.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPages.ForeColor = System.Drawing.Color.White;
             this.lblPages.Location = new System.Drawing.Point(513, 661);
             this.lblPages.Name = "lblPages";
             this.lblPages.Size = new System.Drawing.Size(104, 21);
@@ -154,6 +161,7 @@
             this.btnSuivant.BackColor = System.Drawing.Color.Teal;
             this.btnSuivant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuivant.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuivant.ForeColor = System.Drawing.Color.White;
             this.btnSuivant.Location = new System.Drawing.Point(706, 653);
             this.btnSuivant.Name = "btnSuivant";
             this.btnSuivant.Size = new System.Drawing.Size(118, 36);
@@ -166,6 +174,7 @@
             this.btnPrecedent.BackColor = System.Drawing.Color.Teal;
             this.btnPrecedent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrecedent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrecedent.ForeColor = System.Drawing.Color.White;
             this.btnPrecedent.Location = new System.Drawing.Point(292, 652);
             this.btnPrecedent.Name = "btnPrecedent";
             this.btnPrecedent.Size = new System.Drawing.Size(125, 37);
@@ -261,6 +270,7 @@
             this.Controls.Add(this.btnselect);
             this.Controls.Add(this.ajoutDoc1);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "DocListe";
             this.Size = new System.Drawing.Size(1093, 692);
             this.ResumeLayout(false);

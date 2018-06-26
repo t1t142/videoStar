@@ -58,6 +58,7 @@ namespace videoStar.vue.star
             this.lblPages.AutoSize = true;
             this.lblPages.BackColor = System.Drawing.Color.Teal;
             this.lblPages.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPages.ForeColor = System.Drawing.Color.White;
             this.lblPages.Location = new System.Drawing.Point(409, 680);
             this.lblPages.Name = "lblPages";
             this.lblPages.Size = new System.Drawing.Size(104, 21);
@@ -69,6 +70,7 @@ namespace videoStar.vue.star
             this.btnSuivant.BackColor = System.Drawing.Color.Teal;
             this.btnSuivant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuivant.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuivant.ForeColor = System.Drawing.Color.White;
             this.btnSuivant.Location = new System.Drawing.Point(602, 672);
             this.btnSuivant.Name = "btnSuivant";
             this.btnSuivant.Size = new System.Drawing.Size(118, 36);
@@ -82,6 +84,7 @@ namespace videoStar.vue.star
             this.btnPrecedent.BackColor = System.Drawing.Color.Teal;
             this.btnPrecedent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrecedent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrecedent.ForeColor = System.Drawing.Color.White;
             this.btnPrecedent.Location = new System.Drawing.Point(188, 671);
             this.btnPrecedent.Name = "btnPrecedent";
             this.btnPrecedent.Size = new System.Drawing.Size(125, 37);
@@ -102,8 +105,9 @@ namespace videoStar.vue.star
             // lblRecherche
             // 
             this.lblRecherche.AutoSize = true;
-            this.lblRecherche.BackColor = System.Drawing.Color.Teal;
+            this.lblRecherche.BackColor = System.Drawing.Color.Transparent;
             this.lblRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecherche.ForeColor = System.Drawing.Color.White;
             this.lblRecherche.Location = new System.Drawing.Point(289, 12);
             this.lblRecherche.Name = "lblRecherche";
             this.lblRecherche.Size = new System.Drawing.Size(167, 21);
@@ -115,6 +119,7 @@ namespace videoStar.vue.star
             this.btnAjouter.BackColor = System.Drawing.Color.Teal;
             this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.ForeColor = System.Drawing.Color.White;
             this.btnAjouter.Location = new System.Drawing.Point(931, 69);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(121, 39);
@@ -128,6 +133,7 @@ namespace videoStar.vue.star
             this.lblTitre.AutoSize = true;
             this.lblTitre.BackColor = System.Drawing.Color.Teal;
             this.lblTitre.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.ForeColor = System.Drawing.Color.White;
             this.lblTitre.Location = new System.Drawing.Point(-7, 0);
             this.lblTitre.Name = "lblTitre";
             this.lblTitre.Size = new System.Drawing.Size(247, 39);
@@ -139,6 +145,7 @@ namespace videoStar.vue.star
             this.btnselect.BackColor = System.Drawing.Color.Teal;
             this.btnselect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnselect.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnselect.ForeColor = System.Drawing.Color.White;
             this.btnselect.Location = new System.Drawing.Point(931, 128);
             this.btnselect.Name = "btnselect";
             this.btnselect.Size = new System.Drawing.Size(121, 39);
@@ -152,6 +159,7 @@ namespace videoStar.vue.star
             this.btnDelete.BackColor = System.Drawing.Color.Teal;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(931, 187);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(121, 39);
@@ -165,6 +173,7 @@ namespace videoStar.vue.star
             this.btnReturn.BackColor = System.Drawing.Color.Teal;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
             this.btnReturn.Location = new System.Drawing.Point(931, 248);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(121, 39);
@@ -178,10 +187,12 @@ namespace videoStar.vue.star
             this.ajoutStar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ajoutStar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutStar1.BackgroundImage")));
             this.ajoutStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ajoutStar1.ForeColor = System.Drawing.Color.White;
             this.ajoutStar1.Location = new System.Drawing.Point(1006, 476);
             this.ajoutStar1.Name = "ajoutStar1";
             this.ajoutStar1.Size = new System.Drawing.Size(55, 86);
             this.ajoutStar1.TabIndex = 48;
+            this.ajoutStar1.Load += new System.EventHandler(this.ajoutStar1_Load);
             // 
             // detailStar1
             // 
@@ -318,6 +329,7 @@ namespace videoStar.vue.star
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "GestStars";
             this.Size = new System.Drawing.Size(1082, 724);
+            this.Load += new System.EventHandler(this.GestStars_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

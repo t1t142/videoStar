@@ -32,7 +32,7 @@
             this.txtNom = new System.Windows.Forms.TextBox();
             this.txtPrenom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPhoto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -83,14 +83,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Prenom";
             // 
-            // textBox3
+            // txtPhoto
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(141, 376);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(141, 27);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Visible = false;
+            this.txtPhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoto.Location = new System.Drawing.Point(141, 376);
+            this.txtPhoto.Name = "txtPhoto";
+            this.txtPhoto.Size = new System.Drawing.Size(141, 27);
+            this.txtPhoto.TabIndex = 5;
+            this.txtPhoto.Visible = false;
             // 
             // label3
             // 
@@ -154,7 +154,8 @@
             this.btnAjouter.BackColor = System.Drawing.Color.Teal;
             this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouter.Location = new System.Drawing.Point(696, 507);
+            this.btnAjouter.ForeColor = System.Drawing.Color.White;
+            this.btnAjouter.Location = new System.Drawing.Point(724, 590);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(121, 50);
             this.btnAjouter.TabIndex = 13;
@@ -167,7 +168,8 @@
             this.btnretour.BackColor = System.Drawing.Color.Teal;
             this.btnretour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnretour.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnretour.Location = new System.Drawing.Point(860, 507);
+            this.btnretour.ForeColor = System.Drawing.Color.White;
+            this.btnretour.Location = new System.Drawing.Point(892, 590);
             this.btnretour.Name = "btnretour";
             this.btnretour.Size = new System.Drawing.Size(121, 50);
             this.btnretour.TabIndex = 14;
@@ -188,7 +190,7 @@
             this.Controls.Add(this.dtpNaissance);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPhoto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPrenom);
             this.Controls.Add(this.label2);
@@ -196,7 +198,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "ajoutStar";
-            this.Size = new System.Drawing.Size(1070, 599);
+            this.Size = new System.Drawing.Size(1070, 666);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -209,7 +211,7 @@
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.TextBox txtPrenom;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPhoto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;

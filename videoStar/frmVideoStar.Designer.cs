@@ -2,7 +2,7 @@
 
 namespace videoStar
 {
-    partial class Form2
+    partial class frmVideoStar
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace videoStar
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVideoStar));
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnAnx = new System.Windows.Forms.Button();
             this.btnFilms = new System.Windows.Forms.Button();
@@ -79,6 +79,7 @@ namespace videoStar
             this.btnAnx.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnAnx.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAnx.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnx.ForeColor = System.Drawing.Color.White;
             this.btnAnx.Location = new System.Drawing.Point(0, 529);
             this.btnAnx.Name = "btnAnx";
             this.btnAnx.Size = new System.Drawing.Size(170, 53);
@@ -92,6 +93,7 @@ namespace videoStar
             this.btnFilms.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnFilms.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFilms.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilms.ForeColor = System.Drawing.Color.White;
             this.btnFilms.Location = new System.Drawing.Point(0, 221);
             this.btnFilms.Name = "btnFilms";
             this.btnFilms.Size = new System.Drawing.Size(170, 50);
@@ -105,6 +107,7 @@ namespace videoStar
             this.BtnStars.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BtnStars.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnStars.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStars.ForeColor = System.Drawing.Color.White;
             this.BtnStars.Location = new System.Drawing.Point(0, 156);
             this.BtnStars.Name = "BtnStars";
             this.BtnStars.Size = new System.Drawing.Size(170, 50);
@@ -118,6 +121,7 @@ namespace videoStar
             this.btnExemplaires.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnExemplaires.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExemplaires.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExemplaires.ForeColor = System.Drawing.Color.White;
             this.btnExemplaires.Location = new System.Drawing.Point(0, 470);
             this.btnExemplaires.Name = "btnExemplaires";
             this.btnExemplaires.Size = new System.Drawing.Size(170, 53);
@@ -130,6 +134,7 @@ namespace videoStar
             // 
             this.btnExit.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(0, 706);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(170, 53);
@@ -143,6 +148,7 @@ namespace videoStar
             this.btnStats.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStats.ForeColor = System.Drawing.Color.White;
             this.btnStats.Location = new System.Drawing.Point(0, 647);
             this.btnStats.Name = "btnStats";
             this.btnStats.Size = new System.Drawing.Size(170, 53);
@@ -155,6 +161,7 @@ namespace videoStar
             this.btnParametres.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnParametres.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnParametres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParametres.ForeColor = System.Drawing.Color.White;
             this.btnParametres.Location = new System.Drawing.Point(0, 588);
             this.btnParametres.Name = "btnParametres";
             this.btnParametres.Size = new System.Drawing.Size(170, 53);
@@ -167,6 +174,7 @@ namespace videoStar
             this.btnAdherent.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnAdherent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdherent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdherent.ForeColor = System.Drawing.Color.White;
             this.btnAdherent.Location = new System.Drawing.Point(0, 346);
             this.btnAdherent.Name = "btnAdherent";
             this.btnAdherent.Size = new System.Drawing.Size(170, 53);
@@ -179,6 +187,7 @@ namespace videoStar
             this.btnLocations.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnLocations.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLocations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocations.ForeColor = System.Drawing.Color.White;
             this.btnLocations.Location = new System.Drawing.Point(0, 411);
             this.btnLocations.Name = "btnLocations";
             this.btnLocations.Size = new System.Drawing.Size(170, 53);
@@ -191,6 +200,7 @@ namespace videoStar
             this.btnTournage.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnTournage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTournage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTournage.ForeColor = System.Drawing.Color.White;
             this.btnTournage.Location = new System.Drawing.Point(0, 281);
             this.btnTournage.Name = "btnTournage";
             this.btnTournage.Size = new System.Drawing.Size(170, 53);
@@ -216,6 +226,7 @@ namespace videoStar
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(908, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 50);
@@ -228,6 +239,7 @@ namespace videoStar
             this.lblTitre.AutoSize = true;
             this.lblTitre.BackColor = System.Drawing.Color.Teal;
             this.lblTitre.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.ForeColor = System.Drawing.Color.White;
             this.lblTitre.Location = new System.Drawing.Point(-13, -2);
             this.lblTitre.Name = "lblTitre";
             this.lblTitre.Size = new System.Drawing.Size(374, 78);
@@ -239,6 +251,7 @@ namespace videoStar
             this.lblRecherche.AutoSize = true;
             this.lblRecherche.BackColor = System.Drawing.Color.Transparent;
             this.lblRecherche.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecherche.ForeColor = System.Drawing.Color.White;
             this.lblRecherche.Location = new System.Drawing.Point(728, 27);
             this.lblRecherche.Name = "lblRecherche";
             this.lblRecherche.Size = new System.Drawing.Size(151, 21);
@@ -298,7 +311,7 @@ namespace videoStar
             this.gestStars1.SlctStar = null;
             this.gestStars1.TabIndex = 0;
             // 
-            // Form2
+            // frmVideoStar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -308,7 +321,7 @@ namespace videoStar
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "frmVideoStar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.pnlMenu.ResumeLayout(false);

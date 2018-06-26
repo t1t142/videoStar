@@ -12,11 +12,11 @@ using videoStar.vue.star;
 
 namespace videoStar
 {
-    public partial class Form2 : Form
+    public partial class frmVideoStar : Form
     {
         Point point1 = new Point(0, 0);
 
-        public Form2()
+        public frmVideoStar()
         {
             InitializeComponent();
 

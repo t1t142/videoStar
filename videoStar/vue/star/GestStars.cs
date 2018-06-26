@@ -262,5 +262,15 @@ namespace videoStar.vue.star
         {
         
         }
+
+        private void GestStars_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ajoutStar1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

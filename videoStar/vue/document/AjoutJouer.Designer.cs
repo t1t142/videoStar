@@ -41,7 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnModiFilm = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.btnAnnul = new System.Windows.Forms.Button();
             this.btnAjout = new System.Windows.Forms.Button();
             this.gestStars1 = new videoStar.vue.star.GestStars();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,7 @@
             this.btnAjtStar.BackColor = System.Drawing.Color.Teal;
             this.btnAjtStar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAjtStar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjtStar.ForeColor = System.Drawing.Color.White;
             this.btnAjtStar.Location = new System.Drawing.Point(150, 159);
             this.btnAjtStar.Name = "btnAjtStar";
             this.btnAjtStar.Size = new System.Drawing.Size(101, 33);
@@ -104,6 +105,7 @@
             this.btnModifStar.BackColor = System.Drawing.Color.Teal;
             this.btnModifStar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModifStar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifStar.ForeColor = System.Drawing.Color.White;
             this.btnModifStar.Location = new System.Drawing.Point(399, 159);
             this.btnModifStar.Name = "btnModifStar";
             this.btnModifStar.Size = new System.Drawing.Size(101, 33);
@@ -117,6 +119,7 @@
             this.btnRetour.BackColor = System.Drawing.Color.Teal;
             this.btnRetour.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRetour.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetour.ForeColor = System.Drawing.Color.White;
             this.btnRetour.Location = new System.Drawing.Point(820, 573);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(101, 33);
@@ -159,7 +162,7 @@
             this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(34, 23);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 36);
             this.label1.TabIndex = 38;
@@ -182,41 +185,20 @@
             this.button1.BackColor = System.Drawing.Color.Teal;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(11, 521);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 33);
             this.button1.TabIndex = 41;
-            this.button1.Text = "Valider";
+            this.button1.Text = "Supprimer";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnModiFilm);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btnAjoutFilm);
-            this.groupBox1.Controls.Add(this.btnAnnul);
-            this.groupBox1.Controls.Add(this.btnAjout);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.txtPerso);
-            this.groupBox1.Controls.Add(this.lblPerso);
-            this.groupBox1.Controls.Add(this.btnModifStar);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtStar);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.btnAjtStar);
-            this.groupBox1.Location = new System.Drawing.Point(277, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(512, 488);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
             // 
             // btnModiFilm
             // 
             this.btnModiFilm.BackColor = System.Drawing.Color.Teal;
             this.btnModiFilm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModiFilm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModiFilm.ForeColor = System.Drawing.Color.White;
             this.btnModiFilm.Location = new System.Drawing.Point(399, 85);
             this.btnModiFilm.Name = "btnModiFilm";
             this.btnModiFilm.Size = new System.Drawing.Size(101, 33);
@@ -250,6 +232,7 @@
             this.btnAjoutFilm.BackColor = System.Drawing.Color.Teal;
             this.btnAjoutFilm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAjoutFilm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjoutFilm.ForeColor = System.Drawing.Color.White;
             this.btnAjoutFilm.Location = new System.Drawing.Point(150, 85);
             this.btnAjoutFilm.Name = "btnAjoutFilm";
             this.btnAjoutFilm.Size = new System.Drawing.Size(101, 33);
@@ -262,6 +245,7 @@
             this.btnAnnul.BackColor = System.Drawing.Color.Teal;
             this.btnAnnul.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAnnul.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnul.ForeColor = System.Drawing.Color.White;
             this.btnAnnul.Location = new System.Drawing.Point(380, 417);
             this.btnAnnul.Name = "btnAnnul";
             this.btnAnnul.Size = new System.Drawing.Size(101, 33);
@@ -275,6 +259,7 @@
             this.btnAjout.BackColor = System.Drawing.Color.Teal;
             this.btnAjout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAjout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjout.ForeColor = System.Drawing.Color.White;
             this.btnAjout.Location = new System.Drawing.Point(273, 417);
             this.btnAjout.Name = "btnAjout";
             this.btnAjout.Size = new System.Drawing.Size(101, 33);
@@ -294,6 +279,30 @@
             this.gestStars1.Size = new System.Drawing.Size(58, 71);
             this.gestStars1.SlctStar = null;
             this.gestStars1.TabIndex = 39;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btnModiFilm);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.btnAjoutFilm);
+            this.groupBox1.Controls.Add(this.btnAnnul);
+            this.groupBox1.Controls.Add(this.btnAjout);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.txtPerso);
+            this.groupBox1.Controls.Add(this.lblPerso);
+            this.groupBox1.Controls.Add(this.btnModifStar);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtStar);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.btnAjtStar);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox1.Location = new System.Drawing.Point(277, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(512, 488);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
             // 
             // AjoutJouer
             // 
@@ -332,7 +341,6 @@
         private star.GestStars gestStars1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAnnul;
         private System.Windows.Forms.Button btnAjout;
         private System.Windows.Forms.Button btnModiFilm;
@@ -340,5 +348,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAjoutFilm;
         private DocListe docListe1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

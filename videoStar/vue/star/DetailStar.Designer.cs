@@ -56,6 +56,7 @@
             this.btnEdit.BackColor = System.Drawing.Color.Teal;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(788, 15);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(121, 50);
@@ -69,6 +70,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.Teal;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(788, 156);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(121, 50);
@@ -90,6 +92,7 @@
             this.btnparticip.BackColor = System.Drawing.Color.Teal;
             this.btnparticip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnparticip.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnparticip.ForeColor = System.Drawing.Color.White;
             this.btnparticip.Location = new System.Drawing.Point(-33, 389);
             this.btnparticip.Name = "btnparticip";
             this.btnparticip.Size = new System.Drawing.Size(416, 50);
@@ -112,6 +115,7 @@
             this.btnReturn.BackColor = System.Drawing.Color.Teal;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
             this.btnReturn.Location = new System.Drawing.Point(788, 233);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(121, 50);
@@ -125,6 +129,7 @@
             this.btnModif.BackColor = System.Drawing.Color.Teal;
             this.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModif.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModif.ForeColor = System.Drawing.Color.White;
             this.btnModif.Location = new System.Drawing.Point(788, 91);
             this.btnModif.Name = "btnModif";
             this.btnModif.Size = new System.Drawing.Size(121, 50);
@@ -241,6 +246,7 @@
             this.btnAjout.BackColor = System.Drawing.Color.Teal;
             this.btnAjout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjout.ForeColor = System.Drawing.Color.White;
             this.btnAjout.Location = new System.Drawing.Point(740, 486);
             this.btnAjout.Name = "btnAjout";
             this.btnAjout.Size = new System.Drawing.Size(121, 50);
@@ -254,6 +260,7 @@
             this.btnSupFromList.BackColor = System.Drawing.Color.Teal;
             this.btnSupFromList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSupFromList.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupFromList.ForeColor = System.Drawing.Color.White;
             this.btnSupFromList.Location = new System.Drawing.Point(740, 542);
             this.btnSupFromList.Name = "btnSupFromList";
             this.btnSupFromList.Size = new System.Drawing.Size(121, 50);
@@ -286,6 +293,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtDetStarNom);
             this.Controls.Add(this.label11);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "DetailStar";
             this.Size = new System.Drawing.Size(980, 713);
             this.Load += new System.EventHandler(this.DetailStar_Load);

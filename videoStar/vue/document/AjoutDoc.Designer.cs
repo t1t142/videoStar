@@ -54,11 +54,12 @@
             this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(-4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 39);
+            this.label1.Size = new System.Drawing.Size(230, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Nouveau Film";
             // 
             // cbxType
             // 
@@ -126,6 +127,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Teal;
             this.pictureBox1.Location = new System.Drawing.Point(733, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 365);
@@ -145,6 +147,7 @@
             this.btnValider.BackColor = System.Drawing.Color.Teal;
             this.btnValider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValider.ForeColor = System.Drawing.Color.White;
             this.btnValider.Location = new System.Drawing.Point(238, 387);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(101, 33);
@@ -158,6 +161,7 @@
             this.btnretour.BackColor = System.Drawing.Color.Teal;
             this.btnretour.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnretour.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnretour.ForeColor = System.Drawing.Color.White;
             this.btnretour.Location = new System.Drawing.Point(886, 598);
             this.btnretour.Name = "btnretour";
             this.btnretour.Size = new System.Drawing.Size(101, 33);
@@ -171,6 +175,7 @@
             this.btnAjoutStar.BackColor = System.Drawing.Color.Teal;
             this.btnAjoutStar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAjoutStar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjoutStar.ForeColor = System.Drawing.Color.White;
             this.btnAjoutStar.Location = new System.Drawing.Point(86, 492);
             this.btnAjoutStar.Name = "btnAjoutStar";
             this.btnAjoutStar.Size = new System.Drawing.Size(253, 33);
@@ -185,6 +190,7 @@
             this.btnAjoutLieux.BackColor = System.Drawing.Color.Teal;
             this.btnAjoutLieux.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAjoutLieux.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjoutLieux.ForeColor = System.Drawing.Color.White;
             this.btnAjoutLieux.Location = new System.Drawing.Point(86, 550);
             this.btnAjoutLieux.Name = "btnAjoutLieux";
             this.btnAjoutLieux.Size = new System.Drawing.Size(253, 33);
@@ -245,6 +251,7 @@
             this.Controls.Add(this.txtTitre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "AjoutDoc";
             this.Size = new System.Drawing.Size(1036, 689);
             this.VisibleChanged += new System.EventHandler(this.AjoutDoc_VisibleChanged);
