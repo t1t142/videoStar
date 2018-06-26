@@ -36,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTitre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPhoto = new System.Windows.Forms.TextBox();
             this.btnValider = new System.Windows.Forms.Button();
             this.btnretour = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.txtCode = new System.Windows.Forms.TextBox();
             this.lblCode = new System.Windows.Forms.Label();
             this.ajoutJouer1 = new videoStar.vue.document.AjoutJouer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,20 +124,6 @@
             this.label5.Size = new System.Drawing.Size(43, 21);
             this.label5.TabIndex = 13;
             this.label5.Text = "Titre";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Teal;
-            this.pictureBox1.BackgroundImage = global::videoStar.Properties.Resources.drag_drop_upload_1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(699, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(288, 365);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
-            this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
             // 
             // txtPhoto
             // 
@@ -234,12 +220,25 @@
             this.ajoutJouer1.SlctStar = null;
             this.ajoutJouer1.TabIndex = 32;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Teal;
+            this.pictureBox1.Location = new System.Drawing.Point(711, 117);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(308, 373);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
+            this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
+            // 
             // AjoutDoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::videoStar.Properties.Resources.star_wars_2897280_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtCode);
             this.Controls.Add(this.lblCode);
             this.Controls.Add(this.ajoutJouer1);
@@ -248,7 +247,6 @@
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnretour);
             this.Controls.Add(this.txtPhoto);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbxType);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtAnnee);
@@ -275,7 +273,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTitre;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtPhoto;
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Button btnretour;
@@ -284,5 +281,6 @@
         private AjoutJouer ajoutJouer1;
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Label lblCode;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
