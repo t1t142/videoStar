@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using videoStar.events.star;
 using videoStar.entity;
+using Tulpep.NotificationWindow;
 
 namespace videoStar.vue.document
 {
@@ -60,8 +61,6 @@ namespace videoStar.vue.document
     }
 
 
-
-
         private void HandleEventSlctStar(object sender, EventSlctStar e)
         {
             gestStars1.Hide();
@@ -88,14 +87,8 @@ namespace videoStar.vue.document
         }
 
 
-
-
-
-
-
         private void comboBox1_TextChanged(object sender, EventArgs e)
-        {
-           
+        {          
                 string rech = comboBox1.Text;
 
                 roles = Role.GetRolesByName(comboBox1.Text, 1, 20);
@@ -119,20 +112,14 @@ namespace videoStar.vue.document
                 {
                     txtPerso.Visible = false;
                     lblPerso.Visible = false;
-                }
-            
+                }         
         }
-
-
-
-
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             role = (Role)comboBox1.SelectedItem;
             // MessageBox.Show(((Role)comboBox1.SelectedItem).Id.ToString());
         }
-
 
         private void btnAjout_Click(object sender, EventArgs e)
         {
@@ -145,10 +132,19 @@ namespace videoStar.vue.document
                 participant.Role = role;
                 participant.Personnage = txtPerso.Text;
 
-                participant.AjouterParticipant(participant);
+               Boolean inserer= participant.AjouterParticipant(participant);
+                if (inserer)
+                {
                     Actualise();
                     //dataGridView1.DataSource = Convert.ConvertToDataTable(jouer);
                     AffichageInit();
+
+                    PopupNotifier popup = new PopupNotifier();
+                    popup.TitleText = "Confirmation";
+                    popup.ContentText = "la participation a bien été ajoutée ";
+                    popup.Popup();
+                }
+                
             }
 
 

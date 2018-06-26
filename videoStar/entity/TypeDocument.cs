@@ -26,8 +26,6 @@ namespace videoStar.entity
             List<TypeDocument> types = new List<TypeDocument>();
             string query = "SELECT * FROM typedocument WHERE codetypedocument LIKE @recherche  LIMIT @active,@pageitem";
 
-
-
             MySqlCommand cmd = DBConnect.GetConnexion().CreateCommand();
 
             cmd.Parameters.AddWithValue("@recherche", recherche + '%');
@@ -35,16 +33,12 @@ namespace videoStar.entity
             cmd.Parameters.AddWithValue("@pageitem", pageitem);
             cmd.CommandText = query;
 
-
-            //Create a data reader and Execute the command
             MySqlDataReader dataReader = cmd.ExecuteReader();
-            //Read the data and store them in the list
+ 
             while (dataReader.Read())
-            {
-
-              
-               
-                TypeDocument unType = new TypeDocument(dataReader["codetypedocument"].ToString(), dataReader["typenom"].ToString());
+            {               
+                TypeDocument unType = new TypeDocument(dataReader["codetypedocument"].ToString(),
+                    dataReader["typenom"].ToString());
 
                 types.Add(unType);
 

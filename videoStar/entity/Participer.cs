@@ -28,7 +28,7 @@ namespace videoStar.entity
 
         public static DataSet SelectParticipantsByFilm (string codeDocument)
         {
-            string query = "SELECT document.titre,star.nom,star.prenom,role.libelle,role.personnage FROM participer" +
+            string query = "SELECT document.titre,star.nom,star.prenom,role.libelle,participer.personnage FROM participer" +
                 " JOIN star ON participer.idstar = star.idstar " +
                 "JOIN role ON participer.idrole = role.idrole " +
                 "JOIN document ON participer.codedocument = document.codedocument " +
@@ -48,7 +48,7 @@ namespace videoStar.entity
 
         public static DataSet SelectParticipationByStar(int idStar)
         {
-            string query = "SELECT document.anneesortie,document.titre,role.libelle,role.personnage FROM participer" +
+            string query = "SELECT document.anneesortie,document.titre,role.libelle,participer.personnage FROM participer" +
                 " JOIN star ON participer.idstar = star.idstar " +
                 "JOIN role ON participer.idrole = role.idrole " +
                 "JOIN document ON participer.codedocument = document.codedocument " +
@@ -66,11 +66,11 @@ namespace videoStar.entity
             return ds;
         }
 
-        public void AjouterParticipant(Participer participant)
+        public Boolean AjouterParticipant(Participer participant)
         {
-
-            string query = "INSERT INTO `participer`(`codedocument`, `idstar`, `idrole`) " +
-          " VALUES ( @codedocument,@idstar,@idrole)";
+            Boolean inserer = false;
+            string query = "INSERT INTO `participer`(`codedocument`, `idstar`, `idrole`,`personnage`) " +
+          " VALUES ( @codedocument,@idstar,@idrole,@perso)";
 
             try
             {
@@ -82,13 +82,22 @@ namespace videoStar.entity
                 cmd.Parameters.AddWithValue("@codedocument", participant.Doc.Code);
                 cmd.Parameters.AddWithValue("@idrole",participant.Role.Id );
                 cmd.Parameters.AddWithValue("@idstar", participant.Star.Id);
-
+                cmd.Parameters.AddWithValue("@perso", participant.Personnage);
                 cmd.ExecuteNonQuery();
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
-            }           
+
+                return inserer;
+
+            }
+
+            inserer = true;
+
+            return inserer;
+
+
         }
     }
 

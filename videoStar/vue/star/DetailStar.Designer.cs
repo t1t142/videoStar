@@ -288,6 +288,7 @@
             this.Controls.Add(this.label11);
             this.Name = "DetailStar";
             this.Size = new System.Drawing.Size(980, 713);
+            this.Load += new System.EventHandler(this.DetailStar_Load);
             this.VisibleChanged += new System.EventHandler(this.DetailStar_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvParticip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

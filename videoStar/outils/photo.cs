@@ -13,17 +13,13 @@ namespace videoStar.outils
     {
         private static List<String> expensions= new List<string>();
     
-
         public static Boolean VerifierPhoto(string[] files)
         {
-
             Boolean file=false;
 
             try
             {
-
                file= VerifPhoto(files);
-
             }
 
             catch(PhotoNbreFichierException e)
@@ -36,13 +32,7 @@ namespace videoStar.outils
             }
 
             return file;
-
         }
-
-
-
-
-
 
         private static Boolean VerifPhoto(string[] files)
         {
@@ -50,10 +40,8 @@ namespace videoStar.outils
 
             if (files.Length > 1)
             {
-                // MessageBox.Show("vous ne pouvez pas déposer plusieurs fichier");
                 throw new PhotoNbreFichierException();
             }
-
                 String[] elements = files[0].Split(new char[] { '\\', '.' });
 
                 if (elements[elements.Length - 1].Equals("jpg", StringComparison.OrdinalIgnoreCase))
@@ -79,11 +67,6 @@ namespace videoStar.outils
 
             return nom;
         }
-
-
-
-
-
 
     }
 }

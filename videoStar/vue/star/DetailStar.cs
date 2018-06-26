@@ -132,6 +132,9 @@ namespace videoStar.vue.star
             AffichageInit();
         }
 
-        
+        private void DetailStar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

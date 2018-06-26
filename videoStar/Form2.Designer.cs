@@ -129,7 +129,6 @@ namespace videoStar
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(0, 706);
             this.btnExit.Name = "btnExit";

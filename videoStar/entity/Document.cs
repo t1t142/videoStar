@@ -99,9 +99,6 @@ namespace videoStar
             string query = "INSERT INTO `document` (`codedocument`, `titre`, `anneesortie`, `photo`, `codetypedocument`) " +
           " VALUES ( @code,@titre, @sortie, @photo, @codedoc)";
 
-
-
-
             try
             {
 
