@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocListe));
             this.button1 = new System.Windows.Forms.Button();
-            this.ajoutDoc1 = new videoStar.vue.document.AjoutDoc();
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnselect = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
             this.docVue6 = new videoStar.vue.document.DocVue();
             this.docVue7 = new videoStar.vue.document.DocVue();
             this.docVue8 = new videoStar.vue.document.DocVue();
+            this.ajoutDoc1 = new videoStar.vue.document.AjoutDoc();
             this.SuspendLayout();
             // 
             // button1
@@ -62,17 +62,6 @@
             this.button1.Text = "Ajouter";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // ajoutDoc1
-            // 
-            this.ajoutDoc1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutDoc1.BackgroundImage")));
-            this.ajoutDoc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ajoutDoc1.Film = null;
-            this.ajoutDoc1.Location = new System.Drawing.Point(934, 334);
-            this.ajoutDoc1.Name = "ajoutDoc1";
-            this.ajoutDoc1.Size = new System.Drawing.Size(119, 130);
-            this.ajoutDoc1.St = null;
-            this.ajoutDoc1.TabIndex = 23;
             // 
             // btnReturn
             // 
@@ -246,11 +235,24 @@
             this.docVue8.Size = new System.Drawing.Size(190, 278);
             this.docVue8.TabIndex = 68;
             // 
+            // ajoutDoc1
+            // 
+            this.ajoutDoc1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutDoc1.BackgroundImage")));
+            this.ajoutDoc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ajoutDoc1.Film = null;
+            this.ajoutDoc1.ForeColor = System.Drawing.Color.White;
+            this.ajoutDoc1.Location = new System.Drawing.Point(955, 382);
+            this.ajoutDoc1.Name = "ajoutDoc1";
+            this.ajoutDoc1.Size = new System.Drawing.Size(111, 83);
+            this.ajoutDoc1.St = null;
+            this.ajoutDoc1.TabIndex = 69;
+            // 
             // DocListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::videoStar.Properties.Resources.sci_fi_3233076_1920;
+            this.Controls.Add(this.ajoutDoc1);
             this.Controls.Add(this.docVue8);
             this.Controls.Add(this.docVue7);
             this.Controls.Add(this.docVue6);
@@ -268,7 +270,6 @@
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnselect);
-            this.Controls.Add(this.ajoutDoc1);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "DocListe";
@@ -281,7 +282,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private AjoutDoc ajoutDoc1;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnselect;
@@ -299,5 +299,6 @@
         private DocVue docVue6;
         private DocVue docVue7;
         private DocVue docVue8;
+        private AjoutDoc ajoutDoc1;
     }
 }

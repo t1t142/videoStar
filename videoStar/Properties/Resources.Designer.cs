@@ -93,6 +93,16 @@ namespace videoStar.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap drag_drop_upload_1 {
+            get {
+                object obj = ResourceManager.GetObject("drag-drop-upload-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap sci_fi_3233076_1920 {
             get {
                 object obj = ResourceManager.GetObject("sci-fi-3233076_1920", resourceCulture);

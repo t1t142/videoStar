@@ -128,11 +128,16 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Teal;
-            this.pictureBox1.Location = new System.Drawing.Point(733, 79);
+            this.pictureBox1.BackgroundImage = global::videoStar.Properties.Resources.drag_drop_upload_1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(699, 79);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(254, 365);
+            this.pictureBox1.Size = new System.Drawing.Size(288, 365);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
+            this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
             // 
             // txtPhoto
             // 

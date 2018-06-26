@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using videoStar.entity;
+using videoStar.outils;
 
 namespace videoStar.vue.document
 {
@@ -22,6 +23,8 @@ namespace videoStar.vue.document
         public AjoutDoc()
         {
             InitializeComponent();
+            pictureBox1.AllowDrop = true;
+            pictureBox1.ImageLocation = @"D:\image\drag-drop-upload-1.gif";
             ajoutJouer1.Hide();
             ajoutJouer1.SlctDoc = Film;
         }
@@ -89,6 +92,31 @@ namespace videoStar.vue.document
 
 
             }
+        }
+
+        private void pictureBox1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
+        }
+
+        private void pictureBox1_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+
+            Boolean fileVerif = Photo.VerifierPhoto(files);
+
+            if (fileVerif)
+            {
+                pictureBox1.ImageLocation = files[0];
+                txtPhoto.Text = files[0];
+
+            }
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -371,6 +371,8 @@
   <ItemGroup>
     <None Include="Resources\star-wars-1703175_1920.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\drag-drop-upload-1.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

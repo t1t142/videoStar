@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 19 juin 2018 à 22:40
+-- Généré le :  mar. 26 juin 2018 à 20:57
 -- Version du serveur :  5.7.21
 -- Version de PHP :  5.6.35
 
@@ -6428,11 +6428,28 @@ INSERT INTO `codepostal` (`idcp`, `libelle`, `idpays`) VALUES
 DROP TABLE IF EXISTS `document`;
 CREATE TABLE IF NOT EXISTS `document` (
   `codedocument` varchar(6) NOT NULL,
-  `titre_document` varchar(50) NOT NULL,
-  `codeTypeDocument` varchar(3) NOT NULL,
+  `titre` varchar(50) NOT NULL,
+  `anneesortie` int(4) NOT NULL,
+  `photo` varchar(50) NOT NULL,
+  `codetypedocument` varchar(3) NOT NULL,
   PRIMARY KEY (`codedocument`),
-  KEY `codeTypeDocument` (`codeTypeDocument`)
+  KEY `codeTypeDocument` (`codetypedocument`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `document`
+--
+
+INSERT INTO `document` (`codedocument`, `titre`, `anneesortie`, `photo`, `codetypedocument`) VALUES
+('gfgfdg', 'gdfgdfg', 1584, '', 'NEW'),
+('ghfjfu', 'gfgdgdfgdfg', 1985, '', 'NEW'),
+('ghhghg', 'ghhghh', 1985, '', 'DOC'),
+('hfghgh', 'hghghhh', 1258, '', 'NEW'),
+('hfhfgh', 'gfhgfh', 1985, '', 'DOC'),
+('lesder', 'Les derniers jedi', 2017, '', 'NEW'),
+('LESDES', 'LES DERNIERS JEDIS', 2017, '', 'NEW'),
+('rtrtrt', 'le reveil de la force', 2015, '', 'DOC'),
+('vvxvvc', 'cvxvvdfg', 1758, '', 'NEW');
 
 -- --------------------------------------------------------
 
@@ -6535,11 +6552,23 @@ DROP TABLE IF EXISTS `participer`;
 CREATE TABLE IF NOT EXISTS `participer` (
   `codedocument` varchar(6) NOT NULL,
   `idstar` int(11) NOT NULL,
-  `ID_Compositeur` int(11) NOT NULL,
-  PRIMARY KEY (`codedocument`,`idstar`,`ID_Compositeur`),
+  `idrole` int(11) NOT NULL,
+  `personnage` varchar(50) NOT NULL,
+  PRIMARY KEY (`codedocument`,`idstar`,`idrole`),
   KEY `idstar` (`idstar`),
-  KEY `ID_Compositeur` (`ID_Compositeur`)
+  KEY `ID_Compositeur` (`idrole`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `participer`
+--
+
+INSERT INTO `participer` (`codedocument`, `idstar`, `idrole`, `personnage`) VALUES
+('gfgfdg', 9, 2, 'hytkgg'),
+('gfgfdg', 10, 4, ''),
+('gfgfdg', 11, 5, ''),
+('rtrtrt', 9, 2, 'rey'),
+('rtrtrt', 23, 2, 'Luke Skywalker');
 
 -- --------------------------------------------------------
 
@@ -6768,7 +6797,6 @@ DROP TABLE IF EXISTS `role`;
 CREATE TABLE IF NOT EXISTS `role` (
   `idrole` int(11) NOT NULL AUTO_INCREMENT,
   `libelle` varchar(50) NOT NULL,
-  `service` varchar(20) NOT NULL,
   PRIMARY KEY (`idrole`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
@@ -6776,17 +6804,17 @@ CREATE TABLE IF NOT EXISTS `role` (
 -- Déchargement des données de la table `role`
 --
 
-INSERT INTO `role` (`idrole`, `libelle`, `service`) VALUES
-(1, 'Realisateur', ''),
-(2, 'Acteur', ''),
-(3, 'Producteur', ''),
-(4, 'Compositeur musique ', ''),
-(5, 'Scénariste', ''),
-(6, 'Effets visuels', ''),
-(7, 'Monteur', ''),
-(8, 'Création de costume', ''),
-(9, 'Cadreur', ''),
-(10, 'Direction artistique', '');
+INSERT INTO `role` (`idrole`, `libelle`) VALUES
+(1, 'Realisateur'),
+(2, 'Acteur'),
+(3, 'Producteur'),
+(4, 'Compositeur musique '),
+(5, 'Scénariste'),
+(6, 'Effets visuels'),
+(7, 'Monteur'),
+(8, 'Création de costume'),
+(9, 'Cadreur'),
+(10, 'Direction artistique');
 
 -- --------------------------------------------------------
 
@@ -6804,22 +6832,23 @@ CREATE TABLE IF NOT EXISTS `star` (
   `photo` varchar(50) NOT NULL,
   PRIMARY KEY (`idstar`),
   KEY `nom` (`nom`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `star`
 --
 
 INSERT INTO `star` (`idstar`, `nom`, `prenom`, `datenaissance`, `paysorigine`, `photo`) VALUES
-(7, 'Boyega', 'John', '1992-01-01 21:49:35', 'Angleterre', 'D:\\image\\johnBoyega.jpg'),
-(8, 'Ford', 'Harrison', '1942-07-13 21:57:22', 'États-Unis', 'D:\\image\\harrisonFord.jpg'),
-(9, 'Ridley', 'Daisy', '1992-01-01 23:14:50', 'Angleterre', 'D:\\image\\daisyRisley.jpg'),
-(10, 'Ehrenreich', 'Alden', '1989-11-22 23:39:05', 'États-Unis', 'D:\\image\\AldenEhrenreich.jpg'),
-(11, 'Clarke', 'Emila', '1986-10-23 23:44:17', 'Angleterre', 'D:\\image\\emiliaClarke.jpg'),
-(12, 'Glover', 'Donald', '1983-09-25 00:17:57', 'États-Unis', 'D:\\image\\DonaldGlover.jpg'),
-(13, 'tggtg', 'fggfg', '2018-06-18 16:18:05', 'France', 'D:\\image\\DonaldGlover.jpg'),
-(14, 'Mayhew', 'Peter', '1944-05-19 16:18:40', 'Angleterre', 'D:\\image\\MayhewPeter.jpg'),
-(15, 'Fisher', 'Carrie', '1956-10-21 16:18:40', 'États-Unis', 'D:\\image\\CarrieFisher.jpg');
+(8, 'Ford', 'Harrison', '1942-07-13 21:57:22', 'États-Unis', 'harrisonFord.jpg'),
+(9, 'Ridley', 'Daisy', '1992-01-01 23:14:50', 'Angleterre', 'daisyRisley.jpg'),
+(10, 'Ehrenreich', 'Alden', '1989-11-22 23:39:05', 'États-Unis', 'AldenEhrenreich.jpg'),
+(11, 'Clarke', 'Emila', '1986-10-23 23:44:17', 'Angleterre', 'emiliaClarke.jpg'),
+(12, 'Glover', 'Donald', '1983-09-25 00:17:57', 'États-Unis', 'DonaldGlover.jpg'),
+(14, 'Mayhew', 'Peter', '1944-05-19 16:18:40', 'Angleterre', 'MayhewPeter.jpg'),
+(15, 'Fisher', 'Carrie', '1956-10-21 16:18:40', 'États-Unis', 'CarrieFisher.jpg'),
+(21, 'Driver', 'Adam', '1983-11-19 23:52:55', 'États-Unis', 'AdamDriver.jpg'),
+(22, 'Craig', 'Daniel', '1983-11-19 23:52:55', 'États-Unis', 'DanielCraig.jpg'),
+(23, 'Hamill', 'Mark', '1951-09-25 23:52:55', 'États-Unis', 'marcHamill.jpg');
 
 -- --------------------------------------------------------
 
@@ -6904,16 +6933,16 @@ CREATE TABLE IF NOT EXISTS `tourner` (
 
 DROP TABLE IF EXISTS `typedocument`;
 CREATE TABLE IF NOT EXISTS `typedocument` (
-  `codeTypeDocument` varchar(3) NOT NULL,
-  `typeNom` varchar(50) NOT NULL,
-  PRIMARY KEY (`codeTypeDocument`)
+  `codetypedocument` varchar(3) NOT NULL,
+  `typenom` varchar(50) NOT NULL,
+  PRIMARY KEY (`codetypedocument`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `typedocument`
 --
 
-INSERT INTO `typedocument` (`codeTypeDocument`, `typeNom`) VALUES
+INSERT INTO `typedocument` (`codetypedocument`, `typenom`) VALUES
 ('DOC', 'Documentaire'),
 ('NEW', 'New');
 
@@ -6974,7 +7003,7 @@ ALTER TABLE `codepostal`
 -- Contraintes pour la table `document`
 --
 ALTER TABLE `document`
-  ADD CONSTRAINT `document_ibfk_1` FOREIGN KEY (`codeTypeDocument`) REFERENCES `typedocument` (`codeTypeDocument`);
+  ADD CONSTRAINT `document_ibfk_1` FOREIGN KEY (`codetypedocument`) REFERENCES `typedocument` (`codetypedocument`);
 
 --
 -- Contraintes pour la table `exemplaire`
@@ -7005,7 +7034,7 @@ ALTER TABLE `location`
 ALTER TABLE `participer`
   ADD CONSTRAINT `participer_ibfk_1` FOREIGN KEY (`codedocument`) REFERENCES `document` (`codedocument`),
   ADD CONSTRAINT `participer_ibfk_2` FOREIGN KEY (`idstar`) REFERENCES `star` (`idstar`),
-  ADD CONSTRAINT `participer_ibfk_3` FOREIGN KEY (`ID_Compositeur`) REFERENCES `role` (`idrole`);
+  ADD CONSTRAINT `participer_ibfk_3` FOREIGN KEY (`idrole`) REFERENCES `role` (`idrole`);
 
 --
 -- Contraintes pour la table `support`

@@ -53,6 +53,7 @@
     value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
+
     mimetype: application/x-microsoft.net.object.bytearray.base64
     value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
@@ -117,14 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  
-  <data name="sci-fi-3233076_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sci-fi-3233076_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="star-wars-2592430_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star-wars-2592430_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stormtrooper-1936251_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stormtrooper-1936251_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tunnel-3233082_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tunnel-3233082_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-
+  <data name="sci-fi-3233076_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sci-fi-3233076_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="darth-maul-1555343_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\darth-maul-1555343_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -137,16 +142,13 @@
   <data name="yoda-1726764_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yoda-1726764_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="star-wars-2592430_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star-wars-2592430_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="darth-vader-1207142_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\darth-vader-1207142_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="star-wars-2897280_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star-wars-2897280_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stormtrooper-1936251_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stormtrooper-1936251_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="darth-vader-1207142_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\darth-vader-1207142_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="drag-drop-upload-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drag-drop-upload-1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
