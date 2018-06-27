@@ -23,7 +23,7 @@ namespace videoStar.vue.star
         {
             InitializeComponent();
             pictureBox1.AllowDrop = true;
-            pictureBox1.ImageLocation = @"D:\image\drag-drop-upload-1.gif";
+            pictureBox1.ImageLocation = Parametres.repPhotoFond+"drag-drop-upload-1.gif";
             cbxPays.DroppedDown = true;
 
         }
@@ -95,7 +95,7 @@ namespace videoStar.vue.star
 
             if (st != null) {
 
-                string dossier = @"C:\Users\Thierry\source\repos\videoStar\images\star";
+                string dossier = Parametres.repPhotoStar;
                 string photo= Photo.SavePhoto(txtPhoto.Text,dossier);
                 st.Photo =photo;
                 st.InsertStar(st);

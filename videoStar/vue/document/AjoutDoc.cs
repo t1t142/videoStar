@@ -24,7 +24,7 @@ namespace videoStar.vue.document
         {
             InitializeComponent();
             pictureBox1.AllowDrop = true;
-            pictureBox1.ImageLocation = @"D:\image\drag-drop-upload-1.gif";
+            pictureBox1.ImageLocation = Parametres.repPhotoFond + "drag-drop-upload-1.gif";
             ajoutJouer1.Hide();
             ajoutJouer1.SlctDoc = Film;
         }

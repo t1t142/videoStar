@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace videoStar.entity
 {
-  public  class Parametres
+    public class Parametres
     {
+
+
+        public static String repPhotoStar = @"C:\Users\Thierry\source\repos\videoStar\images\star\";
+        public static String repPhotofile=@"C:\Users\Thierry\source\repos\videoStar\images\films\";
+        public static String repPhotoFond= @"C:\Users\Thierry\source\repos\videoStar\images\";
+
+
+
+
+
+/*
         private  String user;
         private String repPhotoStar;
         private String repPhotofile;
@@ -40,7 +51,7 @@ namespace videoStar.entity
 
 
 
-
+    */
 
 
 

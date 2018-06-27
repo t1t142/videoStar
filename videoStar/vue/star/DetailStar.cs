@@ -31,7 +31,7 @@ namespace videoStar.vue.star
             datePickerDetail.Value = st.Datenaisance;
             cbxDetPays.Text = st.PaysOrigine;
             //pictureBox1.ImageLocation = @"C:\Users\Solene\source\repos\videoStar\images\star\"+ st.Photo;
-            pictureBox1.ImageLocation = @"C:\Users\Thierry\source\repos\videoStar\images\star\" + st.Photo;
+            pictureBox1.ImageLocation = Parametres.repPhotoStar + st.Photo;
            
             this.slctStar = st;
         }
@@ -93,7 +93,7 @@ namespace videoStar.vue.star
                     MessageBox.Show(element);
                 }
 
-                pictureBox1.ImageLocation = @"C:\Users\Solene\source\repos\videoStar\images\star\" + file;
+                pictureBox1.ImageLocation = Parametres.repPhotoStar + file;
                 txtPhoto.Text = file;
 
             }
