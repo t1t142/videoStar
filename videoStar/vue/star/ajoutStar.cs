@@ -108,6 +108,7 @@ namespace videoStar.vue.star
                 popup.ContentText = "la nouvelle star a bien été ajoutée ";
                 popup.Popup();
                 OnAjtStar(new EventAjtStar(st));
+                ClearForm();
             }
         }
 
@@ -142,9 +143,18 @@ namespace videoStar.vue.star
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+       private void ClearForm()
         {
+            txtNom.Text = "";
+            txtPrenom.Text = "";
+            txtPhoto.Text = "";
+            cbxPays.Text = "";
+            pictureBox1.ImageLocation = Parametres.repPhotoFond + "drag-drop-upload-1.gif";
+        }
 
+        private void ajoutStar_VisibleChanged(object sender, EventArgs e)
+        {
+            ClearForm();
         }
     }
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 26 juin 2018 à 20:57
+-- Généré le :  mer. 18 juil. 2018 à 09:03
 -- Version du serveur :  5.7.21
 -- Version de PHP :  5.6.35
 
@@ -6441,15 +6441,7 @@ CREATE TABLE IF NOT EXISTS `document` (
 --
 
 INSERT INTO `document` (`codedocument`, `titre`, `anneesortie`, `photo`, `codetypedocument`) VALUES
-('gfgfdg', 'gdfgdfg', 1584, '', 'NEW'),
-('ghfjfu', 'gfgdgdfgdfg', 1985, '', 'NEW'),
-('ghhghg', 'ghhghh', 1985, '', 'DOC'),
-('hfghgh', 'hghghhh', 1258, '', 'NEW'),
-('hfhfgh', 'gfhgfh', 1985, '', 'DOC'),
-('lesder', 'Les derniers jedi', 2017, '', 'NEW'),
-('LESDES', 'LES DERNIERS JEDIS', 2017, '', 'NEW'),
-('rtrtrt', 'le reveil de la force', 2015, '', 'DOC'),
-('vvxvvc', 'cvxvvdfg', 1758, '', 'NEW');
+('revfor', 'le reveil de la force', 2015, 'lereveildelaforce.jpg', 'DOC');
 
 -- --------------------------------------------------------
 
@@ -6564,11 +6556,10 @@ CREATE TABLE IF NOT EXISTS `participer` (
 --
 
 INSERT INTO `participer` (`codedocument`, `idstar`, `idrole`, `personnage`) VALUES
-('gfgfdg', 9, 2, 'hytkgg'),
-('gfgfdg', 10, 4, ''),
-('gfgfdg', 11, 5, ''),
-('rtrtrt', 9, 2, 'rey'),
-('rtrtrt', 23, 2, 'Luke Skywalker');
+('revfor', 8, 2, 'Han Solo'),
+('revfor', 9, 2, 'Rey'),
+('revfor', 15, 2, 'General Leia'),
+('revfor', 21, 2, 'Kylo Ren');
 
 -- --------------------------------------------------------
 
@@ -6832,7 +6823,7 @@ CREATE TABLE IF NOT EXISTS `star` (
   `photo` varchar(50) NOT NULL,
   PRIMARY KEY (`idstar`),
   KEY `nom` (`nom`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `star`
