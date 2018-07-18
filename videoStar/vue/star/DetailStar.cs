@@ -36,7 +36,7 @@ namespace videoStar.vue.star
             this.slctStar = st;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnRetour_Click(object sender, EventArgs e)
         {
             Hide();
         }
@@ -130,11 +130,10 @@ namespace videoStar.vue.star
         private void DetailStar_VisibleChanged(object sender, EventArgs e)
         {
             AffichageInit();
+            editable = false;
+            Editable(editable);
         }
 
-        private void DetailStar_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

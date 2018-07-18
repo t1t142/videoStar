@@ -57,9 +57,6 @@ namespace videoStar.vue.star
             }
         }
 
-        private void StarVue_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

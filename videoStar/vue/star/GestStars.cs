@@ -41,8 +41,8 @@ namespace videoStar.vue.star
         starVue8.ClickDetail += HandleClickDetail;
         ajoutStar1.AjtStar += HandleAjtStar;
          
-        detailStar1.Hide();
-        ajoutStar1.Hide();
+       detailStar1.Hide();
+       ajoutStar1.Hide();
         btnReturn.Hide();
           
         }
@@ -263,14 +263,6 @@ namespace videoStar.vue.star
         
         }
 
-        private void GestStars_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ajoutStar1_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

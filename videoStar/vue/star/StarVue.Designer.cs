@@ -112,7 +112,6 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "StarVue";
             this.Size = new System.Drawing.Size(190, 280);
-            this.Load += new System.EventHandler(this.StarVue_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

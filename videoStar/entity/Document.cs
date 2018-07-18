@@ -127,6 +127,54 @@ namespace videoStar
 
         }
 
+        public static List<Document> GetDocsPages(string recherche, int activepage, int pageitem)
+        {
+            string query = "SELECT * FROM document WHERE titre LIKE @recherche  LIMIT @active,@pageitem";
+
+            MySqlCommand cmd = DBConnect.GetConnexion().CreateCommand();
+
+            cmd.Parameters.AddWithValue("@recherche", recherche + '%');
+            cmd.Parameters.AddWithValue("@active", ((activepage - 1) * pageitem));
+            cmd.Parameters.AddWithValue("@pageitem", pageitem);
+            cmd.CommandText = query;
+
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            List<Document> docs = new List<Document>();
+
+            while (dataReader.Read())
+            {
+                Document doc = new Document();
+                doc.Code = dataReader["codedocument"].ToString();
+                doc.Annee = dataReader["anneesortie"].ToString();
+                doc.Photo = dataReader["photo"].ToString();
+               // doc.DocType = dataReader["datenaissanc"].ToString();
+                doc.Titre = dataReader["titre"].ToString();
+             
+
+                docs.Add(doc);
+            }
+
+            dataReader.Close();
+
+            return docs;
+
+        }
+        public static int CountDocs(string recherche)
+        {
+
+            string query = "SELECT COUNT(*) FROM document WHERE titre LIKE @recherche";
+            int Count = -1;
+
+            MySqlCommand cmd = DBConnect.GetConnexion().CreateCommand();
+            cmd.Parameters.AddWithValue("@recherche", recherche + '%');
+
+            cmd.CommandText = query;
+
+            Count = int.Parse(cmd.ExecuteScalar().ToString());
+
+            return Count;
+
+        }
 
 
 

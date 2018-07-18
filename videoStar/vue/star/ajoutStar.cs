@@ -94,10 +94,13 @@ namespace videoStar.vue.star
             }
 
             if (st != null) {
-
-                string dossier = Parametres.repPhotoStar;
-                string photo= Photo.SavePhoto(txtPhoto.Text,dossier);
-                st.Photo =photo;
+           
+                if (txtPhoto.Text != "")
+                {
+                    string dossier = Parametres.repPhotoStar;
+                    string photo = Photo.SavePhoto(txtPhoto.Text, dossier);
+                    st.Photo = photo;
+                }
                 st.InsertStar(st);
             
                 PopupNotifier popup = new PopupNotifier();

@@ -11,7 +11,7 @@ namespace videoStar.entity
 
 
         public static String repPhotoStar = @"C:\Users\Thierry\source\repos\videoStar\images\star\";
-        public static String repPhotofile=@"C:\Users\Thierry\source\repos\videoStar\images\films\";
+        public static String repPhotofilm=@"C:\Users\Thierry\source\repos\videoStar\images\films\";
         public static String repPhotoFond= @"C:\Users\Thierry\source\repos\videoStar\images\";
 
 

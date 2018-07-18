@@ -39,15 +39,15 @@
             this.lblPages = new System.Windows.Forms.Label();
             this.btnSuivant = new System.Windows.Forms.Button();
             this.btnPrecedent = new System.Windows.Forms.Button();
-            this.docVue1 = new videoStar.vue.document.DocVue();
-            this.docVue2 = new videoStar.vue.document.DocVue();
-            this.docVue3 = new videoStar.vue.document.DocVue();
-            this.docVue4 = new videoStar.vue.document.DocVue();
-            this.docVue5 = new videoStar.vue.document.DocVue();
-            this.docVue6 = new videoStar.vue.document.DocVue();
-            this.docVue7 = new videoStar.vue.document.DocVue();
-            this.docVue8 = new videoStar.vue.document.DocVue();
             this.ajoutDoc1 = new videoStar.vue.document.AjoutDoc();
+            this.docVue8 = new videoStar.vue.document.DocVue();
+            this.docVue7 = new videoStar.vue.document.DocVue();
+            this.docVue6 = new videoStar.vue.document.DocVue();
+            this.docVue5 = new videoStar.vue.document.DocVue();
+            this.docVue4 = new videoStar.vue.document.DocVue();
+            this.docVue3 = new videoStar.vue.document.DocVue();
+            this.docVue2 = new videoStar.vue.document.DocVue();
+            this.docVue1 = new videoStar.vue.document.DocVue();
             this.SuspendLayout();
             // 
             // button1
@@ -101,6 +101,7 @@
             this.btnselect.TabIndex = 52;
             this.btnselect.Text = "Editer";
             this.btnselect.UseVisualStyleBackColor = false;
+            this.btnselect.Click += new System.EventHandler(this.btnselect_Click);
             // 
             // lblTitre
             // 
@@ -157,6 +158,7 @@
             this.btnSuivant.TabIndex = 59;
             this.btnSuivant.Text = "Suivant";
             this.btnSuivant.UseVisualStyleBackColor = false;
+            this.btnSuivant.Click += new System.EventHandler(this.btnSuivant_Click);
             // 
             // btnPrecedent
             // 
@@ -171,70 +173,6 @@
             this.btnPrecedent.Text = "Précédent";
             this.btnPrecedent.UseVisualStyleBackColor = false;
             // 
-            // docVue1
-            // 
-            this.docVue1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue1.Location = new System.Drawing.Point(42, 70);
-            this.docVue1.Name = "docVue1";
-            this.docVue1.Size = new System.Drawing.Size(190, 278);
-            this.docVue1.TabIndex = 61;
-            // 
-            // docVue2
-            // 
-            this.docVue2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue2.Location = new System.Drawing.Point(266, 70);
-            this.docVue2.Name = "docVue2";
-            this.docVue2.Size = new System.Drawing.Size(190, 278);
-            this.docVue2.TabIndex = 62;
-            // 
-            // docVue3
-            // 
-            this.docVue3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue3.Location = new System.Drawing.Point(483, 70);
-            this.docVue3.Name = "docVue3";
-            this.docVue3.Size = new System.Drawing.Size(190, 278);
-            this.docVue3.TabIndex = 63;
-            // 
-            // docVue4
-            // 
-            this.docVue4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue4.Location = new System.Drawing.Point(723, 70);
-            this.docVue4.Name = "docVue4";
-            this.docVue4.Size = new System.Drawing.Size(190, 278);
-            this.docVue4.TabIndex = 64;
-            // 
-            // docVue5
-            // 
-            this.docVue5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue5.Location = new System.Drawing.Point(42, 364);
-            this.docVue5.Name = "docVue5";
-            this.docVue5.Size = new System.Drawing.Size(190, 278);
-            this.docVue5.TabIndex = 65;
-            // 
-            // docVue6
-            // 
-            this.docVue6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue6.Location = new System.Drawing.Point(266, 364);
-            this.docVue6.Name = "docVue6";
-            this.docVue6.Size = new System.Drawing.Size(190, 278);
-            this.docVue6.TabIndex = 66;
-            // 
-            // docVue7
-            // 
-            this.docVue7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue7.Location = new System.Drawing.Point(483, 364);
-            this.docVue7.Name = "docVue7";
-            this.docVue7.Size = new System.Drawing.Size(190, 278);
-            this.docVue7.TabIndex = 67;
-            // 
-            // docVue8
-            // 
-            this.docVue8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
-            this.docVue8.Location = new System.Drawing.Point(723, 364);
-            this.docVue8.Name = "docVue8";
-            this.docVue8.Size = new System.Drawing.Size(190, 278);
-            this.docVue8.TabIndex = 68;
-            // 
             // ajoutDoc1
             // 
             this.ajoutDoc1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajoutDoc1.BackgroundImage")));
@@ -246,6 +184,79 @@
             this.ajoutDoc1.Size = new System.Drawing.Size(111, 83);
             this.ajoutDoc1.St = null;
             this.ajoutDoc1.TabIndex = 69;
+            // 
+            // docVue8
+            // 
+            this.docVue8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue8.Doc = null;
+            this.docVue8.Location = new System.Drawing.Point(723, 364);
+            this.docVue8.Name = "docVue8";
+            this.docVue8.Size = new System.Drawing.Size(190, 278);
+            this.docVue8.TabIndex = 68;
+            // 
+            // docVue7
+            // 
+            this.docVue7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue7.Doc = null;
+            this.docVue7.Location = new System.Drawing.Point(483, 364);
+            this.docVue7.Name = "docVue7";
+            this.docVue7.Size = new System.Drawing.Size(190, 278);
+            this.docVue7.TabIndex = 67;
+            // 
+            // docVue6
+            // 
+            this.docVue6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue6.Doc = null;
+            this.docVue6.Location = new System.Drawing.Point(266, 364);
+            this.docVue6.Name = "docVue6";
+            this.docVue6.Size = new System.Drawing.Size(190, 278);
+            this.docVue6.TabIndex = 66;
+            // 
+            // docVue5
+            // 
+            this.docVue5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue5.Doc = null;
+            this.docVue5.Location = new System.Drawing.Point(42, 364);
+            this.docVue5.Name = "docVue5";
+            this.docVue5.Size = new System.Drawing.Size(190, 278);
+            this.docVue5.TabIndex = 65;
+            // 
+            // docVue4
+            // 
+            this.docVue4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue4.Doc = null;
+            this.docVue4.Location = new System.Drawing.Point(723, 70);
+            this.docVue4.Name = "docVue4";
+            this.docVue4.Size = new System.Drawing.Size(190, 278);
+            this.docVue4.TabIndex = 64;
+            // 
+            // docVue3
+            // 
+            this.docVue3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue3.Doc = null;
+            this.docVue3.Location = new System.Drawing.Point(483, 70);
+            this.docVue3.Name = "docVue3";
+            this.docVue3.Size = new System.Drawing.Size(190, 278);
+            this.docVue3.TabIndex = 63;
+            // 
+            // docVue2
+            // 
+            this.docVue2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue2.Doc = null;
+            this.docVue2.Location = new System.Drawing.Point(266, 70);
+            this.docVue2.Name = "docVue2";
+            this.docVue2.Size = new System.Drawing.Size(190, 278);
+            this.docVue2.TabIndex = 62;
+            // 
+            // docVue1
+            // 
+            this.docVue1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(71)))), ((int)(((byte)(76)))));
+            this.docVue1.Doc = null;
+            this.docVue1.Location = new System.Drawing.Point(42, 70);
+            this.docVue1.Name = "docVue1";
+            this.docVue1.Size = new System.Drawing.Size(190, 278);
+            this.docVue1.TabIndex = 61;
+            this.docVue1.Load += new System.EventHandler(this.docVue1_Load);
             // 
             // DocListe
             // 
@@ -274,6 +285,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "DocListe";
             this.Size = new System.Drawing.Size(1093, 692);
+            this.Load += new System.EventHandler(this.DocListe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

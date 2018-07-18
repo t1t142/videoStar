@@ -52,5 +52,10 @@ namespace videoStar.vue.role
         {
             Dimensionnement.Dimensionner(updateRole1, 0, 0, true, 400, 700);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

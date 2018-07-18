@@ -9,13 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using videoStar.entity;
 using videoStar.outils;
+using videoStar.events;
 
 namespace videoStar.vue.document
 {
+
+   
+
     public partial class AjoutDoc : UserControl
     {
         private Star st;
         private Document film;
+
+        public event EventHandler<EventAjtDoc> AjtDoc;
+
+
+
 
         public Star St { get => st; set => st = value; }
         public Document Film { get => film; set => film = value; }
@@ -57,14 +66,33 @@ namespace videoStar.vue.document
             Film.Code = txtCode.Text;
             Film.Titre = txtTitre.Text;
             Film.Annee = txtAnnee.Text;
-            Film.Photo = txtPhoto.Text;
+            
            
             Film.DocType = (TypeDocument)cbxType.SelectedItem ;
             ajoutJouer1.SlctDoc = film;
+            if (txtPhoto.Text != "")
+            {
+                string dossier = Parametres.repPhotofilm;
+                string photo = Photo.SavePhoto(txtPhoto.Text, dossier);
+                Film.Photo = photo;
+            }
 
             film.Insertdocument(film);
 
+            OnAjtDoc(new EventAjtDoc(film));
         }
+    
+
+        protected virtual void OnAjtDoc(EventAjtDoc e)
+        {
+            EventHandler<EventAjtDoc> handler = AjtDoc;
+
+            if (handler != null)
+            {
+                handler(this, e);
+            }
+        }
+
 
         private void AjoutDoc_VisibleChanged(object sender, EventArgs e)
         {

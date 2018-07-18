@@ -192,12 +192,12 @@ namespace videoStar.vue.star
             this.ajoutStar1.Name = "ajoutStar1";
             this.ajoutStar1.Size = new System.Drawing.Size(55, 86);
             this.ajoutStar1.TabIndex = 48;
-            this.ajoutStar1.Load += new System.EventHandler(this.ajoutStar1_Load);
             // 
             // detailStar1
             // 
             this.detailStar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("detailStar1.BackgroundImage")));
             this.detailStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.detailStar1.ForeColor = System.Drawing.Color.White;
             this.detailStar1.Location = new System.Drawing.Point(1006, 357);
             this.detailStar1.Name = "detailStar1";
             this.detailStar1.Size = new System.Drawing.Size(73, 90);
@@ -329,7 +329,6 @@ namespace videoStar.vue.star
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "GestStars";
             this.Size = new System.Drawing.Size(1082, 724);
-            this.Load += new System.EventHandler(this.GestStars_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

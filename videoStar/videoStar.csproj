@@ -62,6 +62,7 @@
     <Compile Include="entity\Role.cs" />
     <Compile Include="entity\Star.cs" />
     <Compile Include="entity\TypeDocument.cs" />
+    <Compile Include="events\doc\EventAjtDoc.cs" />
     <Compile Include="events\star\EventAjtStar.cs" />
     <Compile Include="events\star\EventSlctStar.cs" />
     <Compile Include="exception\photoException\PhotoFormatExeption.cs" />

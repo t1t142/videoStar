@@ -132,6 +132,7 @@
             this.txtPhoto.Name = "txtPhoto";
             this.txtPhoto.Size = new System.Drawing.Size(141, 27);
             this.txtPhoto.TabIndex = 24;
+            this.txtPhoto.Visible = false;
             // 
             // btnValider
             // 

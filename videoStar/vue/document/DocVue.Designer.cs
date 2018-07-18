@@ -45,6 +45,7 @@
             this.lblPrenom.Size = new System.Drawing.Size(57, 21);
             this.lblPrenom.TabIndex = 32;
             this.lblPrenom.Text = "label2";
+            this.lblPrenom.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblNom
             // 
@@ -56,6 +57,8 @@
             this.lblNom.Size = new System.Drawing.Size(57, 21);
             this.lblNom.TabIndex = 31;
             this.lblNom.Text = "label1";
+            this.lblNom.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblNom.Click += new System.EventHandler(this.lblNom_Click);
             // 
             // picBox
             // 
@@ -91,6 +94,7 @@
             this.Controls.Add(this.btnDetail);
             this.Name = "DocVue";
             this.Size = new System.Drawing.Size(190, 278);
+            this.Load += new System.EventHandler(this.DocVue_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
