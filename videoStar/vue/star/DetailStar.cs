@@ -134,6 +134,6 @@ namespace videoStar.vue.star
             Editable(editable);
         }
 
-        
+       
     }
 }
