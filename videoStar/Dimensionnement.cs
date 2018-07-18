@@ -15,12 +15,9 @@ public static void Dimensionner(Control ctl,int inix,int iniy,Boolean taillePare
         {
 
           
-           // MessageBox.Show(ctl.Name);
-
             ctl.Location = new System.Drawing.Point(inix, iniy);
 
-           // MessageBox.Show(ctl.Location.ToString());
-
+           
             if (tailleParent)
             {
                 ctl.Size = ctl.Parent.Size;
@@ -29,19 +26,10 @@ public static void Dimensionner(Control ctl,int inix,int iniy,Boolean taillePare
             {
                 ctl.Size = new Size(width,height) ;
             }
-            //MessageBox.Show(ctl.Size.ToString());
+          
             ctl.Show();
             ctl.BringToFront();
-
         }
-
-
-
-
-
-
-
-
 
     }
 }
